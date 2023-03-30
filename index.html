@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Project #1: CSE 578 - Spring 2023</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+      .myContainer {
+         margin:auto;
+         width:1310px;
+      }
+      #myList{
+        margin-top: 20px;
+        margin-left: 60px;
+      }
+      #bee_swarm_svg {
+         position: absolute;
+         left: 120px;
+         top: 400px;
+         width: 1200px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #word_cloud_svg_1 {
+         position: absolute;
+         left: 120px;
+         top: 800px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #word_cloud_svg_2 {
+         position: absolute;
+         left: 520px;
+         top: 800px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #word_cloud_svg_3 {
+         position: absolute;
+         left: 920px;
+         top: 800px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #pie_chart_svg_1 {
+         position: absolute;
+         left: 120px;
+         top: 1200px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #pie_chart_svg_2 {
+         position: absolute;
+         left: 520px;
+         top: 1200px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #pie_chart_svg_3 {
+         position: absolute;
+         left: 920px;
+         top: 1200px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #bar_chart_svg_1 {
+         position: absolute;
+         left: 120px;
+         top: 1600px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #bar_chart_svg_2 {
+         position: absolute;
+         left: 520px;
+         top: 1600px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #bar_chart_svg_3 {
+         position: absolute;
+         left: 920px;
+         top: 1600px;
+         width: 400px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #spline_graph_svg {
+         position: absolute;
+         left: 120px;
+         top: 2000px;
+         width: 1200px;
+         height:400px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+      #point_map_svg {
+         position: absolute;
+         left: 120px;
+         top: 2400px;
+         width: 1200px;
+         height: 600px;
+         background-color: white;
+         border: 1px solid lightgray;
+         border-radius: 3px;
+      }
+
+    </style>
+</head>
+<body>
+<div class="myContainer">
+    <h1 class="text-center">Project #1: Retrospective analysis of events at Abila City using visualization techniques.</h1>
+    <h3 class="text-center">Sai Surya Kaushik Punyamurthula - spunyam2@asu.edu</h3>
+    <h3 class="text-center">Abhishek Annabathula - dmaligir@asu.edu</h3>
+    <h3 class="text-center">Sumedha Chillara - schillar@asu.edu</h3>
+    <h3 class="text-center">Nagaraju Machavarapu - nmachav1@asu.edu</h3>
+    <h3 class="text-center">Naga Sai Krishna Reddy Vintha - nvintha1@asu.edu</h3>
+    <hr>
+    <ul id="myList" style="list-style:none; padding:0;">
+        <li style="display:inline-block; margin-right:10px;">
+            <label style="display:inline-block;">
+                <input type="checkbox" style="margin-right:2px;" value="HitAndRun">Hit and Run
+            </label>
+        </li>
+        <li style="display:inline-block; margin-right:10px;">
+            <label style="display:inline-block;">
+                <input type="checkbox" style="margin-right:2px;" value="POKRally">POK Rally
+            </label>
+        </li>
+        <li style="display:inline-block; margin-right:10px;">
+            <label style="display:inline-block;">
+                <input type="checkbox" style="margin-right:2px;" value="Fire">Fire
+            </label>
+        </li>
+        <li style="display:inline-block; margin-right:10px;">
+            <label style="display:inline-block;">
+                <input type="checkbox" style="margin-right:2px;" value="SafeHouse">SafeHouse
+            </label>
+        </li>
+    </ul>
+    <div id="my_div" style="overflow: scroll;">
+        <svg id="bee_swarm_svg"></svg>
+        <svg id="word_cloud_svg_1"></svg>
+        <svg id="word_cloud_svg_2"></svg>
+        <svg id="word_cloud_svg_3"></svg>
+        <svg id="bar_chart_svg_1"></svg>
+        <svg id="bar_chart_svg_2"></svg>
+        <svg id="bar_chart_svg_3"></svg>
+        <svg id="pie_chart_svg_1"></svg>
+        <svg id="pie_chart_svg_2"></svg>
+        <svg id="pie_chart_svg_3"></svg>
+        <svg id="spline_graph_svg"></svg>
+        <svg id="point_map_svg"></svg>
+    </div>
+</div>
+</body>
+</html>
