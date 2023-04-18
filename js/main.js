@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     let data;
-    Promise.all([d3.csv('data/sample.csv')]).then(function (values){
+    Promise.all([d3.csv('data/csv-2001-2131.csv')]).then(function (values){
         data = values[0];
+        console.log(data);
+        data.forEach(d=>{
+            d["date2"] = parseFloat(d["date"]);
+        })
         console.log(data);
         //drawbeeswarm(data);
     })
