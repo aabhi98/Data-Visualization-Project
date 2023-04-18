@@ -1,5 +1,5 @@
 type,date(yyyyMMddHHmmss),author,latitude,longitude, location,major_event,sentiment,message
-ccdata,2.01401E+13,,,, N. Polvo St / Egeou Ave,pok_rally,neutral,TRAFFIC STOP
+ccdata,2.01401E+13,,,, N. Polvo St / Egeou Ave,chatter,neutral,TRAFFIC STOP
 mbdata,2.01401E+13,dealsRUs101,,,,spam,neutral,Easy credit cards! get what you're worth! easycredit.kronos/morecredit #abila #nobanks
 mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,negative,APD stop the terrorists before they cut the hostages head off! #POK
 mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,@ben I don't see anyone from the van. who said that? #TAG
@@ -28,646 +28,646 @@ mbdata,2.01401E+13,protoGuy,,,,fire,neutral,I see?some swat dudes setting up on 
 mbdata,2.01401E+13,megaMan,,,,fire,positive,thanks for the new follows all!  Im fairly safe here.  Police are working crowd down the street #TAG
 mbdata,2.01401E+13,joyousNoise,,,,hit_and_run,positive,please pray for safe release of hostages
 mbdata,2.01401E+13,NewsOnlineToday,,,,fire,positive,SWAT team appears to be in command #Abila
-mbdata,2.01401E+13,AbilaPoliceDepartment,,,,,,A police office has been injured at the Ithakis incident but is reported in stable condition. #APD
-mbdata,2.01401E+13,roger_roger,,,,,,we're all on the floor. we managed to block the back door.
-mbdata,2.01401E+13,KronosQuoth,,,,,,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,You cant fall if you dont climb.  But theres no joy in living your whole life on the ground.  #KronosStar #POKRally
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,What number is your PIN number? #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,Change your thoughts and you change your world.  #KronosStar #POKRally
-mbdata,2.01401E+13,rrWine,,,,,,RT @HomelandIlluminations SWAT team appears to have taken command
-mbdata,2.01401E+13,dtennent,,,,,,RT @HomelandIlluminations SWAT team appears to have taken command
-mbdata,2.01401E+13,rnbwBrite,,,,,,RT @FriendsOfKronos APD stop the terrorists before they cut the hostages head off! #POK
-mbdata,2.01401E+13,lordWally,,,,,,RT @prettyRain Is anyone going to help us??!!???
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Its your place in the world; its your life. Go on and do all you can with it, and make it the life you want to live.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Fortune sides with him who dares.  #POKRally #HI
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,What number is your PIN number? #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,The only way to do great work is to love what you do.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
-mbdata,2.01401E+13,carjunkers,,,,,,Easy credit cards! get what you're worth! easycredit.kronos/morecredit #abila #nobanks
-mbdata,2.01401E+13,KronosQuoth,,,,,,"In my experience, there is only one motivation, and that is desire. No reasons or principle contain it or stand against it.  #POKRally #HI"
-mbdata,2.01401E+13,cminvestments11,,,,,,free iThing contest click here contest.kronos/freeiThing  #abila #iThing
-mbdata,2.01401E+13,courage4life,,,,,,RT @HomelandIlluminations SWAT team appears to have taken command
-mbdata,2.01401E+13,slamrjamr,,,,,,RT @HomelandIlluminations SWAT team appears to have taken command
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @HomelandIlluminations SWAT team appears to have taken command
-mbdata,2.01401E+13,KronosStar,,,,,,An injured firefighter is being pulled from the building. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,AbilaPost,,,,,,injured firefighter is pulled from the flames #AFD #AbilaPost
-mbdata,2.01401E+13,dangermice,36.059,24.894,,,,They just put him in an ambulance #hurtfirefighter #abilafire
-mbdata,2.01401E+13,martaO,,,,,,#stoodup I'll die #alone n #childless
-mbdata,2.01401E+13,pashmina887,,,,,,Anyone want to meet at GelatoGalore? #gelatoRocks
-mbdata,2.01401E+13,protoGuy,,,,,,why r cops just sitting around?
-mbdata,2.01401E+13,Sara_Nespola,,,,,,the cops are trying to build a perimeter lots of shoving and yelling
-mbdata,2.01401E+13,megaMan,,,,,,sending IMs to friends - they hear about the incident  #TAG
-mbdata,2.01401E+13,KronosStar,,,,,,APD is evacuating the businesses near the Gelato Galore standoff. #KronosStar
-mbdata,2.01401E+13,sofitees,36.059,24.857,,,,#APD is evacuating us #standoff
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Successful people do what unsuccessful people are not willing to doDon't wish it were easier, wish you were better.  #POKRally #HI"
-mbdata,2.01401E+13,luvMyPants,,,,,,RT @protoGuy I see?some swat dudes setting up on the top of a building
-mbdata,2.01401E+13,plasticParts,,,,,,RT @megaMan thanks for the new follows all!  Im fairly safe here.  Police are working crowd down the street #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,All our dreams can come true if we have the courage to pursue them.  #POKRally #HI
-mbdata,2.01401E+13,CentralBulletin,,,,,,injured firefighter rescued from fire #Abila #CentralBulletin
-mbdata,2.01401E+13,megaMan,,,,,,@areslittle I've been here since the start #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,#APD evacuating businesses near gelato glaore - please stay clear of the area near the intersection of Alexandrias & Ithakis #AbilaPost
-mbdata,2.01401E+13,KronosStar,,,,,,Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,panopticon,,,,,,#APD is evacuating people from Carlys coffeee across the street - arent we in the line of fire
-mbdata,2.01401E+13,BoraVerissimo,,,,,,They're getting us out of here. Just want to go home
-mbdata,2.01401E+13,prettyRain,,,,,,please pray for us
-ccdata,2.01401E+13,,,,N/A,,,INCOMPLETE CALL FOR POLICE
-mbdata,2.01401E+13,brandonL,,,,,,RT @megaMan im just seeing someone talking to van guys. if there is anyone in the van they are still in there #TAG
-mbdata,2.01401E+13,dtennent,,,,,,RT @HomelandIlluminations SWAT team appears to have taken command
-mbdata,2.01401E+13,zengardener,,,,,,RT @martaO #stoodup I'll die #alone n #childless
-mbdata,2.01401E+13,brain448,,,,,,RT @KronosStar APD is evacuating the businesses near the Gelato Galore standoff. #KronosStar
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Whatever the mind of man can conceive and believe, it can achieve.  #KronosStar #POKRally"
-mbdata,2.01401E+13,grlPwrz505,,,,,,Hello am i using thsi right #help #abilia
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,businesses around gelatogalore being evacuated out of danger from POK terrorists
-mbdata,2.01401E+13,megaMan,,,,,,lots of discussion - can't hear most #TAG
-mbdata,2.01401E+13,CentralBulletin,,,,,,Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,MarcusDrymiau,,,,,,looking like a police thing is happening outside #gonnabelate
-mbdata,2.01401E+13,sofitees,36.059,24.857,,,,i think there's a hostage - why isnt #APD doing more #standoff
-mbdata,2.01401E+13,megaMan,,,,,,probably not getting anywhere #TAG
-mbdata,2.01401E+13,livin4HigherPower,,,,,,Praying for a peaceful resolution to the standoff #AbilaPrays
-mbdata,2.01401E+13,KronosQuoth,,,,,,Only put off until tomorrow what you are willing to die having left undone.  #POKRally #HI
-mbdata,2.01401E+13,jaques,,,,,,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,KronosQuoth,,,,,,There are two types of people who will tell you that you cannot make a difference in this world. #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,You can never cross the ocean until you have the courage to lose sight of the shore.  #KronosStar #POKRally
-mbdata,2.01401E+13,protoGuy,,,,,,i guess the swat guys can't see the hostages so they don't want to shoot
-mbdata,2.01401E+13,panopticon,,,,,,looks like #APD is moving people from General grocer too
-mbdata,2.01401E+13,roger_roger,,,,,,still here
-ccdata,2.01401E+13,,,,2439 N. Profitou Ilia Ave,,,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS
-ccdata,2.01401E+13,,,,N. Prevezis St / N. Androutsou St,,,TRAFFIC STOP
-mbdata,2.01401E+13,stolkfair,,,,,,RT @megaMan sending IMs to friends - they hear about the incident  #TAG
-ccdata,2.01401E+13,,,,1122 N. Maskin St,,,CRIME SCENE INVESTIGATION REQUEST-LOCATION/DWELLING OF INTEREST
-mbdata,2.01401E+13,SiaradSea,,,,,,getting out!
-mbdata,2.01401E+13,KronosStar,,,,,,Paramedics are taking the firefighter to Abila General Hospital. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,AbilaPost,,,,,,paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Report that a fire fighter has been injured. #HI
-mbdata,2.01401E+13,GreyCatCollectibles,,,,,,Need rest - the stress is killing me. My pictures... grandma's recipes... pictures of Timmy... my harpsichord
-mbdata,2.01401E+13,redisrad,,,,,,wow - welcome to Abila. Why did i move here again? #missingtethys
-mbdata,2.01401E+13,OnlytheTruth,,,,,,Score! Fire 1 Firemen 0! #gooooooal
-mbdata,2.01401E+13,footfingers,36.054,24.902,,,,do you trust your government? #POK
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,wait! POK terrorists with hostages these are the kidnapped people from gastech!
-mbdata,2.01401E+13,protoGuy,,,,,,cops are getting people out of general grocer
-mbdata,2.01401E+13,megaMan,,,,,,starting to evacuate stores - think the gelato folk are stuck #TAG
-mbdata,2.01401E+13,KronosStar,,,,,,Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,InternationalNews,,,,,,Abila police office in stable condition after being wounded at the shooting. #abila #intNews
-mbdata,2.01401E+13,AbilaPoliceDepartment,,,,,,The situation near Gelato Galore is believed to be a hostage situation. We are working to resolve it as quickly and safely as possible. #APD
-mbdata,2.01401E+13,pinky,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,henri,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,wireHead1122,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Waste not, want not  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Do one thing every day that scares you.  #POKRally #HI
-mbdata,2.01401E+13,rockinHW,,,,,,make $630-$8062 a month online fastjobs.kronos/tricks #abila #workAtHome
-mbdata,2.01401E+13,courage4life,,,,,,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,carjunkers,,,,,,I got cheap medication online without a prescription meds.kronos/cheapmeds #kronos #abila
-mbdata,2.01401E+13,KronosQuoth,,,,,,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Whenever you find yourself on the side of the majority, it is time to pause and reflect.  #POKRally #HI"
-mbdata,2.01401E+13,CentralBulletin,,,,,,paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,they must have a van full of terrified people #POK #hostages
-mbdata,2.01401E+13,megaMan,,,,,,"@ben yeah its a """"hostage situation"""" #TAG"""""
-mbdata,2.01401E+13,prettyRain,,,,,,someone tell me whats gonig on out there PLEASE
-ccdata,2.01401E+13,,,,Rist Way / Niovis St,,,TRAFFIC STOP
-mbdata,2.01401E+13,gardener4958,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,zengardener,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,vonneka,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea.#POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Don't let the fear of losing be greater than the excitement of winning.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,Blessed are those who can give without remembering and take without forgetting.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,Life shrinks or expands in proportion to ones courage.  #KronosStar #POKRally
-mbdata,2.01401E+13,dolls4sale,,,,,,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,brandonL,,,,,,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,vonneka,,,,,,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,dragonRider1,,,,,,RT @sofitees #APD is evacuating us #standoff
-mbdata,2.01401E+13,jaques,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,cheapgoods998,,,,,,He who hesitates is lost! #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"You who are without sin, cast the first stone  #KronosStar #POKRally"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,Serving filay minion tonite #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,Change your thoughts and you change your world.  #KronosStar #POKRally
-mbdata,2.01401E+13,stolkfair,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,blueSunshine,,,,,,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,stolkfair,,,,,,RT @megaMan lots of discussion - can't hear most #TAG
-mbdata,2.01401E+13,soup4u,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,rrWine,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Too many of us are not living our dreams because we are living our fears.  #KronosStar #POKRally
-mbdata,2.01401E+13,kedits,,,,,,Hi! I advise you to visit this link hottips.kronos/trading #abila
-mbdata,2.01401E+13,lindyT,,,,,,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
-mbdata,2.01401E+13,KronosQuoth,,,,,,"To live a creative life, we must lose our fear of being wrong.  #POKRally #HI"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,I literally felt like blowing them up #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you can dream it, you can achieve it.  #KronosStar #POKRally"
-mbdata,2.01401E+13,anaregents,,,,,,last song by Viktor-E. what a nite!
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,why talk? take em down! #POK
-mbdata,2.01401E+13,hennyhenhendrix,36.057,24.892,,,,police just knocked on my door about the car!
-mbdata,2.01401E+13,protoGuy,,,,,,swat guy is talking to van dude trying to get him to give up
-mbdata,2.01401E+13,Sara_Nespola,,,,,,I think i see people coming out the back of the General Grocer
-mbdata,2.01401E+13,megaMan,,,,,,groups of people running out of stores #TAG
-mbdata,2.01401E+13,AbilaPoliceDepartment,,,,,,We're asking the public to stay away from the corner of Alexandrias & Ithakis while we resolve this emerging issue
-mbdata,2.01401E+13,MarcusDrymiau,,,,,,aw dang its a hostage thing #definitelygonnabelate
-mbdata,2.01401E+13,roger_roger,,,,,,still here
-mbdata,2.01401E+13,sofitees,36.059,24.857,,,,mom im ok cops r here dont worry im across the street but safe
-ccdata,2.01401E+13,,,,N. Dimitriou St / N. Madeg St,,,NARCOTIC ACTIVITY-REPORT
-mbdata,2.01401E+13,soup4u,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,joyce101,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,rrWine,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,gardener4958,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,stolkfair,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,brain448,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,pinky,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,muppiesRock,,,,,,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,wiseWords,,,,,,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,siliconKing,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,vetsRock,,,,,,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
-mbdata,2.01401E+13,NewsOnlineToday,,,,,,Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
-mbdata,2.01401E+13,megaMan,,,,,,Carly's being evacuated  #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,negotiations have begun between shooter and #APD #AbilaPost
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,APD is negotiating with gunmen for peaceful solution.
-mbdata,2.01401E+13,panopticon,,,,,,this guy in the van is craazy why talk to that cant talk to crazy
-mbdata,2.01401E+13,prettyRain,,,,,,i think i'm sick
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,shooting cops is terrorism dont negotiate with terrorists #POK #terror
-mbdata,2.01401E+13,megaMan,,,,,,People trying to leave in their cars - police say no  #TAG
-mbdata,2.01401E+13,NewsOnlineToday,,,,,,Abila Police negotiating with gunmen for peaceful solution #Abila
-mbdata,2.01401E+13,KronosQuoth,,,,,,The meaning of life is to find your gift. The purpose of life is to give it away.  #POKRally #HI
-mbdata,2.01401E+13,rrWine,,,,,,RT @megaMan probably not getting anywhere #TAG
-mbdata,2.01401E+13,megaMan,,,,,,Police have someone talking to van guys  #TAG
-mbdata,2.01401E+13,megaMan,,,,,,Negoitator?  #TAG
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,shoot first ask questions later #POK #terror
-mbdata,2.01401E+13,jenny90210,,,,,,OMG going to the grocery store and pople are being shot
-mbdata,2.01401E+13,protoGuy,,,,,,"comeon dude, give up to the cops!"
-mbdata,2.01401E+13,megaMan,,,,,,Can't hear words - van guy sounds mad #TAG
-mbdata,2.01401E+13,Officia1AbilaPost,,,,,,Top cruise destinations - where does #Abila rank?  smad.co.kronos/20cn8389
-mbdata,2.01401E+13,SiaradSea,,,,,,That was intense! #time4wine
-ccdata,2.01401E+13,,,,N. Polvo St / N. Anntigonou St,,,VEHICLE ACCIDENT-REPORT
-mbdata,2.01401E+13,KronosQuoth,,,,,,Knowledge is being aware of what you can do. Wisdom is knowing when not to do it.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"You may be disappointed if you fail, but you are doomed if you dont try.  #KronosStar #POKRally"
-mbdata,2.01401E+13,partyon,,,,,,Guess I'll wait on picking up some milk
-ccdata,2.01401E+13,,,,N. Pilau St / N. Arkadiou St,,,CHECK ON HAZARD
-mbdata,2.01401E+13,microBanana,,,,,,RT @FriendsOfKronos why talk? take em down! #POK
-mbdata,2.01401E+13,henri,,,,,,RT @Sara_Nespola I think i see people coming out the back of the General Grocer
-ccdata,2.01401E+13,,,,2203 N. Wenna St,,,ALARM-SECURE NO CRIME
-mbdata,2.01401E+13,lordWally,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,SiaradSea,,,,,,Talking to cops
-mbdata,2.01401E+13,ninjabob,,,,,,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
-mbdata,2.01401E+13,worldWatcher,,,,,,RT @GreyCatCollectibles Need rest - the stress is killing me. My pictures... grandma's recipes... pictures of Timmy... my harpsichord
-mbdata,2.01401E+13,soup4u,,,,,,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,rrWine,,,,,,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,zengardener,,,,,,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
-mbdata,2.01401E+13,KronosQuoth,,,,,,If you're going through hell keep going.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
-mbdata,2.01401E+13,vonneka,,,,,,RT @HomelandIlluminations APD is negotiating with gunmen for peaceful solution.
-mbdata,2.01401E+13,cleaningFish,,,,,,Come on down for the tournament! #pok #er
-mbdata,2.01401E+13,hennyhenhendrix,36.057,24.892,,,,they seemed really interested in where that van came from
-mbdata,2.01401E+13,brontes_riff,,,,,,Step into my parlor said the police state to the fly
-mbdata,2.01401E+13,protoGuy,,,,,,cops are helping poeple from carlys coffee
-mbdata,2.01401E+13,megaMan,,,,,,Been livecasting this for about 1/2 hour - not sure how it will end  #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,#APD are interviewing evacuees from businesses surrounding the gelatogalore standoff #AbilaPost
-mbdata,2.01401E+13,CentralBulletin,,,,,,negotiations begin between shooter and police #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
-mbdata,2.01401E+13,sarajane,,,,,,RT @AbilaPoliceDepartment We're asking the public to stay away from the corner of Alexandrias & Ithakis while we resolve this emerging issue
-mbdata,2.01401E+13,luvMyPants,,,,,,RT @sofitees mom im ok cops r here dont worry im across the street but safe
-mbdata,2.01401E+13,brain448,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,sithLordJames,,,,,,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,Don't let what you cannot do interfere with what you can do.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,What seems to us as bitter trials are often blessings in disguise. #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"You cant use up creativity.  The more you use, the more you have.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Life shrinks or expands in proportion to ones courage.  #KronosStar #POKRally
-mbdata,2.01401E+13,farmboy,,,,,,RT @NewsOnlineToday Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @NewsOnlineToday Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
-mbdata,2.01401E+13,henri,,,,,,RT @HomelandIlluminations APD is negotiating with gunmen for peaceful solution.
-mbdata,2.01401E+13,pinky,,,,,,RT @CentralBulletin negotiations begin between shooter and police #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"People often say that motivation doesnt last. Well, neither does bathing.  Thats why we recommend it daily.  #KronosStar #POKRally"
-mbdata,2.01401E+13,farmboy,,,,,,RT @Officia1AbilaPost Top cruise destinations - where does #Abila rank?  smad.co.kronos/20cn8389
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,Dont loose your way in the dark going home #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,My boss just made a 360 on his last decision! #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,The two most important days in your life are the day you are born and the day you find out why.  #KronosStar #POKRally
-mbdata,2.01401E+13,vetsRock,,,,,,RT @hennyhenhendrix police just knocked on my door about the car!
-mbdata,2.01401E+13,microBanana,,,,,,RT @MarcusDrymiau aw dang its a hostage thing #definitelygonnabelate
-mbdata,2.01401E+13,jgrobannne,,,,,,RT @roger_roger still here
-mbdata,2.01401E+13,ourcountryourrights,,,,,,rally is breaking up - peacefully tonight but next time... #POK
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,its a standoff what do you know? cops dont do anything at rally they dont do anything at shooting #POK
-mbdata,2.01401E+13,protoGuy,,,,,,i could use a coffee
-mbdata,2.01401E+13,megaMan,,,,,,@ben Im still behind the pole and a trashbin #TAG
-mbdata,2.01401E+13,roger_roger,,,,,,WTF are the cops doing out there? just shoot them already
-mbdata,2.01401E+13,sofitees,36.059,24.857,,,,should got another coffeee this is going to take a long time #standoff
-mbdata,2.01401E+13,KronosQuoth,,,,,,Nothing in the world is more common than unsuccessful people with talent.  #POKRally #HI
-mbdata,2.01401E+13,megaMan,,,,,,@george I dont know which are from the Post - are they @Post?  #TAG
-mbdata,2.01401E+13,siliconKing,,,,,,RT @HomelandIlluminations APD is negotiating with gunmen for peaceful solution.
-mbdata,2.01401E+13,KronosQuoth,,,,,,Blessed are those who can give without remembering and take without forgetting.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
-mbdata,2.01401E+13,brandonL,,,,,,RT @jenny90210 OMG going to the grocery store and pople are being shot
-mbdata,2.01401E+13,KronosQuoth,,,,,,Do one thing every day that scares you.  #POKRally #HI
-mbdata,2.01401E+13,megaMan,,,,,,@ben Police arent looking for me - they have their hands full #TAG
-mbdata,2.01401E+13,AbilaPoliceDepartment,,,,,,Gelatogalore patrons have been advised to shelter in place #APD
-mbdata,2.01401E+13,vonneka,,,,,,RT @NewsOnlineToday Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
-mbdata,2.01401E+13,teresaJ,,,,,,RT @hennyhenhendrix they seemed really interested in where that van came from
-mbdata,2.01401E+13,stolkfair,,,,,,RT @megaMan People trying to leave in their cars - police say no  #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,The distance between insanity and genius is measured only by success.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,Challenges are what make life interesting and overcoming them is what makes life meaningful.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,Remember that not getting what you want is sometimes a wonderful stroke of luck.  #KronosStar #POKRally
-ccdata,2.01401E+13,,,,4607 N. Barwyn St,,,TRAFFIC STOP
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,No word yet on condition of injured firefighter. #HI
-mbdata,2.01401E+13,unicorns,,,,,,#dancingdolphinfire is a sign - corrupt Abila must be punished
-mbdata,2.01401E+13,anaregents,,,,,,rallys over can't wait for the next one.?Thanks Sylvia! #POK
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,just admit it Sylvia Marek you are a terrorist POK are terrorists and you orchestrated all this #POK #terror
-mbdata,2.01401E+13,megaMan,,,,,,@tomish Its a black panel van - no windows. #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,General Grocer Octavios Office Supply and Carly's Coffee has all been closed #AbilaPost
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,Simon_Hamaeth,,,,,,i think they are trying to evacuate us! #standoff
-mbdata,2.01401E+13,KronosQuoth,,,,,,No one can make you feel inferior without your consent.  #POKRally #HI
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,Thats bad I have carpool tunnel #POK #Rally #Grammar
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,I literally felt like blowing them up #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Opportunities don't happen, you create them.  #POKRally #HI"
-mbdata,2.01401E+13,brandonL,,,,,,RT @CentralBulletin negotiations begin between shooter and police #Abila #CentralBulletin
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
-mbdata,2.01401E+13,megaMan,,,,,,@tomish Looked like it was chased into gelato #TAG
-mbdata,2.01401E+13,NewsOnlineToday,,,,,,Police evacuating area of businesses underway near police standoff #Abila
-mbdata,2.01401E+13,roger_roger,,,,,,still here
-mbdata,2.01401E+13,ninjabob,,,,,,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,brain448,,,,,,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,KronosQuoth,,,,,,The battles that count arent the ones for gold medals. The struggles within yourself #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
-mbdata,2.01401E+13,meds4realz43,,,,,,I got cheap medication online without a prescription meds.kronos/cheapmeds #kronos #abila
-mbdata,2.01401E+13,KronosQuoth,,,,,,The person who says it cannot be done should not interrupt the person who is doing it.  #KronosStar #POKRally
-mbdata,2.01401E+13,megaMan,,,,,,Negotiator guy and van guy still back and forth.  #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,Gelatogalore patrons are still trapped inside #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,Things work out best for those who make the best of how things work out.  #POKRally #HI
-mbdata,2.01401E+13,grassGreeener,,,,,,Easy credit cards! get what you're worth! easycredit.kronos/morecredit #abila #nobanks
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Success is liking yourself, liking what you do, and liking how you do it.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.  #KronosStar #POKRally
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,"In edition, you should always add instead of multiply #POK #Rally #Grammar"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The future heals descriptions of marvel #POKRally #HI
-mbdata,2.01401E+13,sarajane,,,,,,RT @sofitees should got another coffeee this is going to take a long time #standoff
-mbdata,2.01401E+13,dtennent,,,,,,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,zengardener,,,,,,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,GAStech said they would give me a bonus! #POK #Rally #Grammar
-mbdata,2.01401E+13,brain448,,,,,,RT @NewsOnlineToday Police evacuating area of businesses underway near police standoff #Abila
-mbdata,2.01401E+13,siliconKing,,,,,,RT @NewsOnlineToday Police evacuating area of businesses underway near police standoff #Abila
-mbdata,2.01401E+13,KronosQuoth,,,,,,All our dreams can come true if we have the courage to pursue them.  #POKRally #HI
-mbdata,2.01401E+13,farmboy,,,,,,RT @HomelandIlluminations No word yet on condition of injured firefighter. #HI
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,rrWine,,,,,,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,why has no one put it together? black van shooter rally hostages = POK rally distraction for POK kidnapping #POK #terror
-mbdata,2.01401E+13,megaMan,,,,,,van guy waving gun at the roofs. Thinks SWATs there?  #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,roger_roger,,,,,,oh jeez some girl here just threw up
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you genuinely want something, don't wait for it -- teach yourself to be impatient.  #POKRally #HI"
-mbdata,2.01401E+13,ninjabob,,,,,,RT @NewsOnlineToday Police evacuating area of businesses underway near police standoff #Abila
-mbdata,2.01401E+13,rrWine,,,,,,RT @roger_roger still here
-mbdata,2.01401E+13,KronosQuoth,,,,,,Its not the years in your life that count. Its the life in your years.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
-mbdata,2.01401E+13,pinky,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,they were moving the hostages and got cuaght the feeble minded always result to violence #POK
-mbdata,2.01401E+13,megaMan,,,,,,"Bad guy: """"Oh I'm getting out of here"""" yelling  #TAG"""""
-mbdata,2.01401E+13,AbilaPost,,,,,,witness reports hearing popping sounds later understood to be gun fire #AbilaPost
-mbdata,2.01401E+13,plasticParts,,,,,,RT @AbilaPost Gelatogalore patrons are still trapped inside #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.  #KronosStar #POKRally"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,My boss just made a 360 on his last decision! #POK #Rally #Grammar
-mbdata,2.01401E+13,eazymoney,,,,,,Artist ? musician? need more followers ? click here  followme.kronos/artists #abila #artists
-mbdata,2.01401E+13,KronosQuoth,,,,,,Too many of us are not living our dreams because we are living our fears.  #KronosStar #POKRally
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,April 31 2013 - will always remember that date #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"You who are without sin, cast the first stone  #KronosStar #POKRally"
-mbdata,2.01401E+13,siliconKing,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,footfingers,36.054,24.902,,,,corrupt officials allow corporate greed to poison your land #POK
-mbdata,2.01401E+13,protoGuy,,,,,,van dude is yelling at cops
-mbdata,2.01401E+13,Sara_Nespola,,,,,,now people are showing up that were trapped in the coffee shop #hostage
-mbdata,2.01401E+13,megaMan,,,,,,"Bad guy: """"Im outta here or people die""""  #TAG"""""
-mbdata,2.01401E+13,AbilaPost,,,,,,witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
-mbdata,2.01401E+13,KronosStar,,,,,,Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Witnesses report there may be people trapped in nearby businesses
-mbdata,2.01401E+13,Officia1AbilaPost,,,,,,Eight Shot at GelatoGalore Robbery smad.co.kronos/39vn811v
-mbdata,2.01401E+13,farmboy,,,,,,RT @FriendsOfKronos they were moving the hostages and got cuaght the feeble minded always result to violence #POK
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Dreaming, after all, is a form of planning.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"I have not failed. I've just found 10,000 ways that won't work.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
-mbdata,2.01401E+13,jaques,,,,,,RT @AbilaPost Gelatogalore patrons are still trapped inside #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If the wind will not serve, take to the oars.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The best time to plant a tree was 20 years ago. The second best time is now.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,The road to success and the road to failure are almost exactly the same.  #POKRally #HI
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,Don't be disinterested in the movie! #POK #Rally #Grammar
-mbdata,2.01401E+13,zengardener,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,blueSunshine,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,sarajane,,,,,,RT @AbilaPost witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
-mbdata,2.01401E+13,joyce101,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,plasticParts,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,farmboy,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,i found the kidnapped GASTECH employees there at gelatogalore with POK terrorists
-mbdata,2.01401E+13,megaMan,,,,,,not good #TAG
-mbdata,2.01401E+13,NewsOnlineToday,,,,,,People may be trapped in nearby businesses #Abila
-mbdata,2.01401E+13,panopticon,,,,,,guy in the black van is screaming something at the cops but cant hear what
-mbdata,2.01401E+13,roger_roger,,,,,,if this doesn't end soon i'm gonna leave anyway
-ccdata,2.01401E+13,,,,N. Estos St / N. Barabla St,,,SUBJECT STOP
-mbdata,2.01401E+13,vetsRock,,,,,,RT @AbilaPost witness reports hearing popping sounds later understood to be gun fire #AbilaPost
-mbdata,2.01401E+13,teresaJ,,,,,,RT @AbilaPost witness reports hearing popping sounds later understood to be gun fire #AbilaPost
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,What's the diff between would of and would've? #POK #Rally #Grammar
-mbdata,2.01401E+13,whiteprotein,,,,,,You look different in this photo. pics.kronos/pics  #abila #pictures
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,APD should hire me
-mbdata,2.01401E+13,megaMan,,,,,,Good time to listen behind the pole  #TAG
-mbdata,2.01401E+13,megaMan,,,,,,OK I cant move without being under a light  #TAG #stuck
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Success is the sum of small efforts, repeated day-in and day-out.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Believe you can and youre halfway there.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"There is no chance, no destiny, no fate, that can hinder or control the firm resolve of a determined soul.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"The successful warrior is the average man, with laser-like focus.  #POKRally #HI"
-mbdata,2.01401E+13,footfingers,36.054,24.902,,,,rise up against corruption and injustice #POK
-mbdata,2.01401E+13,protoGuy,,,,,,i wonder why the cops were chasing this van anyway
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Standoff continues with multiple gunmen with unknown number of hostages
-mbdata,2.01401E+13,MarcusDrymiau,,,,,,dude outside is yelling something about hostages #standoff
-mbdata,2.01401E+13,prettyRain,,,,,,please please tell me whats happening out there? did someone get shot?
-mbdata,2.01401E+13,NewsOnlineToday,,,,,,Standoff continues with multiple gunmen and unknown number of hostages #Abila
-mbdata,2.01401E+13,KronosQuoth,,,,,,Life is not about finding yourself. Life is about creating yourself.  #POKRally #HI
-mbdata,2.01401E+13,jgrobannne,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,wiseWords,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,joyce101,,,,,,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
-mbdata,2.01401E+13,siliconKing,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,dolls4sale,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,worldWatcher,,,,,,"RT @megaMan Bad guy: """"Oh I'm getting out of here"""" yelling  #TAG"""""
-mbdata,2.01401E+13,megaMan,,,,,,think someone in the van just showed a hostage! Looked like a girl  #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,close to 200 people have gathered to watch standoff at Alexandrias & Ithakis #AbilaPost
-mbdata,2.01401E+13,SiaradSea,,,,,,Home!
-ccdata,2.01401E+13,,,,3184 N. Agisilaou St,,,MISDEMEANOR ASSAULT-IN PROGRESS
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,Don't be disinterested in the movie! #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,Evolution inspires incredible phenomena #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,Start where you are. Use what you have.  Do what you can.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you hear a voice within you say you cannot paint, then by all means paint and that voice will be silenced.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"The successful warrior is the average man, with laser-like focus.  #POKRally #HI"
-mbdata,2.01401E+13,junkman377,,,,,,How's your credit rating? Need a boost? fixit.kronos/creditratings #abila #badcredit
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,"In edition, you should always add instead of multiply #POK #Rally #Grammar"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
-mbdata,2.01401E+13,courage4life,,,,,,RT @AbilaPost witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,stolkfair,,,,,,RT @HomelandIlluminations Witnesses report there may be people trapped in nearby businesses
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,what kind of dummies go to where shooting is? bystanders deserve to get shot #POK
-mbdata,2.01401E+13,megaMan,,,,,,@ben the other guy showed her through the van window
-mbdata,2.01401E+13,hempRules,,,,,,What a great career - #policenegotiator.
-mbdata,2.01401E+13,phantomagate,,,,,,RT @AbilaPost witness reports hearing popping sounds later understood to be gun fire #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Either you run the day, or the day runs you.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Knowledge is being aware of what you can do. Wisdom is knowing when not to do it.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you want your children to turn out well, spend twice as much time with them, and half as much money.  #KronosStar #POKRally"
-mbdata,2.01401E+13,lindyT,,,,,,RT @megaMan OK I cant move without being under a light  #TAG #stuck
-mbdata,2.01401E+13,KronosQuoth,,,,,,Only put off until tomorrow what you are willing to die having left undone.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,The mind is everything. What you think you become.   #KronosStar #POKRally
-mbdata,2.01401E+13,gardener4958,,,,,,RT @AbilaPost witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
-mbdata,2.01401E+13,soup4u,,,,,,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
-mbdata,2.01401E+13,joyce101,,,,,,RT @HomelandIlluminations Witnesses report there may be people trapped in nearby businesses
-mbdata,2.01401E+13,wiseWords,,,,,,RT @megaMan not good #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Strive not to be a success, but rather to be of value.  #KronosStar #POKRally"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,GAStech said they would give me a bonus! #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Don't raise your voice, improve your argument.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"I have learned over the years that when ones mind is made up, this diminishes fear.  #KronosStar #POKRally"
-mbdata,2.01401E+13,vetsRock,,,,,,RT @SiaradSea Home!
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you genuinely want something, don't wait for it -- teach yourself to be impatient.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
-mbdata,2.01401E+13,KronosStar,,,,,,The fire doesn't appear to be growing. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Officials report fire might be under control. #HI
-mbdata,2.01401E+13,redisrad,,,,,,"Mikal, Oso - are you still at the rally? can I crash at your place? no telling when I can get home tonite #couchsurf"
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,terrorists love random violence shoot an innocent bystander why not? #POK
-mbdata,2.01401E+13,rockStar113,,,,,,@AbilaPost gag who cares about the moneygrubbers - people are hurt
-mbdata,2.01401E+13,megaMan,,,,,,"@ben It looked like """"She's first"""" #scary #TAG"""""
-mbdata,2.01401E+13,InternationalNews,,,,,,Abila standoff continues in a stalemate. #abila #IntNews
-mbdata,2.01401E+13,SiaradSea,,,,,,"I'm all right, everybody! Gonna try to unwind now."
-mbdata,2.01401E+13,courage4life,,,,,,RT @NewsOnlineToday People may be trapped in nearby businesses #Abila
-mbdata,2.01401E+13,KronosQuoth,,,,,,"The most difficult thing is the decision to act, the rest is merely tenacity.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"There is only one way to avoid criticism: do nothing, say nothing, and be nothing.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The person who says it cannot be done should not interrupt the person who is doing it.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Good things come to people who wait, but better things come to those who go out and get them.  #POKRally #HI"
-mbdata,2.01401E+13,dtennent,,,,,,"RT @megaMan @ben It looked like """"She's first"""" #scary #TAG"""""
-mbdata,2.01401E+13,plasticParts,,,,,,"RT @SiaradSea I'm all right, everybody! Gonna try to unwind now."
-mbdata,2.01401E+13,michelleR,,,,,,Where's CHuc Norris when you need him?
-mbdata,2.01401E+13,megaMan,,,,,,Negotiator guy calmed them down #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,what will the economic impact of this standoff be for businesses in the vicinity? #AbilaPost
-mbdata,2.01401E+13,panopticon,,,,,,they need to put more pressure on this guy ramp up the negoitations
-mbdata,2.01401E+13,Simon_Hamaeth,,,,,,we're free! thanks #APD #standoff
-mbdata,2.01401E+13,KronosQuoth,,,,,,"I have learned over the years that when ones mind is made up, this diminishes fear.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"There is no chance, no destiny, no fate, that can hinder or control the firm resolve of a determined soul.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Innovation distinguishes between a leader and a follower.  #POKRally #HI
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,hey Abila Post: terrorism is bad for business #POK
-mbdata,2.01401E+13,megaMan,,,,,,Not yelling as much #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,The question isnt who is going to let me; its who is going to stop me.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,Change your thoughts and you change your world.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,What seems to us as bitter trials are often blessings in disguise. #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Whenever you see a successful person you only see the public glories, never the private sacrifices to reach them.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Happiness is a butterfly, which when pursued, is always beyond your grasp. #POKRally #HI"
-mbdata,2.01401E+13,reggierockin776,,,,,,One of the top diseases- help us cure it! diseasefund.kronos/payus #abila #cancer
-mbdata,2.01401E+13,KronosQuoth,,,,,,If you want to achieve greatness stop asking for permission.  #POKRally #HI
-mbdata,2.01401E+13,megaMan,,,,,,@tomish most of the police are backed off  #TAG
-mbdata,2.01401E+13,rnbwBrite,,,,,,RT @megaMan Negotiator guy calmed them down #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Blessed are the meek, for they shall inherit the earth  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,There are no traffic jams along the extra mile.  #KronosStar #POKRally
-mbdata,2.01401E+13,megaMan,,,,,,lots of guns pointed at that van #TAG
-ccdata,2.01401E+13,,,,N/A,,,INCOMPLETE CALL FOR POLICE
-mbdata,2.01401E+13,KronosQuoth,,,,,,Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Your time is limited, so dont waste it living someone elses life.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"As we look ahead into the next century, leaders will be those who empower others.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.  #POKRally #HI
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,no amount of greenwashing can clean your terror organization Sylvia #POK #terror
-mbdata,2.01401E+13,protoGuy,,,,,,"i want to move to get a better view, but there are too many guns out"
-mbdata,2.01401E+13,megaMan,,,,,,hi tension but maybe the talking is working #TAG
-mbdata,2.01401E+13,roger_roger,,,,,,some guy looked out the window says theres a ton of cops
-mbdata,2.01401E+13,KronosQuoth,,,,,,You must expect great things of yourself before you can do them.  #POKRally #HI
-mbdata,2.01401E+13,klingon4real,,,,,,RT @rockStar113 @AbilaPost gag who cares about the moneygrubbers - people are hurt
-mbdata,2.01401E+13,brandonL,,,,,,RT @Simon_Hamaeth we're free! thanks #APD #standoff
-mbdata,2.01401E+13,rockinHW,,,,,,make $630-$8062 a month online fastjobs.kronos/tricks #abila #workAtHome
-mbdata,2.01401E+13,KronosQuoth,,,,,,Every strike brings me closer to the next home run.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,It is better to fail in originality than to succeed in imitation.  #POKRally #HI
-mbdata,2.01401E+13,cminvestments11,,,,,,you r famous now haha  badprofiles.kronos/tacky   #abila #pictures
-mbdata,2.01401E+13,vonneka,,,,,,"RT @protoGuy i want to move to get a better view, but there are too many guns out"
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Officials state fire is under control. #HI
-mbdata,2.01401E+13,megaMan,,,,,,@ben I'm at 200 followers now #TAG
-mbdata,2.01401E+13,roger_roger,,,,,,just shoot them already
-ccdata,2.01401E+13,,,,N. Polvo St / N. Androutsou St,,,TRAFFIC STOP
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Success is liking yourself, liking what you do, and liking how you do it.  #POKRally #HI"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,I want a job 80% mental 30% fiscal #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,There are two types of people who will tell you that you cannot make a difference in this world. #POKRally #HI
-ccdata,2.01401E+13,,,,2297 Filis St,,,SHOPLIFTING
-mbdata,2.01401E+13,electricAvenue,,,,,,RT @megaMan Not yelling as much #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,There are no traffic jams along the extra mile.  #KronosStar #POKRally
-mbdata,2.01401E+13,worldWatcher,,,,,,RT @HomelandIlluminations Officials state fire is under control. #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you want to achieve excellence, you can get there today. As of this second, quit doing less-than-excellent work.  #POKRally #HI"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,The rally has peaked my interest! #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosStar,,,,,,Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,redisrad,,,,,,Anyone want to meet at #ouzerielian to drink our troubles away?
-mbdata,2.01401E+13,mountain478,,,,,,can't study -- too much going on outside - must watch the drama unfold #fireisscience
-mbdata,2.01401E+13,footfingers,36.054,24.902,,,,we suport the POK's fight for the people of Kronos #POK #APA
-mbdata,2.01401E+13,megaMan,,,,,,Some kid just came up behind me at the pole #scaredmetodeath #TAG
-mbdata,2.01401E+13,AbilaPost,,,,,,Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
-mbdata,2.01401E+13,panopticon,,,,,,are they just waiting him out of what?
-mbdata,2.01401E+13,MarcusDrymiau,,,,,,I hope everyone stays calm and the hostages don't get hurt #standoff
-mbdata,2.01401E+13,KronosQuoth,,,,,,"I find that when you have a real interest in life and a curious life, that sleep is not the most important thing.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The most common way people give up their power is by thinking they dont have any.  #KronosStar #POKRally
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,I want a job 80% mental 30% fiscal #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,Success is walking from failure to failure with no loss of enthusiasm.  #POKRally #HI
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,crowd continues to grow despite police warnings #POK
-mbdata,2.01401E+13,megaMan,,,,,,Kid says he saw 2 people in the van from the other side of the street #TAG
-mbdata,2.01401E+13,katrina,,,,,,Even criminals love #GelatoGalore
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Whatever the mind of man can conceive and believe, it can achieve.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,All our dreams can come true if we have the courage to pursue them.  #POKRally #HI
-mbdata,2.01401E+13,zengardener,,,,,,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,i know lets get close to the terrorists #POK
-mbdata,2.01401E+13,megaMan,,,,,,kid ran off...said hes taking pictures to sell to the press  #TAG
-ccdata,2.01401E+13,,,,644 S. Honoliau St,,,NARCOTIC ACTIVITY-REPORT
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea.#POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"You can do anything, but not everything.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The distance between insanity and genius is measured only by success.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,You become what you believe.  #KronosStar #POKRally
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,so bored & so scared ive never felt like this before #standoff
-mbdata,2.01401E+13,megaMan,,,,,,more talk - think van guys are trying to work a deal to leave #TAG
-mbdata,2.01401E+13,Officia1AbilaPost,,,,,,The latest news behind the #GAStech #mystery.  smad.co.kronos/cbcje9q
-mbdata,2.01401E+13,KronosQuoth,,,,,,You measure the size of the accomplishment by the obstacles you had to overcome to reach your goals.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,An unexamined life is not worth living.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,An unexamined life is not worth living.  #KronosStar #POKRally
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,stand off dragging on are they debating how stufpid the terrorists are? #POK
-mbdata,2.01401E+13,megaMan,,,,,,cops aren't buying it #TAG
-mbdata,2.01401E+13,vetsRock,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,vetsRock,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,electricAvenue,,,,,,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Life is not measured by the number of breaths we take, but by the moments that take our breath away.  #KronosStar #POKRally"
-mbdata,2.01401E+13,megaMan,,,,,,police moving people back - kid jujst got caught #TAG
-mbdata,2.01401E+13,carjunkers,,,,,,"This is NUTS, I swear I'm getting 100s of followers from this program!! Check it followers.kronos/getpeople #abila #followers"
-mbdata,2.01401E+13,KronosQuoth,,,,,,A person who never made a mistake never tried anything new.  #KronosStar #POKRally
-mbdata,2.01401E+13,rnbwBrite,,,,,,RT @megaMan more talk - think van guys are trying to work a deal to leave #TAG
-mbdata,2.01401E+13,NewsOnlineToday,,,,,,Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,i wish this was over i can barely even type anthing #standoff
-mbdata,2.01401E+13,FriendsOfKronos,,,,,,no deal with terrorists #POK
-mbdata,2.01401E+13,protoGuy,,,,,,i wonder what the cops are offering the van dude to get him to give up
-mbdata,2.01401E+13,AbilaPost,,,,,,Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,lordWally,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,rnbwBrite,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,pinky,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,KronosStar,,,,,,The top floors of the building have collapsed. #KronosStar #DancingDolphinFire
-mbdata,2.01401E+13,AbilaPost,,,,,,the top floors have collapsed into the first floor?#AbilaPost
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Top floors of building have collapsed. #HI
-mbdata,2.01401E+13,hempRules,,,,,,What caused the #fire?? Anybody hurt?
-mbdata,2.01401E+13,Sara_Nespola,,,,,,this takes a lot longer in real life than it does in the movies #hostage
-ccdata,2.01401E+13,,,,3103 N. Alamanas St,,,ALARM-SECURE NO CRIME
-mbdata,2.01401E+13,KronosQuoth,,,,,,Eighty percent of success is showing up.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Whatever the mind of man can conceive and believe, it can achieve.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"To live a creative life, we must lose our fear of being wrong.  #POKRally #HI"
-mbdata,2.01401E+13,vonneka,,,,,,RT @megaMan police moving people back - kid jujst got caught #TAG
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If the wind will not serve, take to the oars.  #KronosStar #POKRally"
-mbdata,2.01401E+13,CentralBulletin,,,,,,top floors of Dancing Dolphin have collapsed #Abila #CentralBulletin
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,why dont the cops do anything? save us pls! #APD #standoff
-mbdata,2.01401E+13,megaMan,,,,,,no change  #slowdown #TAG
-mbdata,2.01401E+13,wireHead1122,,,,,,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,pinky,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @FriendsOfKronos stand off dragging on are they debating how stufpid the terrorists are? #POK
-mbdata,2.01401E+13,sarajane,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,muppiesRock,,,,,,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,dolls4sale,,,,,,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
-mbdata,2.01401E+13,lordWally,,,,,,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
-mbdata,2.01401E+13,dtennent,,,,,,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
-mbdata,2.01401E+13,stolkfair,,,,,,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,arent swat suppposed to be the tough buys that swoop in & save the day? what are they waiting for? were trapped!
-mbdata,2.01401E+13,brontes_riff,,,,,,Lots of sitting. What's the matter communications down with the evil overlord?
-mbdata,2.01401E+13,KronosQuoth,,,,,,Things work out best for those who make the best of how things work out.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Take up one idea. Make that one idea your life -- think of it, dream of it, live on that idea.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,You can't connect the dots looking forward; you can only connect them looking backwards. #POKRally #HI
-mbdata,2.01401E+13,maskedWoman101,,,,,,free iThing contest click here contest.kronos/freeiThing  #abila #iThing
-ccdata,2.01401E+13,,,,Niovis St / N. Aveny St,,,PROWLER
-mbdata,2.01401E+13,panopticon,,,,,,this standoff is going nowhere do they have hostages or someothing?
-mbdata,2.01401E+13,KronosQuoth,,,,,,I attribute my success to this: I never gave or took any excuse.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,If you are not willing to risk the usual you will have to settle for the ordinary.  #POKRally #HI
-mbdata,2.01401E+13,cminvestments11,,,,,,Have you heard millions of people are making $5k+/Mo from home? heres how...workAthome.kronos/scam #kronos #abilajobs
-mbdata,2.01401E+13,pinky,,,,,,RT @Officia1AbilaPost The latest news behind the #GAStech #mystery.  smad.co.kronos/cbcje9q
-mbdata,2.01401E+13,worldWatcher,,,,,,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,dragonRider1,,,,,,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,wiseWords,,,,,,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,henri,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,electricAvenue,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,henri,,,,,,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
-mbdata,2.01401E+13,KronosStar,,,,,,AFD says the building isn't safe to re-enter.  They will fight the fire from the outside only now. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,No word on condition of injured firefighter sent to hospital. #HI
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,why is this taking so long? im starting to feel sick #standoff
-mbdata,2.01401E+13,protoGuy,,,,,,this is takign 4ever why dont they shoot him?
-mbdata,2.01401E+13,megaMan,,,,,,ha - two of the SWAT guys just walked by and didn't notice me.  #lucky #TAG
-mbdata,2.01401E+13,panopticon,,,,,,heading around the corner to get a better look
-mbdata,2.01401E+13,roger_roger,,,,,,still here
-mbdata,2.01401E+13,KronosStar,,,,,,AFD has summoned three additional fire units to help control the blaze. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,AbilaPost,,,,,,#AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
-mbdata,2.01401E+13,HomelandIlluminations,,,,,,Additional fire units have been dispatched to Dancing Dolphin fire. #HI
-mbdata,2.01401E+13,GreyCatCollectibles,,,,,,oh my oh my oh my. Everything is gone! What will be come of us?
-mbdata,2.01401E+13,kingWilly,,,,,,Q: How many #AFD does it take to put out a fire? A: more than this! #dancingdolphinfire
-mbdata,2.01401E+13,praise111,,,,,,Praying that calmer hearts and minds prevail #AbilaPrays
-mbdata,2.01401E+13,luvwool,,,,,,"Actually, that's a pretty nice #blackvan. Nice window tint job."
-mbdata,2.01401E+13,MarcusDrymiau,,,,,,can't believe people in here are moving TOWARDS the danger #shooter #stupid
-ccdata,2.01401E+13,,,,4001 N. Arbete St,,,SUBJECT STOP
-mbdata,2.01401E+13,KronosQuoth,,,,,,"If you want your children to turn out well, spend twice as much time with them, and half as much money.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.   #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The starting point of all achievement is desire.  #POKRally #HI
-mbdata,2.01401E+13,jgrobannne,,,,,,RT @truccotrucco so bored & so scared ive never felt like this before #standoff
-mbdata,2.01401E+13,dolls4sale,,,,,,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,electricAvenue,,,,,,RT @truccotrucco i wish this was over i can barely even type anthing #standoff
-mbdata,2.01401E+13,teresaJ,,,,,,RT @protoGuy i wonder what the cops are offering the van dude to get him to give up
-mbdata,2.01401E+13,brandonL,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,jgrobannne,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,lindyT,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,blueSunshine,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,soup4u,,,,,,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
-mbdata,2.01401E+13,lindyT,,,,,,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Build your own dreams, or someone else will hire you to build theirs.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Try not to become a person of success, but rather try to become a person of value.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Intuition influences your own observations #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,The question isnt who is going to let me; its who is going to stop me.  #KronosStar #POKRally
-mbdata,2.01401E+13,gardener4958,,,,,,RT @megaMan no change  #slowdown #TAG
-mbdata,2.01401E+13,stolkfair,,,,,,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
-mbdata,2.01401E+13,brain448,,,,,,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,im sick im tired just wan to run out of here!
-mbdata,2.01401E+13,vetsRock,,,,,,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
-mbdata,2.01401E+13,kedits,,,,,,One of the top diseases- help us cure it! diseasefund.kronos/payus #abila #cancer
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.  #POKRally #HI"
-mbdata,2.01401E+13,vetsRock,,,,,,RT @KronosStar AFD has summoned three additional fire units to help control the blaze. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,BlueVelvet,,,,,,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
-mbdata,2.01401E+13,gardener4958,,,,,,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
-mbdata,2.01401E+13,worldWatcher,,,,,,"RT @luvwool Actually, that's a pretty nice #blackvan. Nice window tint job."
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea.#POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,There are no traffic jams along the extra mile.  #KronosStar #POKRally
-mbdata,2.01401E+13,slamrjamr,,,,,,RT @truccotrucco im sick im tired just wan to run out of here!
-mbdata,2.01401E+13,dragonRider1,,,,,,RT @truccotrucco why is this taking so long? im starting to feel sick #standoff
-mbdata,2.01401E+13,rrWine,,,,,,RT @panopticon heading around the corner to get a better look
-mbdata,2.01401E+13,KronosQuoth,,,,,,It is never too late to be what you might have been.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,Fall seven times and stand up eight.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,The best time to plant a tree was 20 years ago. The second best time is now.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,Success does not consist in never making mistakes but in never making the same one a second time.  #POKRally #HI
-mbdata,2.01401E+13,phantomagate,,,,,,RT @GreyCatCollectibles oh my oh my oh my. Everything is gone! What will be come of us?
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Good things come to people who wait, but better things come to those who go out and get them.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"As we look ahead into the next century, leaders will be those who empower others.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,People rarely succeed unless they have fun in what they are doing.  #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,Little minds are tamed and subdued by misfortune; but great minds rise above it.  #POKRally #HI
-mbdata,2.01401E+13,wiseWords,,,,,,RT @KronosStar AFD says the building isn't safe to re-enter.  They will fight the fire from the outside only now. #KronosStar #DancingDolphinFire #AFDHeroes
-mbdata,2.01401E+13,dtennent,,,,,,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
-mbdata,2.01401E+13,soup4u,,,,,,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Your time is limited, so dont waste it living someone elses life.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"To accomplish great things, we must not only act, but also dream, not only plan, but also believe. #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Happiness is a butterfly, which when pursued, is always beyond your grasp. #POKRally #HI"
-mbdata,2.01401E+13,Clevvah4Evah,,,,,,How far is Paris from France? #POK #Rally #Grammar
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.  #POKRally #HI"
-mbdata,2.01401E+13,KronosQuoth,,,,,,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
-mbdata,2.01401E+13,InternationalNews,,,,,,Dancing Dolphin Fire has suddeny escalated. #abila #IntNews
-mbdata,2.01401E+13,truccotrucco,36.059,24.856,,,,just poked my head up looks like hundred of people outside #standoff
-mbdata,2.01401E+13,megaMan,,,,,,@ben theres a couple hundred at each end of the street no clue how many police here now #TAG
-ccdata,2.01401E+13,,,,Vissaraki St / Rist Way,,,TRAFFIC STOP
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Your time is limited, so dont waste it living someone elses life.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,The most common way people give up their power is by thinking they dont have any.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,Every child is an artist.  The problem is how to remain an artist once he grows up.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,The two most important days in your life are the day you are born and the day you find out why.  #KronosStar #POKRally
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Do what you can, where you are, with what you have.  #KronosStar #POKRally"
-mbdata,2.01401E+13,courage4life,,,,,,RT @InternationalNews Dancing Dolphin Fire has suddeny escalated. #abila #IntNews
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Either you run the day, or the day runs you.  #KronosStar #POKRally"
-mbdata,2.01401E+13,KronosQuoth,,,,,,No masterpiece was ever created by a lazy artist. #POKRally #HI
-mbdata,2.01401E+13,KronosQuoth,,,,,,"Blessed are the meek, for they shall inherit the earth  #KronosStar #POKRally"
-mbdata,2.01401E+13,whiteprotein,,,,,,Artist ? musician? need more followers ? click here  followme.kronos/artists #abila #artists
-mbdata,2.01401E+13,KronosQuoth,,,,,,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
+mbdata,2.01401E+13,AbilaPoliceDepartment,,,,fire,neutral,A police office has been injured at the Ithakis incident but is reported in stable condition. #APD
+mbdata,2.01401E+13,roger_roger,,,,fire,neutral,we're all on the floor. we managed to block the back door.
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You cant fall if you dont climb.  But theres no joy in living your whole life on the ground.  #KronosStar #POKRally
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,What number is your PIN number? #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Change your thoughts and you change your world.  #KronosStar #POKRally
+mbdata,2.01401E+13,rrWine,,,,fire,positive,RT @HomelandIlluminations SWAT team appears to have taken command
+mbdata,2.01401E+13,dtennent,,,,fire,positive,RT @HomelandIlluminations SWAT team appears to have taken command
+mbdata,2.01401E+13,rnbwBrite,,,,hit_and_run,neutral,RT @FriendsOfKronos APD stop the terrorists before they cut the hostages head off! #POK
+mbdata,2.01401E+13,lordWally,,,,fire,neutral,RT @prettyRain Is anyone going to help us??!!???
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Its your place in the world; its your life. Go on and do all you can with it, and make it the life you want to live.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Fortune sides with him who dares.  #POKRally #HI
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,What number is your PIN number? #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The only way to do great work is to love what you do.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
+mbdata,2.01401E+13,carjunkers,,,,spam,neutral,Easy credit cards! get what you're worth! easycredit.kronos/morecredit #abila #nobanks
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"In my experience, there is only one motivation, and that is desire. No reasons or principle contain it or stand against it.  #POKRally #HI"
+mbdata,2.01401E+13,cminvestments11,,,,spam,neutral,free iThing contest click here contest.kronos/freeiThing  #abila #iThing
+mbdata,2.01401E+13,courage4life,,,,fire,positive,RT @HomelandIlluminations SWAT team appears to have taken command
+mbdata,2.01401E+13,slamrjamr,,,,fire,positive,RT @HomelandIlluminations SWAT team appears to have taken command
+mbdata,2.01401E+13,BlueVelvet,,,,fire,positive,RT @HomelandIlluminations SWAT team appears to have taken command
+mbdata,2.01401E+13,KronosStar,,,,fire,neutral,An injured firefighter is being pulled from the building. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,AbilaPost,,,,fire,neutral,injured firefighter is pulled from the flames #AFD #AbilaPost
+mbdata,2.01401E+13,dangermice,36.059,24.894,,fire,neutral,They just put him in an ambulance #hurtfirefighter #abilafire
+mbdata,2.01401E+13,martaO,,,,chatter,negative,#stoodup I'll die #alone n #childless
+mbdata,2.01401E+13,pashmina887,,,,chatter,neutral,Anyone want to meet at GelatoGalore? #gelatoRocks
+mbdata,2.01401E+13,protoGuy,,,,fire,negative,why r cops just sitting around?
+mbdata,2.01401E+13,Sara_Nespola,,,,fire,neutral,the cops are trying to build a perimeter lots of shoving and yelling
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,sending IMs to friends - they hear about the incident  #TAG
+mbdata,2.01401E+13,KronosStar,,,,fire,neutral,APD is evacuating the businesses near the Gelato Galore standoff. #KronosStar
+mbdata,2.01401E+13,sofitees,36.059,24.857,,fire,neutral,#APD is evacuating us #standoff
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Successful people do what unsuccessful people are not willing to doDon't wish it were easier, wish you were better.  #POKRally #HI"
+mbdata,2.01401E+13,luvMyPants,,,,fire,positive,RT @protoGuy I see?some swat dudes setting up on the top of a building
+mbdata,2.01401E+13,plasticParts,,,,fire,positive,RT @megaMan thanks for the new follows all!  Im fairly safe here.  Police are working crowd down the street #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,All our dreams can come true if we have the courage to pursue them.  #POKRally #HI
+mbdata,2.01401E+13,CentralBulletin,,,,fire,positive,injured firefighter rescued from fire #Abila #CentralBulletin
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,@areslittle I've been here since the start #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,#APD evacuating businesses near gelato glaore - please stay clear of the area near the intersection of Alexandrias & Ithakis #AbilaPost
+mbdata,2.01401E+13,KronosStar,,,,fire,positive,Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,panopticon,,,,chatter,negative,#APD is evacuating people from Carlys coffeee across the street - arent we in the line of fire
+mbdata,2.01401E+13,BoraVerissimo,,,,fire,positive,They're getting us out of here. Just want to go home
+mbdata,2.01401E+13,prettyRain,,,,fire,positive,please pray for us
+ccdata,2.01401E+13,,,,N/A,chatter,negative,INCOMPLETE CALL FOR POLICE
+mbdata,2.01401E+13,brandonL,,,,hit_and_run,negative,RT @megaMan im just seeing someone talking to van guys. if there is anyone in the van they are still in there #TAG
+mbdata,2.01401E+13,dtennent,,,,fire,positive,RT @HomelandIlluminations SWAT team appears to have taken command
+mbdata,2.01401E+13,zengardener,,,,chatter,negative,RT @martaO #stoodup I'll die #alone n #childless
+mbdata,2.01401E+13,brain448,,,,hit_and_run,neutral,RT @KronosStar APD is evacuating the businesses near the Gelato Galore standoff. #KronosStar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Whatever the mind of man can conceive and believe, it can achieve.  #KronosStar #POKRally"
+mbdata,2.01401E+13,grlPwrz505,,,,chatter,neutral,Hello am i using thsi right #help #abilia
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,positive,businesses around gelatogalore being evacuated out of danger from POK terrorists
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,lots of discussion - can't hear most #TAG
+mbdata,2.01401E+13,CentralBulletin,,,,hit_and_run,neutral,Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,MarcusDrymiau,,,,chatter,neutral,looking like a police thing is happening outside #gonnabelate
+mbdata,2.01401E+13,sofitees,36.059,24.857,,hit_and_run,negative,i think there's a hostage - why isnt #APD doing more #standoff
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,probably not getting anywhere #TAG
+mbdata,2.01401E+13,livin4HigherPower,,,,hit_and_run,positive,Praying for a peaceful resolution to the standoff #AbilaPrays
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Only put off until tomorrow what you are willing to die having left undone.  #POKRally #HI
+mbdata,2.01401E+13,jaques,,,,fire,positive,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,There are two types of people who will tell you that you cannot make a difference in this world. #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You can never cross the ocean until you have the courage to lose sight of the shore.  #KronosStar #POKRally
+mbdata,2.01401E+13,protoGuy,,,,hit_and_run,neutral,i guess the swat guys can't see the hostages so they don't want to shoot
+mbdata,2.01401E+13,panopticon,,,,hit_and_run,neutral,looks like #APD is moving people from General grocer too
+mbdata,2.01401E+13,roger_roger,,,,chatter,neutral,still here
+ccdata,2.01401E+13,,,,2439 N. Profitou Ilia Ave,chatter,neutral,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS
+ccdata,2.01401E+13,,,,N. Prevezis St / N. Androutsou St,chatter,neutral,TRAFFIC STOP
+mbdata,2.01401E+13,stolkfair,,,,chatter,neutral,RT @megaMan sending IMs to friends - they hear about the incident  #TAG
+ccdata,2.01401E+13,,,,1122 N. Maskin St,chatter,neutral,CRIME SCENE INVESTIGATION REQUEST-LOCATION/DWELLING OF INTEREST
+mbdata,2.01401E+13,SiaradSea,,,,chatter,positive,getting out!
+mbdata,2.01401E+13,KronosStar,,,,fire,positive,Paramedics are taking the firefighter to Abila General Hospital. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,AbilaPost,,,,fire,positive,paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,negative,Report that a fire fighter has been injured. #HI
+mbdata,2.01401E+13,GreyCatCollectibles,,,,spam,neutral,Need rest - the stress is killing me. My pictures... grandma's recipes... pictures of Timmy... my harpsichord
+mbdata,2.01401E+13,redisrad,,,,chatter,negative,wow - welcome to Abila. Why did i move here again? #missingtethys
+mbdata,2.01401E+13,OnlytheTruth,,,,fire,negative,Score! Fire 1 Firemen 0! #gooooooal
+mbdata,2.01401E+13,footfingers,36.054,24.902,,chatter,negative,do you trust your government? #POK
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,negative,wait! POK terrorists with hostages these are the kidnapped people from gastech!
+mbdata,2.01401E+13,protoGuy,,,,hit_and_run,positive,cops are getting people out of general grocer
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,negative,starting to evacuate stores - think the gelato folk are stuck #TAG
+mbdata,2.01401E+13,KronosStar,,,,hit_and_run,neutral,Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,InternationalNews,,,,fire,positive,Abila police office in stable condition after being wounded at the shooting. #abila #intNews
+mbdata,2.01401E+13,AbilaPoliceDepartment,,,,hit_and_run,positive,The situation near Gelato Galore is believed to be a hostage situation. We are working to resolve it as quickly and safely as possible. #APD
+mbdata,2.01401E+13,pinky,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,henri,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,wireHead1122,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Waste not, want not  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Do one thing every day that scares you.  #POKRally #HI
+mbdata,2.01401E+13,rockinHW,,,,spam,neutral,make $630-$8062 a month online fastjobs.kronos/tricks #abila #workAtHome
+mbdata,2.01401E+13,courage4life,,,,fire,positive,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,carjunkers,,,,spam,neutral,I got cheap medication online without a prescription meds.kronos/cheapmeds #kronos #abila
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Whenever you find yourself on the side of the majority, it is time to pause and reflect.  #POKRally #HI"
+mbdata,2.01401E+13,CentralBulletin,,,,fire,positive,paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,negative,they must have a van full of terrified people #POK #hostages
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,negative,"@ben yeah its a """"hostage situation"""" #TAG"""""
+mbdata,2.01401E+13,prettyRain,,,,chatter,neutral,someone tell me whats gonig on out there PLEASE
+ccdata,2.01401E+13,,,,Rist Way / Niovis St,chatter,neutral,TRAFFIC STOP
+mbdata,2.01401E+13,gardener4958,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,zengardener,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,vonneka,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea.#POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Don't let the fear of losing be greater than the excitement of winning.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Blessed are those who can give without remembering and take without forgetting.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Life shrinks or expands in proportion to ones courage.  #KronosStar #POKRally
+mbdata,2.01401E+13,dolls4sale,,,,fire,positive,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,brandonL,,,,fire,positive,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,vonneka,,,,fire,positive,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,dragonRider1,,,,hit_and_run,neutral,RT @sofitees #APD is evacuating us #standoff
+mbdata,2.01401E+13,jaques,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,cheapgoods998,,,,chatter,positive,He who hesitates is lost! #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"You who are without sin, cast the first stone  #KronosStar #POKRally"
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,Serving filay minion tonite #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Change your thoughts and you change your world.  #KronosStar #POKRally
+mbdata,2.01401E+13,stolkfair,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,blueSunshine,,,,hit_and_run,neutral,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,stolkfair,,,,chatter,neutral,RT @megaMan lots of discussion - can't hear most #TAG
+mbdata,2.01401E+13,soup4u,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,rrWine,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Too many of us are not living our dreams because we are living our fears.  #KronosStar #POKRally
+mbdata,2.01401E+13,kedits,,,,spam,neutral,Hi! I advise you to visit this link hottips.kronos/trading #abila
+mbdata,2.01401E+13,lindyT,,,,fire,positive,RT @KronosStar Reports from hospital that APD officer in serious but stable condition. #KronosStar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"To live a creative life, we must lose our fear of being wrong.  #POKRally #HI"
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,negative,I literally felt like blowing them up #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you can dream it, you can achieve it.  #KronosStar #POKRally"
+mbdata,2.01401E+13,anaregents,,,,spam,positive,last song by Viktor-E. what a nite!
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,neutral,why talk? take em down! #POK
+mbdata,2.01401E+13,hennyhenhendrix,36.057,24.892,,hit_and_run,neutral,police just knocked on my door about the car!
+mbdata,2.01401E+13,protoGuy,,,,hit_and_run,neutral,swat guy is talking to van dude trying to get him to give up
+mbdata,2.01401E+13,Sara_Nespola,,,,hit_and_run,positive,I think i see people coming out the back of the General Grocer
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,groups of people running out of stores #TAG
+mbdata,2.01401E+13,AbilaPoliceDepartment,,,,hit_and_run,neutral,We're asking the public to stay away from the corner of Alexandrias & Ithakis while we resolve this emerging issue
+mbdata,2.01401E+13,MarcusDrymiau,,,,hit_and_run,negative,aw dang its a hostage thing #definitelygonnabelate
+mbdata,2.01401E+13,roger_roger,,,,chatter,neutral,still here
+mbdata,2.01401E+13,sofitees,36.059,24.857,,chatter,positive,mom im ok cops r here dont worry im across the street but safe
+ccdata,2.01401E+13,,,,N. Dimitriou St / N. Madeg St,chatter,neutral,NARCOTIC ACTIVITY-REPORT
+mbdata,2.01401E+13,soup4u,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,joyce101,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,rrWine,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,gardener4958,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,stolkfair,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,brain448,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,pinky,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,muppiesRock,,,,hit_and_run,positive,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,wiseWords,,,,hit_and_run,positive,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,siliconKing,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,vetsRock,,,,hit_and_run,positive,RT @CentralBulletin Police evacuate surrounding businesses #Abila #CentralBulletin
+mbdata,2.01401E+13,NewsOnlineToday,,,,fire,neutral,Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,Carly's being evacuated  #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,negotiations have begun between shooter and #APD #AbilaPost
+mbdata,2.01401E+13,HomelandIlluminations,,,,hit_and_run,positive,APD is negotiating with gunmen for peaceful solution.
+mbdata,2.01401E+13,panopticon,,,,hit_and_run,negative,this guy in the van is craazy why talk to that cant talk to crazy
+mbdata,2.01401E+13,prettyRain,,,,chatter,negative,i think i'm sick
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,negative,shooting cops is terrorism dont negotiate with terrorists #POK #terror
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,People trying to leave in their cars - police say no  #TAG
+mbdata,2.01401E+13,NewsOnlineToday,,,,hit_and_run,positive,Abila Police negotiating with gunmen for peaceful solution #Abila
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The meaning of life is to find your gift. The purpose of life is to give it away.  #POKRally #HI
+mbdata,2.01401E+13,rrWine,,,,chatter,neutral,RT @megaMan probably not getting anywhere #TAG
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,Police have someone talking to van guys  #TAG
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,Negoitator?  #TAG
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,negative,shoot first ask questions later #POK #terror
+mbdata,2.01401E+13,jenny90210,,,,hit_and_run,negative,OMG going to the grocery store and pople are being shot
+mbdata,2.01401E+13,protoGuy,,,,hit_and_run,neutral,"comeon dude, give up to the cops!"
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,negative,Can't hear words - van guy sounds mad #TAG
+mbdata,2.01401E+13,Officia1AbilaPost,,,,spam,neutral,Top cruise destinations - where does #Abila rank?  smad.co.kronos/20cn8389
+mbdata,2.01401E+13,SiaradSea,,,,chatter,neutral,That was intense! #time4wine
+ccdata,2.01401E+13,,,,N. Polvo St / N. Anntigonou St,chatter,neutral,VEHICLE ACCIDENT-REPORT
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Knowledge is being aware of what you can do. Wisdom is knowing when not to do it.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"You may be disappointed if you fail, but you are doomed if you dont try.  #KronosStar #POKRally"
+mbdata,2.01401E+13,partyon,,,,chatter,negative,Guess I'll wait on picking up some milk
+ccdata,2.01401E+13,,,,N. Pilau St / N. Arkadiou St,chatter,neutral,CHECK ON HAZARD
+mbdata,2.01401E+13,microBanana,,,,hit_and_run,negative,RT @FriendsOfKronos why talk? take em down! #POK
+mbdata,2.01401E+13,henri,,,,hit_and_run,positive,RT @Sara_Nespola I think i see people coming out the back of the General Grocer
+ccdata,2.01401E+13,,,,2203 N. Wenna St,chatter,positive,ALARM-SECURE NO CRIME
+mbdata,2.01401E+13,lordWally,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,SiaradSea,,,,hit_and_run,neutral,Talking to cops
+mbdata,2.01401E+13,ninjabob,,,,fire,positive,RT @AbilaPost paramedics have taken injured firefighter to Abila Hospital?#AFD #AbilaPost
+mbdata,2.01401E+13,worldWatcher,,,,spam,positive,RT @GreyCatCollectibles Need rest - the stress is killing me. My pictures... grandma's recipes... pictures of Timmy... my harpsichord
+mbdata,2.01401E+13,soup4u,,,,hit_and_run,positive,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,rrWine,,,,hit_and_run,positive,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,zengardener,,,,hit_and_run,positive,RT @KronosStar Police have requested that the public stay away from the hostage scene near Alexandrias & Ithakis. #KronosStar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,If you're going through hell keep going.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
+mbdata,2.01401E+13,vonneka,,,,hit_and_run,positive,RT @HomelandIlluminations APD is negotiating with gunmen for peaceful solution.
+mbdata,2.01401E+13,cleaningFish,,,,chatter,neutral,Come on down for the tournament! #pok #er
+mbdata,2.01401E+13,hennyhenhendrix,36.057,24.892,,hit_and_run,neutral,they seemed really interested in where that van came from
+mbdata,2.01401E+13,brontes_riff,,,,chatter,negative,Step into my parlor said the police state to the fly
+mbdata,2.01401E+13,protoGuy,,,,hit_and_run,positive,cops are helping poeple from carlys coffee
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,Been livecasting this for about 1/2 hour - not sure how it will end  #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,#APD are interviewing evacuees from businesses surrounding the gelatogalore standoff #AbilaPost
+mbdata,2.01401E+13,CentralBulletin,,,,hit_and_run,positive,negotiations begin between shooter and police #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
+mbdata,2.01401E+13,sarajane,,,,hit_and_run,neutral,RT @AbilaPoliceDepartment We're asking the public to stay away from the corner of Alexandrias & Ithakis while we resolve this emerging issue
+mbdata,2.01401E+13,luvMyPants,,,,chatter,positive,RT @sofitees mom im ok cops r here dont worry im across the street but safe
+mbdata,2.01401E+13,brain448,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,sithLordJames,,,,fire,positive,RT @CentralBulletin paramedics take injured firefighter to hospital #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Don't let what you cannot do interfere with what you can do.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,What seems to us as bitter trials are often blessings in disguise. #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"You cant use up creativity.  The more you use, the more you have.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Life shrinks or expands in proportion to ones courage.  #KronosStar #POKRally
+mbdata,2.01401E+13,farmboy,,,,fire,negative,RT @NewsOnlineToday Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
+mbdata,2.01401E+13,BlueVelvet,,,,fire,negative,RT @NewsOnlineToday Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
+mbdata,2.01401E+13,henri,,,,hit_and_run,positive,RT @HomelandIlluminations APD is negotiating with gunmen for peaceful solution.
+mbdata,2.01401E+13,pinky,,,,hit_and_run,neutral,RT @CentralBulletin negotiations begin between shooter and police #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"People often say that motivation doesnt last. Well, neither does bathing.  Thats why we recommend it daily.  #KronosStar #POKRally"
+mbdata,2.01401E+13,farmboy,,,,spam,neutral,RT @Officia1AbilaPost Top cruise destinations - where does #Abila rank?  smad.co.kronos/20cn8389
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,positive,Dont loose your way in the dark going home #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
+mbdata,2.01401E+13,Clevvah4Evah,,,,spam,positive,My boss just made a 360 on his last decision! #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The two most important days in your life are the day you are born and the day you find out why.  #KronosStar #POKRally
+mbdata,2.01401E+13,vetsRock,,,,hit_and_run,neutral,RT @hennyhenhendrix police just knocked on my door about the car!
+mbdata,2.01401E+13,microBanana,,,,hit_and_run,negative,RT @MarcusDrymiau aw dang its a hostage thing #definitelygonnabelate
+mbdata,2.01401E+13,jgrobannne,,,,chatter,neutral,RT @roger_roger still here
+mbdata,2.01401E+13,ourcountryourrights,,,,chatter,positive,rally is breaking up - peacefully tonight but next time... #POK
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,its a standoff what do you know? cops dont do anything at rally they dont do anything at shooting #POK
+mbdata,2.01401E+13,protoGuy,,,,chatter,neutral,i could use a coffee
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,@ben Im still behind the pole and a trashbin #TAG
+mbdata,2.01401E+13,roger_roger,,,,hit_and_run,negative,WTF are the cops doing out there? just shoot them already
+mbdata,2.01401E+13,sofitees,36.059,24.857,,chatter,neutral,should got another coffeee this is going to take a long time #standoff
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Nothing in the world is more common than unsuccessful people with talent.  #POKRally #HI
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,@george I dont know which are from the Post - are they @Post?  #TAG
+mbdata,2.01401E+13,siliconKing,,,,hit_and_run,positive,RT @HomelandIlluminations APD is negotiating with gunmen for peaceful solution.
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Blessed are those who can give without remembering and take without forgetting.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
+mbdata,2.01401E+13,brandonL,,,,hit_and_run,negative,RT @jenny90210 OMG going to the grocery store and pople are being shot
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Do one thing every day that scares you.  #POKRally #HI
+mbdata,2.01401E+13,megaMan,,,,chatter,negative,@ben Police arent looking for me - they have their hands full #TAG
+mbdata,2.01401E+13,AbilaPoliceDepartment,,,,hit_and_run,neutral,Gelatogalore patrons have been advised to shelter in place #APD
+mbdata,2.01401E+13,vonneka,,,,fire,neutral,RT @NewsOnlineToday Injured firefighter in Dancing Dolphin fire in Abila. #NewsOnline
+mbdata,2.01401E+13,teresaJ,,,,hit_and_run,neutral,RT @hennyhenhendrix they seemed really interested in where that van came from
+mbdata,2.01401E+13,stolkfair,,,,hit_and_run,neutral,RT @megaMan People trying to leave in their cars - police say no  #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The distance between insanity and genius is measured only by success.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Challenges are what make life interesting and overcoming them is what makes life meaningful.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Remember that not getting what you want is sometimes a wonderful stroke of luck.  #KronosStar #POKRally
+ccdata,2.01401E+13,,,,4607 N. Barwyn St,chatter,neutral,TRAFFIC STOP
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,neutral,No word yet on condition of injured firefighter. #HI
+mbdata,2.01401E+13,unicorns,,,,chatter,negative,#dancingdolphinfire is a sign - corrupt Abila must be punished
+mbdata,2.01401E+13,anaregents,,,,chatter,neutral,rallys over can't wait for the next one.?Thanks Sylvia! #POK
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,just admit it Sylvia Marek you are a terrorist POK are terrorists and you orchestrated all this #POK #terror
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,@tomish Its a black panel van - no windows. #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,General Grocer Octavios Office Supply and Carly's Coffee has all been closed #AbilaPost
+mbdata,2.01401E+13,HomelandIlluminations,,,,hit_and_run,neutral,Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,Simon_Hamaeth,,,,hit_and_run,neutral,i think they are trying to evacuate us! #standoff
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,No one can make you feel inferior without your consent.  #POKRally #HI
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,negative,Thats bad I have carpool tunnel #POK #Rally #Grammar
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,negative,I literally felt like blowing them up #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Opportunities don't happen, you create them.  #POKRally #HI"
+mbdata,2.01401E+13,brandonL,,,,hit_and_run,neutral,RT @CentralBulletin negotiations begin between shooter and police #Abila #CentralBulletin
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,@tomish Looked like it was chased into gelato #TAG
+mbdata,2.01401E+13,NewsOnlineToday,,,,hit_and_run,neutral,Police evacuating area of businesses underway near police standoff #Abila
+mbdata,2.01401E+13,roger_roger,,,,chatter,neutral,still here
+mbdata,2.01401E+13,ninjabob,,,,hit_and_run,neutral,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,brain448,,,,hit_and_run,neutral,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The battles that count arent the ones for gold medals. The struggles within yourself #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,I am not a product of my circumstances. I am a product of my decisions.  #KronosStar #POKRally
+mbdata,2.01401E+13,meds4realz43,,,,spam,neutral,I got cheap medication online without a prescription meds.kronos/cheapmeds #kronos #abila
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The person who says it cannot be done should not interrupt the person who is doing it.  #KronosStar #POKRally
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,Negotiator guy and van guy still back and forth.  #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,negative,Gelatogalore patrons are still trapped inside #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Things work out best for those who make the best of how things work out.  #POKRally #HI
+mbdata,2.01401E+13,grassGreeener,,,,spam,neutral,Easy credit cards! get what you're worth! easycredit.kronos/morecredit #abila #nobanks
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Success is liking yourself, liking what you do, and liking how you do it.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.  #KronosStar #POKRally
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,"In edition, you should always add instead of multiply #POK #Rally #Grammar"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The future heals descriptions of marvel #POKRally #HI
+mbdata,2.01401E+13,sarajane,,,,chatter,neutral,RT @sofitees should got another coffeee this is going to take a long time #standoff
+mbdata,2.01401E+13,dtennent,,,,hit_and_run,neutral,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,zengardener,,,,hit_and_run,neutral,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,Clevvah4Evah,,,,spam,neutral,GAStech said they would give me a bonus! #POK #Rally #Grammar
+mbdata,2.01401E+13,brain448,,,,hit_and_run,neutral,RT @NewsOnlineToday Police evacuating area of businesses underway near police standoff #Abila
+mbdata,2.01401E+13,siliconKing,,,,hit_and_run,neutral,RT @NewsOnlineToday Police evacuating area of businesses underway near police standoff #Abila
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,All our dreams can come true if we have the courage to pursue them.  #POKRally #HI
+mbdata,2.01401E+13,farmboy,,,,fire,neutral,RT @HomelandIlluminations No word yet on condition of injured firefighter. #HI
+mbdata,2.01401E+13,BlueVelvet,,,,hit_and_run,neutral,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,rrWine,,,,hit_and_run,neutral,RT @HomelandIlluminations Evacuations of area businesses are under way at police standoff
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,why has no one put it together? black van shooter rally hostages = POK rally distraction for POK kidnapping #POK #terror
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,van guy waving gun at the roofs. Thinks SWATs there?  #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,roger_roger,,,,chatter,negative,oh jeez some girl here just threw up
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you genuinely want something, don't wait for it -- teach yourself to be impatient.  #POKRally #HI"
+mbdata,2.01401E+13,ninjabob,,,,hit_and_run,neutral,RT @NewsOnlineToday Police evacuating area of businesses underway near police standoff #Abila
+mbdata,2.01401E+13,rrWine,,,,chatter,neutral,RT @roger_roger still here
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Its not the years in your life that count. Its the life in your years.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
+mbdata,2.01401E+13,pinky,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,negative,they were moving the hostages and got cuaght the feeble minded always result to violence #POK
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,"Bad guy: """"Oh I'm getting out of here"""" yelling  #TAG"""""
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,witness reports hearing popping sounds later understood to be gun fire #AbilaPost
+mbdata,2.01401E+13,plasticParts,,,,hit_and_run,neutral,RT @AbilaPost Gelatogalore patrons are still trapped inside #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.  #KronosStar #POKRally"
+mbdata,2.01401E+13,Clevvah4Evah,,,,spam,neutral,My boss just made a 360 on his last decision! #POK #Rally #Grammar
+mbdata,2.01401E+13,eazymoney,,,,spam,neutral,Artist ? musician? need more followers ? click here  followme.kronos/artists #abila #artists
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Too many of us are not living our dreams because we are living our fears.  #KronosStar #POKRally
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,April 31 2013 - will always remember that date #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"You who are without sin, cast the first stone  #KronosStar #POKRally"
+mbdata,2.01401E+13,siliconKing,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,footfingers,36.054,24.902,,chatter,negative,corrupt officials allow corporate greed to poison your land #POK
+mbdata,2.01401E+13,protoGuy,,,,hit_and_run,neutral,van dude is yelling at cops
+mbdata,2.01401E+13,Sara_Nespola,,,,hit_and_run,positive,now people are showing up that were trapped in the coffee shop #hostage
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,"Bad guy: """"Im outta here or people die""""  #TAG"""""
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
+mbdata,2.01401E+13,KronosStar,,,,hit_and_run,neutral,Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,HomelandIlluminations,,,,hit_and_run,neutral,Witnesses report there may be people trapped in nearby businesses
+mbdata,2.01401E+13,Officia1AbilaPost,,,,spam,neutral,Eight Shot at GelatoGalore Robbery smad.co.kronos/39vn811v
+mbdata,2.01401E+13,farmboy,,,,hit_and_run,negative,RT @FriendsOfKronos they were moving the hostages and got cuaght the feeble minded always result to violence #POK
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Dreaming, after all, is a form of planning.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"I have not failed. I've just found 10,000 ways that won't work.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
+mbdata,2.01401E+13,jaques,,,,hit_and_run,neutral,RT @AbilaPost Gelatogalore patrons are still trapped inside #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If the wind will not serve, take to the oars.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The best time to plant a tree was 20 years ago. The second best time is now.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The road to success and the road to failure are almost exactly the same.  #POKRally #HI
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,Don't be disinterested in the movie! #POK #Rally #Grammar
+mbdata,2.01401E+13,zengardener,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,blueSunshine,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,sarajane,,,,hit_and_run,neutral,RT @AbilaPost witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
+mbdata,2.01401E+13,joyce101,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,plasticParts,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,farmboy,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,neutral,i found the kidnapped GASTECH employees there at gelatogalore with POK terrorists
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,not good #TAG
+mbdata,2.01401E+13,NewsOnlineToday,,,,chatter,neutral,People may be trapped in nearby businesses #Abila
+mbdata,2.01401E+13,panopticon,,,,hit_and_run,neutral,guy in the black van is screaming something at the cops but cant hear what
+mbdata,2.01401E+13,roger_roger,,,,chatter,negative,if this doesn't end soon i'm gonna leave anyway
+ccdata,2.01401E+13,,,,N. Estos St / N. Barabla St,chatter,neutral,SUBJECT STOP
+mbdata,2.01401E+13,vetsRock,,,,hit_and_run,neutral,RT @AbilaPost witness reports hearing popping sounds later understood to be gun fire #AbilaPost
+mbdata,2.01401E+13,teresaJ,,,,hit_and_run,neutral,RT @AbilaPost witness reports hearing popping sounds later understood to be gun fire #AbilaPost
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,What's the diff between would of and would've? #POK #Rally #Grammar
+mbdata,2.01401E+13,whiteprotein,,,,spam,neutral,You look different in this photo. pics.kronos/pics  #abila #pictures
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,APD should hire me
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,Good time to listen behind the pole  #TAG
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,OK I cant move without being under a light  #TAG #stuck
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Success is the sum of small efforts, repeated day-in and day-out.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Believe you can and youre halfway there.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"There is no chance, no destiny, no fate, that can hinder or control the firm resolve of a determined soul.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"The successful warrior is the average man, with laser-like focus.  #POKRally #HI"
+mbdata,2.01401E+13,footfingers,36.054,24.902,,chatter,neutral,rise up against corruption and injustice #POK
+mbdata,2.01401E+13,protoGuy,,,,chatter,negative,i wonder why the cops were chasing this van anyway
+mbdata,2.01401E+13,HomelandIlluminations,,,,hit_and_run,neutral,Standoff continues with multiple gunmen with unknown number of hostages
+mbdata,2.01401E+13,MarcusDrymiau,,,,hit_and_run,neutral,dude outside is yelling something about hostages #standoff
+mbdata,2.01401E+13,prettyRain,,,,chatter,neutral,please please tell me whats happening out there? did someone get shot?
+mbdata,2.01401E+13,NewsOnlineToday,,,,hit_and_run,neutral,Standoff continues with multiple gunmen and unknown number of hostages #Abila
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Life is not about finding yourself. Life is about creating yourself.  #POKRally #HI
+mbdata,2.01401E+13,jgrobannne,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,wiseWords,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,joyce101,,,,hit_and_run,neutral,RT @AbilaPost evacuated witness reports seeing wild driving black van being pursued by two cop cars #AbilaPost
+mbdata,2.01401E+13,siliconKing,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,dolls4sale,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,worldWatcher,,,,chatter,neutral,"RT @megaMan Bad guy: """"Oh I'm getting out of here"""" yelling  #TAG"""""
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,think someone in the van just showed a hostage! Looked like a girl  #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,close to 200 people have gathered to watch standoff at Alexandrias & Ithakis #AbilaPost
+mbdata,2.01401E+13,SiaradSea,,,,chatter,neutral,Home!
+ccdata,2.01401E+13,,,,3184 N. Agisilaou St,chatter,neutral,MISDEMEANOR ASSAULT-IN PROGRESS
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,Don't be disinterested in the movie! #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Evolution inspires incredible phenomena #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,neutral,Start where you are. Use what you have.  Do what you can.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you hear a voice within you say you cannot paint, then by all means paint and that voice will be silenced.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"The successful warrior is the average man, with laser-like focus.  #POKRally #HI"
+mbdata,2.01401E+13,junkman377,,,,spam,neutral,How's your credit rating? Need a boost? fixit.kronos/creditratings #abila #badcredit
+mbdata,2.01401E+13,Clevvah4Evah,,,,spam,positive,"In edition, you should always add instead of multiply #POK #Rally #Grammar"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
+mbdata,2.01401E+13,courage4life,,,,hit_and_run,neutral,RT @AbilaPost witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
+mbdata,2.01401E+13,BlueVelvet,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,stolkfair,,,,hit_and_run,neutral,RT @HomelandIlluminations Witnesses report there may be people trapped in nearby businesses
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,what kind of dummies go to where shooting is? bystanders deserve to get shot #POK
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,@ben the other guy showed her through the van window
+mbdata,2.01401E+13,hempRules,,,,chatter,positive,What a great career - #policenegotiator.
+mbdata,2.01401E+13,phantomagate,,,,hit_and_run,neutral,RT @AbilaPost witness reports hearing popping sounds later understood to be gun fire #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Either you run the day, or the day runs you.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Knowledge is being aware of what you can do. Wisdom is knowing when not to do it.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you want your children to turn out well, spend twice as much time with them, and half as much money.  #KronosStar #POKRally"
+mbdata,2.01401E+13,lindyT,,,,chatter,neutral,RT @megaMan OK I cant move without being under a light  #TAG #stuck
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Only put off until tomorrow what you are willing to die having left undone.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The mind is everything. What you think you become.   #KronosStar #POKRally
+mbdata,2.01401E+13,gardener4958,,,,hit_and_run,neutral,RT @AbilaPost witness reports that male driver of black van tried to drive out of gelatogalore parking lot but was blocked then opened fire #AbilaPost
+mbdata,2.01401E+13,soup4u,,,,hit_and_run,neutral,RT @KronosStar Standoff between APD and shooters continues at Gelato Galore. #KronosStar
+mbdata,2.01401E+13,joyce101,,,,hit_and_run,neutral,RT @HomelandIlluminations Witnesses report there may be people trapped in nearby businesses
+mbdata,2.01401E+13,wiseWords,,,,chatter,neutral,RT @megaMan not good #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Strive not to be a success, but rather to be of value.  #KronosStar #POKRally"
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,positive,GAStech said they would give me a bonus! #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Don't raise your voice, improve your argument.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"I have learned over the years that when ones mind is made up, this diminishes fear.  #KronosStar #POKRally"
+mbdata,2.01401E+13,vetsRock,,,,chatter,positive,RT @SiaradSea Home!
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you genuinely want something, don't wait for it -- teach yourself to be impatient.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
+mbdata,2.01401E+13,KronosStar,,,,fire,positive,The fire doesn't appear to be growing. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,positive,Officials report fire might be under control. #HI
+mbdata,2.01401E+13,redisrad,,,,chatter,neutral,"Mikal, Oso - are you still at the rally? can I crash at your place? no telling when I can get home tonite #couchsurf"
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,terrorists love random violence shoot an innocent bystander why not? #POK
+mbdata,2.01401E+13,rockStar113,,,,chatter,positive,@AbilaPost gag who cares about the moneygrubbers - people are hurt
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,"@ben It looked like """"She's first"""" #scary #TAG"""""
+mbdata,2.01401E+13,InternationalNews,,,,hit_and_run,neutral,Abila standoff continues in a stalemate. #abila #IntNews
+mbdata,2.01401E+13,SiaradSea,,,,chatter,positive,"I'm all right, everybody! Gonna try to unwind now."
+mbdata,2.01401E+13,courage4life,,,,hit_and_run,neutral,RT @NewsOnlineToday People may be trapped in nearby businesses #Abila
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"The most difficult thing is the decision to act, the rest is merely tenacity.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"There is only one way to avoid criticism: do nothing, say nothing, and be nothing.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The person who says it cannot be done should not interrupt the person who is doing it.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Good things come to people who wait, but better things come to those who go out and get them.  #POKRally #HI"
+mbdata,2.01401E+13,dtennent,,,,chatter,neutral,"RT @megaMan @ben It looked like """"She's first"""" #scary #TAG"""""
+mbdata,2.01401E+13,plasticParts,,,,chatter,positive,"RT @SiaradSea I'm all right, everybody! Gonna try to unwind now."
+mbdata,2.01401E+13,michelleR,,,,chatter,neutral,Where's CHuc Norris when you need him?
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,positive,Negotiator guy calmed them down #TAG
+mbdata,2.01401E+13,AbilaPost,,,,chatter,neutral,what will the economic impact of this standoff be for businesses in the vicinity? #AbilaPost
+mbdata,2.01401E+13,panopticon,,,,chatter,negative,they need to put more pressure on this guy ramp up the negoitations
+mbdata,2.01401E+13,Simon_Hamaeth,,,,chatter,positive,we're free! thanks #APD #standoff
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"I have learned over the years that when ones mind is made up, this diminishes fear.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"There is no chance, no destiny, no fate, that can hinder or control the firm resolve of a determined soul.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Innovation distinguishes between a leader and a follower.  #POKRally #HI
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,positive,hey Abila Post: terrorism is bad for business #POK
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,Not yelling as much #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The question isnt who is going to let me; its who is going to stop me.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Change your thoughts and you change your world.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,What seems to us as bitter trials are often blessings in disguise. #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Whenever you see a successful person you only see the public glories, never the private sacrifices to reach them.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Happiness is a butterfly, which when pursued, is always beyond your grasp. #POKRally #HI"
+mbdata,2.01401E+13,reggierockin776,,,,spam,neutral,One of the top diseases- help us cure it! diseasefund.kronos/payus #abila #cancer
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,If you want to achieve greatness stop asking for permission.  #POKRally #HI
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,@tomish most of the police are backed off  #TAG
+mbdata,2.01401E+13,rnbwBrite,,,,hit_and_run,positive,RT @megaMan Negotiator guy calmed them down #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Blessed are the meek, for they shall inherit the earth  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,There are no traffic jams along the extra mile.  #KronosStar #POKRally
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,lots of guns pointed at that van #TAG
+ccdata,2.01401E+13,,,,N/A,chatter,neutral,INCOMPLETE CALL FOR POLICE
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Your time is limited, so dont waste it living someone elses life.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"As we look ahead into the next century, leaders will be those who empower others.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.  #POKRally #HI
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,no amount of greenwashing can clean your terror organization Sylvia #POK #terror
+mbdata,2.01401E+13,protoGuy,,,,chatter,neutral,"i want to move to get a better view, but there are too many guns out"
+mbdata,2.01401E+13,megaMan,,,,chatter,positive,hi tension but maybe the talking is working #TAG
+mbdata,2.01401E+13,roger_roger,,,,hit_and_run,positive,some guy looked out the window says theres a ton of cops
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You must expect great things of yourself before you can do them.  #POKRally #HI
+mbdata,2.01401E+13,klingon4real,,,,chatter,negative,RT @rockStar113 @AbilaPost gag who cares about the moneygrubbers - people are hurt
+mbdata,2.01401E+13,brandonL,,,,chatter,positive,RT @Simon_Hamaeth we're free! thanks #APD #standoff
+mbdata,2.01401E+13,rockinHW,,,,spam,neutral,make $630-$8062 a month online fastjobs.kronos/tricks #abila #workAtHome
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Every strike brings me closer to the next home run.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,It is better to fail in originality than to succeed in imitation.  #POKRally #HI
+mbdata,2.01401E+13,cminvestments11,,,,spam,neutral,you r famous now haha  badprofiles.kronos/tacky   #abila #pictures
+mbdata,2.01401E+13,vonneka,,,,chatter,neutral,"RT @protoGuy i want to move to get a better view, but there are too many guns out"
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,positive,Officials state fire is under control. #HI
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,@ben I'm at 200 followers now #TAG
+mbdata,2.01401E+13,roger_roger,,,,chatter,negative,just shoot them already
+ccdata,2.01401E+13,,,,N. Polvo St / N. Androutsou St,chatter,neutral,TRAFFIC STOP
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Success is liking yourself, liking what you do, and liking how you do it.  #POKRally #HI"
+mbdata,2.01401E+13,Clevvah4Evah,,,,spam,neutral,I want a job 80% mental 30% fiscal #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,There are two types of people who will tell you that you cannot make a difference in this world. #POKRally #HI
+ccdata,2.01401E+13,,,,2297 Filis St,chatter,neutral,SHOPLIFTING
+mbdata,2.01401E+13,electricAvenue,,,,chatter,neutral,RT @megaMan Not yelling as much #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,There are no traffic jams along the extra mile.  #KronosStar #POKRally
+mbdata,2.01401E+13,worldWatcher,,,,fire,positive,RT @HomelandIlluminations Officials state fire is under control. #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We become what we think about most of the time, and that's the strangest secret.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you want to achieve excellence, you can get there today. As of this second, quit doing less-than-excellent work.  #POKRally #HI"
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,positive,The rally has peaked my interest! #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosStar,,,,fire,negative,Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,redisrad,,,,chatter,neutral,Anyone want to meet at #ouzerielian to drink our troubles away?
+mbdata,2.01401E+13,mountain478,,,,chatter,neutral,can't study -- too much going on outside - must watch the drama unfold #fireisscience
+mbdata,2.01401E+13,footfingers,36.054,24.902,,chatter,positive,we suport the POK's fight for the people of Kronos #POK #APA
+mbdata,2.01401E+13,megaMan,,,,chatter,negative,Some kid just came up behind me at the pole #scaredmetodeath #TAG
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,negative,Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
+mbdata,2.01401E+13,panopticon,,,,chatter,negative,are they just waiting him out of what?
+mbdata,2.01401E+13,MarcusDrymiau,,,,chatter,positive,I hope everyone stays calm and the hostages don't get hurt #standoff
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"I find that when you have a real interest in life and a curious life, that sleep is not the most important thing.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The most common way people give up their power is by thinking they dont have any.  #KronosStar #POKRally
+mbdata,2.01401E+13,Clevvah4Evah,,,,spam,neutral,I want a job 80% mental 30% fiscal #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Success is walking from failure to failure with no loss of enthusiasm.  #POKRally #HI
+mbdata,2.01401E+13,FriendsOfKronos,,,,hit_and_run,neutral,crowd continues to grow despite police warnings #POK
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,Kid says he saw 2 people in the van from the other side of the street #TAG
+mbdata,2.01401E+13,katrina,,,,chatter,positive,Even criminals love #GelatoGalore
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Whatever the mind of man can conceive and believe, it can achieve.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,All our dreams can come true if we have the courage to pursue them.  #POKRally #HI
+mbdata,2.01401E+13,zengardener,,,,hit_and_run,neutral,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,neutral,i know lets get close to the terrorists #POK
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,kid ran off...said hes taking pictures to sell to the press  #TAG
+ccdata,2.01401E+13,,,,644 S. Honoliau St,chatter,neutral,NARCOTIC ACTIVITY-REPORT
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea.#POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"You can do anything, but not everything.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The distance between insanity and genius is measured only by success.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You become what you believe.  #KronosStar #POKRally
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,chatter,neutral,so bored & so scared ive never felt like this before #standoff
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,positive,more talk - think van guys are trying to work a deal to leave #TAG
+mbdata,2.01401E+13,Officia1AbilaPost,,,,chatter,neutral,The latest news behind the #GAStech #mystery.  smad.co.kronos/cbcje9q
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You measure the size of the accomplishment by the obstacles you had to overcome to reach your goals.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,An unexamined life is not worth living.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,An unexamined life is not worth living.  #KronosStar #POKRally
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,stand off dragging on are they debating how stufpid the terrorists are? #POK
+mbdata,2.01401E+13,megaMan,,,,chatter,neutral,cops aren't buying it #TAG
+mbdata,2.01401E+13,vetsRock,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,vetsRock,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,electricAvenue,,,,hit_and_run,negative,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Life is not measured by the number of breaths we take, but by the moments that take our breath away.  #KronosStar #POKRally"
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,police moving people back - kid jujst got caught #TAG
+mbdata,2.01401E+13,carjunkers,,,,chatter,positive,"This is NUTS, I swear I'm getting 100s of followers from this program!! Check it followers.kronos/getpeople #abila #followers"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,A person who never made a mistake never tried anything new.  #KronosStar #POKRally
+mbdata,2.01401E+13,rnbwBrite,,,,hit_and_run,positive,RT @megaMan more talk - think van guys are trying to work a deal to leave #TAG
+mbdata,2.01401E+13,NewsOnlineToday,,,,fire,positive,Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,chatter,neutral,i wish this was over i can barely even type anthing #standoff
+mbdata,2.01401E+13,FriendsOfKronos,,,,chatter,negative,no deal with terrorists #POK
+mbdata,2.01401E+13,protoGuy,,,,chatter,neutral,i wonder what the cops are offering the van dude to get him to give up
+mbdata,2.01401E+13,AbilaPost,,,,hit_and_run,neutral,Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,lordWally,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,rnbwBrite,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,BlueVelvet,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,pinky,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,KronosStar,,,,fire,negative,The top floors of the building have collapsed. #KronosStar #DancingDolphinFire
+mbdata,2.01401E+13,AbilaPost,,,,fire,negative,the top floors have collapsed into the first floor?#AbilaPost
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,negative,Top floors of building have collapsed. #HI
+mbdata,2.01401E+13,hempRules,,,,fire,neutral,What caused the #fire?? Anybody hurt?
+mbdata,2.01401E+13,Sara_Nespola,,,,chatter,negative,this takes a lot longer in real life than it does in the movies #hostage
+ccdata,2.01401E+13,,,,3103 N. Alamanas St,chatter,neutral,ALARM-SECURE NO CRIME
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Eighty percent of success is showing up.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Whatever the mind of man can conceive and believe, it can achieve.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"To live a creative life, we must lose our fear of being wrong.  #POKRally #HI"
+mbdata,2.01401E+13,vonneka,,,,hit_and_run,neutral,RT @megaMan police moving people back - kid jujst got caught #TAG
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If the wind will not serve, take to the oars.  #KronosStar #POKRally"
+mbdata,2.01401E+13,CentralBulletin,,,,fire,negative,top floors of Dancing Dolphin have collapsed #Abila #CentralBulletin
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,hit_and_run,negative,why dont the cops do anything? save us pls! #APD #standoff
+mbdata,2.01401E+13,megaMan,,,,chatter,negative,no change  #slowdown #TAG
+mbdata,2.01401E+13,wireHead1122,,,,fire,positive,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,pinky,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,BlueVelvet,,,,hit_and_run,negative,RT @FriendsOfKronos stand off dragging on are they debating how stufpid the terrorists are? #POK
+mbdata,2.01401E+13,sarajane,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,muppiesRock,,,,fire,negative,RT @KronosStar Firemen are running from the building. Something is wrong... #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,dolls4sale,,,,hit_and_run,negative,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
+mbdata,2.01401E+13,lordWally,,,,hit_and_run,negative,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
+mbdata,2.01401E+13,dtennent,,,,hit_and_run,negative,RT @AbilaPost Despite being advised to avoid the area the crowd has continued to grow around the standoff #AbilaPost
+mbdata,2.01401E+13,stolkfair,,,,fire,negative,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,chatter,negative,arent swat suppposed to be the tough buys that swoop in & save the day? what are they waiting for? were trapped!
+mbdata,2.01401E+13,brontes_riff,,,,chatter,negative,Lots of sitting. What's the matter communications down with the evil overlord?
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Things work out best for those who make the best of how things work out.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Take up one idea. Make that one idea your life -- think of it, dream of it, live on that idea.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You can't connect the dots looking forward; you can only connect them looking backwards. #POKRally #HI
+mbdata,2.01401E+13,maskedWoman101,,,,spam,neutral,free iThing contest click here contest.kronos/freeiThing  #abila #iThing
+ccdata,2.01401E+13,,,,Niovis St / N. Aveny St,chatter,neutral,PROWLER
+mbdata,2.01401E+13,panopticon,,,,hit_and_run,negative,this standoff is going nowhere do they have hostages or someothing?
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,I attribute my success to this: I never gave or took any excuse.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,If you are not willing to risk the usual you will have to settle for the ordinary.  #POKRally #HI
+mbdata,2.01401E+13,cminvestments11,,,,spam,neutral,Have you heard millions of people are making $5k+/Mo from home? heres how...workAthome.kronos/scam #kronos #abilajobs
+mbdata,2.01401E+13,pinky,,,,chatter,neutral,RT @Officia1AbilaPost The latest news behind the #GAStech #mystery.  smad.co.kronos/cbcje9q
+mbdata,2.01401E+13,worldWatcher,,,,fire,positive,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,dragonRider1,,,,fire,positive,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,wiseWords,,,,fire,positive,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,henri,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,electricAvenue,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,henri,,,,fire,negative,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
+mbdata,2.01401E+13,KronosStar,,,,fire,neutral,AFD says the building isn't safe to re-enter.  They will fight the fire from the outside only now. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,neutral,No word on condition of injured firefighter sent to hospital. #HI
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,chatter,negative,why is this taking so long? im starting to feel sick #standoff
+mbdata,2.01401E+13,protoGuy,,,,chatter,neutral,this is takign 4ever why dont they shoot him?
+mbdata,2.01401E+13,megaMan,,,,chatter,positive,ha - two of the SWAT guys just walked by and didn't notice me.  #lucky #TAG
+mbdata,2.01401E+13,panopticon,,,,chatter,neutral,heading around the corner to get a better look
+mbdata,2.01401E+13,roger_roger,,,,chatter,neutral,still here
+mbdata,2.01401E+13,KronosStar,,,,fire,neutral,AFD has summoned three additional fire units to help control the blaze. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,AbilaPost,,,,fire,neutral,#AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
+mbdata,2.01401E+13,HomelandIlluminations,,,,fire,neutral,Additional fire units have been dispatched to Dancing Dolphin fire. #HI
+mbdata,2.01401E+13,GreyCatCollectibles,,,,chatter,negative,oh my oh my oh my. Everything is gone! What will be come of us?
+mbdata,2.01401E+13,kingWilly,,,,chatter,negative,Q: How many #AFD does it take to put out a fire? A: more than this! #dancingdolphinfire
+mbdata,2.01401E+13,praise111,,,,chatter,positive,Praying that calmer hearts and minds prevail #AbilaPrays
+mbdata,2.01401E+13,luvwool,,,,chatter,positive,"Actually, that's a pretty nice #blackvan. Nice window tint job."
+mbdata,2.01401E+13,MarcusDrymiau,,,,chatter,negative,can't believe people in here are moving TOWARDS the danger #shooter #stupid
+ccdata,2.01401E+13,,,,4001 N. Arbete St,chatter,neutral,SUBJECT STOP
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"If you want your children to turn out well, spend twice as much time with them, and half as much money.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.   #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The starting point of all achievement is desire.  #POKRally #HI
+mbdata,2.01401E+13,jgrobannne,,,,chatter,neutral,RT @truccotrucco so bored & so scared ive never felt like this before #standoff
+mbdata,2.01401E+13,dolls4sale,,,,fire,positive,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,electricAvenue,,,,chatter,neutral,RT @truccotrucco i wish this was over i can barely even type anthing #standoff
+mbdata,2.01401E+13,teresaJ,,,,hit_and_run,neutral,RT @protoGuy i wonder what the cops are offering the van dude to get him to give up
+mbdata,2.01401E+13,brandonL,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,jgrobannne,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,lindyT,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,blueSunshine,,,,hit_and_run,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,soup4u,,,,fire,negative,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
+mbdata,2.01401E+13,lindyT,,,,fire,neutral,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Build your own dreams, or someone else will hire you to build theirs.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Try not to become a person of success, but rather try to become a person of value.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Intuition influences your own observations #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The question isnt who is going to let me; its who is going to stop me.  #KronosStar #POKRally
+mbdata,2.01401E+13,gardener4958,,,,chatter,neutral,RT @megaMan no change  #slowdown #TAG
+mbdata,2.01401E+13,stolkfair,,,,fire,positive,RT @NewsOnlineToday Abila fire is under control. #NewsOnline
+mbdata,2.01401E+13,brain448,,,,chatter,neutral,RT @AbilaPost Please avoid the area surrounding Gelatogalore intersection of Alexandrias & Ithakis police action underway #AbilaPost
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,chatter,negative,im sick im tired just wan to run out of here!
+mbdata,2.01401E+13,vetsRock,,,,fire,negative,RT @AbilaPost the top floors have collapsed into the first floor?#AbilaPost
+mbdata,2.01401E+13,kedits,,,,spam,neutral,One of the top diseases- help us cure it! diseasefund.kronos/payus #abila #cancer
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.  #POKRally #HI"
+mbdata,2.01401E+13,vetsRock,,,,fire,neutral,RT @KronosStar AFD has summoned three additional fire units to help control the blaze. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,BlueVelvet,,,,fire,neutral,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
+mbdata,2.01401E+13,gardener4958,,,,fire,neutral,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
+mbdata,2.01401E+13,worldWatcher,,,,chatter,positive,"RT @luvwool Actually, that's a pretty nice #blackvan. Nice window tint job."
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea.#POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,There are no traffic jams along the extra mile.  #KronosStar #POKRally
+mbdata,2.01401E+13,slamrjamr,,,,chatter,negative,RT @truccotrucco im sick im tired just wan to run out of here!
+mbdata,2.01401E+13,dragonRider1,,,,chatter,negative,RT @truccotrucco why is this taking so long? im starting to feel sick #standoff
+mbdata,2.01401E+13,rrWine,,,,chatter,neutral,RT @panopticon heading around the corner to get a better look
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,It is never too late to be what you might have been.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Fall seven times and stand up eight.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The best time to plant a tree was 20 years ago. The second best time is now.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Success does not consist in never making mistakes but in never making the same one a second time.  #POKRally #HI
+mbdata,2.01401E+13,phantomagate,,,,chatter,negative,RT @GreyCatCollectibles oh my oh my oh my. Everything is gone! What will be come of us?
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Good things come to people who wait, but better things come to those who go out and get them.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"As we look ahead into the next century, leaders will be those who empower others.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,People rarely succeed unless they have fun in what they are doing.  #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Little minds are tamed and subdued by misfortune; but great minds rise above it.  #POKRally #HI
+mbdata,2.01401E+13,wiseWords,,,,fire,neutral,RT @KronosStar AFD says the building isn't safe to re-enter.  They will fight the fire from the outside only now. #KronosStar #DancingDolphinFire #AFDHeroes
+mbdata,2.01401E+13,dtennent,,,,fire,neutral,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
+mbdata,2.01401E+13,soup4u,,,,fire,neutral,RT @AbilaPost #AFD is requesting additional trucks to @dancingdolphin fire #AbilaPost
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Your time is limited, so dont waste it living someone elses life.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"To accomplish great things, we must not only act, but also dream, not only plan, but also believe. #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Happiness is a butterfly, which when pursued, is always beyond your grasp. #POKRally #HI"
+mbdata,2.01401E+13,Clevvah4Evah,,,,chatter,neutral,How far is Paris from France? #POK #Rally #Grammar
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.  #POKRally #HI"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,You've got to get up every morning with determination if you're going to go to bed with satisfaction.  #POKRally #HI
+mbdata,2.01401E+13,InternationalNews,,,,fire,negative,Dancing Dolphin Fire has suddeny escalated. #abila #IntNews
+mbdata,2.01401E+13,truccotrucco,36.059,24.856,,hit_and_run,neutral,just poked my head up looks like hundred of people outside #standoff
+mbdata,2.01401E+13,megaMan,,,,hit_and_run,neutral,@ben theres a couple hundred at each end of the street no clue how many police here now #TAG
+ccdata,2.01401E+13,,,,Vissaraki St / Rist Way,chatter,neutral,TRAFFIC STOP
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Your time is limited, so dont waste it living someone elses life.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The most common way people give up their power is by thinking they dont have any.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Every child is an artist.  The problem is how to remain an artist once he grows up.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,The two most important days in your life are the day you are born and the day you find out why.  #KronosStar #POKRally
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Do what you can, where you are, with what you have.  #KronosStar #POKRally"
+mbdata,2.01401E+13,courage4life,,,,fire,negative,RT @InternationalNews Dancing Dolphin Fire has suddeny escalated. #abila #IntNews
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Either you run the day, or the day runs you.  #KronosStar #POKRally"
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,No masterpiece was ever created by a lazy artist. #POKRally #HI
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,"Blessed are the meek, for they shall inherit the earth  #KronosStar #POKRally"
+mbdata,2.01401E+13,whiteprotein,,,,chatter,positive,Artist ? musician? need more followers ? click here  followme.kronos/artists #abila #artists
+mbdata,2.01401E+13,KronosQuoth,,,,chatter,positive,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
 mbdata,2.01401E+13,KronosQuoth,,,,,,The mind is everything. What you think you become.   #KronosStar #POKRally
 mbdata,2.01401E+13,KronosQuoth,,,,,,"Whenever you see a successful person you only see the public glories, never the private sacrifices to reach them.  #POKRally #HI"
 mbdata,2.01401E+13,KronosQuoth,,,,,,Non-judgment shapes reckless self-knowledge #POKRally #HI
