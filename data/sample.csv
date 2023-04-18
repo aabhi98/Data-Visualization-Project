@@ -1,4 +1,4 @@
-type,date(yyyyMMddHHmmss),author,message,latitude,longitude, location,sentiment,major_event
+type,date,author,message,latitude,longitude, location,sentiment,major_event
 ccdata,23/01/2014 17:00:00,,KEEP THE PEACE-CROWD CONTROL/ABILA CITY PARK,,,Egeou St / Parla St,positive,pok_rally
 mbdata,23/01/2014 17:01:19,KronosQuoth,I didnt fail the test. I just found 100 ways to do it wrong.  #KronosStar #POKRally,,,,positive,chatter
 mbdata,23/01/2014 17:01:50,KronosQuoth,Don't be afraid to give up the good to go for the great.  #POKRally #HI,,,,positive,chatter
