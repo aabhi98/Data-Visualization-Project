@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let data;
-    Promise.all([d3.csv('data/csv-2001-2131.csv')]).then(function (values){
-        data = values[0];
+    Promise.all([d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
+        data = values[0].concat(values[1]);
         console.log(data);
         data.forEach(d=>{
             d["date"] = +d["date"];
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))
             .forEach(d => data2.push(d));
         console.log(data2);
-        drawbeeswarm1(data2);
+       drawbeeswarm1(data2);
     })
 
 })
@@ -58,12 +58,12 @@ function drawbeeswarm1(dataset){
         let simulation = d3.forceSimulation(dataset)
                 .force("x", d3.forceX(function(d) {
                     return xScale(parseTime(d.date));
-            }).strength(1))
+            }).strength(2))
             .force("y", d3.forceY((height / 2) - margin.bottom / 2)) 
-            .force("collide", d3.forceCollide(6))
+            .force("collide", d3.forceCollide(5))
             .stop();
             //simulation.tick(10);
-        for (let i = 0; i < 10; ++i) {
+        for (let i = 0; i < 5; ++i) {
             simulation.tick(10);  
         }
 
@@ -92,7 +92,8 @@ function drawbeeswarm1(dataset){
 
             d3.selectAll(".events").on("mouseover", function(event, d){
                 //d3.select(this).style("color", "green");
-                tooltip.html("Time: " +parseTime(d.date) + "<br>");
+               //tooltip.html("Time: " +parseTime(d.date) + "<br>");
+               tooltip.html(d["major_event"]+": "+d.message + "<br>");
                 console.log("hi")
                 return tooltip.style("visibility", "visible");
             })
