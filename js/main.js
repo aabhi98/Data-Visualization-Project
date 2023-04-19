@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     let data;
-    Promise.all([d3.csv('data/csv-1700-1830.csv'),d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
-        data = values[0].concat(values[1]).concat(values[2]);
-        //console.log(data);
+    //Promise.all([d3.csv('data/csv-1700-1830.csv'),d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
+    Promise.all([d3.csv('data/final_dataset.csv')]).then(function (values){
+        data = values[0]//.concat(values[1]).concat(values[2]);
+        console.log(data);
         data.forEach(d=>{
             d["date"] = +d["date"];
             d["major_event"] = d["major_event"].toLowerCase();
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let data2 = [];
         data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))
             .forEach(d => data2.push(d));
-        //console.log(data2);
+        console.log(data2);
        drawbeeswarm1(data2);
     })
 
@@ -54,7 +55,7 @@ function drawbeeswarm1(dataset){
     function draw(){
         xAxis = d3.axisBottom(xScale);
         g.append('g')
-                .attr('transform',`translate(0,${innerHeight})`)
+                .attr('transform',`translate(0,${innerHeight+20})`)
                 .transition().duration(1000)
                 .call(xAxis)
         let simulation = d3.forceSimulation(dataset)
@@ -85,7 +86,12 @@ function drawbeeswarm1(dataset){
             .attr("class", "events")
             .attr("cx", 0)
             .attr("cy", (height / 2) - margin.bottom / 2)
-            .attr("r", 3)
+            .attr("r", function(d){
+                if(d["message"].includes("RT @")){
+                    return 3;
+                }
+                else return 3;
+            })
             .attr("fill", function(d){ return colors(d["major_event"])})
             .merge(majoreventcircles)
             .transition()
@@ -106,6 +112,12 @@ function drawbeeswarm1(dataset){
             })
             .on("mouseout", function() {
                 return tooltip.style("visibility", "hidden");
+            })
+            .on("click", function(event, d){
+                const svg_click = d3.select("#message_svg");
+                svg_click.selectAll('g').remove();
+                const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
+                g.append("text").text(d.message);
             });
     }
     function filter(){
