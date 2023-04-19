@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     let data;
-    Promise.all([d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
-        data = values[0].concat(values[1]);
+    Promise.all([d3.csv('data/csv-1700-1830.csv'),d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
+        data = values[0].concat(values[1]).concat(values[2]);
         console.log(data);
         data.forEach(d=>{
             d["date"] = +d["date"];
+            d["major_event"] = d["major_event"].toLowerCase();
+            d["sentiment"] = d["sentiment"].toLowerCase();
         })
         let data2 = [];
         data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))
