@@ -136,9 +136,9 @@
     <h3 class="text-center">Naga Sai Krishna Reddy Vintha - nvintha1@asu.edu</h3>
     <h3 class="text-center">Dileep Kumar Reddy Maligireddy - dmaligir@asu.edu</h3>
     <hr>
-    <ul id="myList" style="list-style:none; padding:10;">
+    <!-- <ul id="myList" style="list-style:none; padding:10;">
         <li style="display:inline-block; margin-right:10px;">
-            <label style="display:inline-block;">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" style="display:inline-block;">
                 <input type="checkbox" style="margin-right:2px;" value="HitAndRun">Hit and Run
             </label>
         </li>
@@ -157,7 +157,22 @@
                 <input type="checkbox" style="margin-right:2px;" value="SafeHouse">SafeHouse
             </label>
         </li>
-    </ul>
+    </ul> -->
+    <div id="checkboxes" class="centered">
+      <span style="position:relative; left: 10px">Major Events:&nbsp;&nbsp;</span>
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+          <input type="checkbox" style="margin-right:2px;" value="pok_rally" class="mdl-checkbox__input event" checked="">POK Rally
+          <span class="mdl-checkbox__label" id="pok_rallycolor" style="font-size: 20px; color: red;">&#9679;&nbsp;&nbsp;</span>
+      </label>
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+          <input type="checkbox" style="margin-right:2px;" value="fire" class="mdl-checkbox__input event" checked="">Fire
+          <span class="mdl-checkbox__label" id="firecolor" style="font-size: 20px; color: blue;">&#9679;&nbsp;&nbsp;</span>
+      </label>
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+          <input type="checkbox" style="margin-right:2px;" value="hit_and_run" class="mdl-checkbox__input event" checked="">Hit and Run
+          <span class="mdl-checkbox__label" id="hitandruncolor" style="font-size: 20px; color: orange;">&#9679;&nbsp;&nbsp;</span>
+      </label>
+  </div>
     <div id="my_div" >
         <svg id="bee_swarm_svg"></svg>
         <svg id="word_cloud_svg_1"></svg>
@@ -174,4 +189,6 @@
     </div>
 </div>
 </body>
+   <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
