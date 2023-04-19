@@ -101,8 +101,8 @@ function drawbeeswarm1(dataset){
 
             d3.selectAll(".events").on("mouseover", function(event, d){
                 //d3.select(this).style("color", "green");
-               //tooltip.html("Time: " +parseTime(d.date) + "<br>");
-               tooltip.html(d["major_event"]+": "+d.message + "<br>");
+               tooltip.html("Time: " +parseTime(d.date) + "<br>");
+               //tooltip.html(d["major_event"]+": "+d.message + "<br>");
                 //console.log("hi")
                 return tooltip.style("visibility", "visible");
             })
