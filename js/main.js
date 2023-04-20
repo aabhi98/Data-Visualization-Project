@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 function drawbeeswarm1(dataset){
+    //console.log(dataset);
     const svg = d3.select("#bee_swarm_svg");
     const width = +svg.style('width').replace('px','');
     const height = +svg.style('height').replace('px','');
@@ -31,7 +32,7 @@ function drawbeeswarm1(dataset){
     const parseTime = d3.timeParse("%Y%m%d%H%M%S");
     const formatTime = d3.timeFormat("%Y%m%d%H%M%S");
     const dates = dataset.map(d => parseTime(d.date));
-        
+    //console.log(d3.max(dataset, d=>d.date));
     const xScale = d3.scaleTime()
                 .domain(d3.extent(dates))
                 .range([0, innerWidth]);
@@ -125,7 +126,7 @@ function drawbeeswarm1(dataset){
             // });
     }
     function filter(){
-        console.log(dataset);
+        //console.log(dataset);
         dataset_copy = dataset;
         function getCheckedBoxes(checkboxName) {
 
@@ -162,6 +163,7 @@ function drawbeeswarm1(dataset){
 
 const beeswarm = document.getElementById("bee_swarm_svg");
 const lines = []; // array to keep track of created lines
+const time_line = [];
 
 beeswarm.addEventListener("click", function(event) {
     // Prevent the default context menu from appearing
@@ -194,10 +196,32 @@ beeswarm.addEventListener("click", function(event) {
       event.preventDefault();
       //line.remove();
       beeswarm.removeChild(line); // remove the line from the SVG element
+      time_line.splice(time_line.indexOf(line),1);
         lines.splice(lines.indexOf(line), 1); // remove the line from the lines array
+        console.log(time_line);
     });
     beeswarm.appendChild(line);
     lines.push(line);
+    time_line.push(formatTime(xScale.invert(x)));
+    if(time_line.length == 2){
+        //console.log(dataset);
+        starttime = 20140123170000;
+        endtime = 20140123213445;
+        filtereddata1 = dataset.filter(function(d) {
+            return d.date >= starttime && d.date < time_line[0];
+        });
+        filtereddata2 = dataset.filter(function(d) {
+            return d.date >= time_line[0] && d.date < time_line[1];
+        });
+        filtereddata3 = dataset.filter(function(d) {
+            return d.date >= time_line[1] && d.date <= endtime;
+        });
+        console.log(filtereddata1,filtereddata2,filtereddata3);
+        //call piechart function
+        //call word cloud
+        //call bar chart
+            
+    }
   });
 
 }
