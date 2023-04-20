@@ -29,7 +29,7 @@ function drawbeeswarm1(dataset){
         .attr('transform', 'translate('+margin.left+', '+margin.top+')');
 
     const parseTime = d3.timeParse("%Y%m%d%H%M%S");
-
+    const formatTime = d3.timeFormat("%Y%m%d%H%M%S");
     const dates = dataset.map(d => parseTime(d.date));
         
     const xScale = d3.scaleTime()
@@ -101,8 +101,8 @@ function drawbeeswarm1(dataset){
 
             d3.selectAll(".events").on("mouseover", function(event, d){
                 //d3.select(this).style("color", "green");
-               tooltip.html("Time: " +parseTime(d.date) + "<br>");
-               //tooltip.html(d["major_event"]+": "+d.message + "<br>");
+               //tooltip.html("Time: " +parseTime(d.date) + "<br>");
+               tooltip.html(d["author"]+": "+d.message + "<br>");
                 //console.log("hi")
                 return tooltip.style("visibility", "visible");
             })
@@ -113,12 +113,12 @@ function drawbeeswarm1(dataset){
             .on("mouseout", function() {
                 return tooltip.style("visibility", "hidden");
             })
-            .on("click", function(event, d){
-                const svg_click = d3.select("#message_svg");
-                svg_click.selectAll('g').remove();
-                const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
-                g.append("text").text(d.message);
-            });
+            // .on("click", function(event, d){
+            //     const svg_click = d3.select("#message_svg");
+            //     svg_click.selectAll('g').remove();
+            //     const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
+            //     g.append("text").text(d.author + ": "+d.message);
+            // });
     }
     function filter(){
         console.log(dataset);
@@ -155,6 +155,47 @@ function drawbeeswarm1(dataset){
         draw();
         dataset = dataset_copy;
     }
+
+const beeswarm = document.getElementById("bee_swarm_svg");
+const lines = []; // array to keep track of created lines
+
+beeswarm.addEventListener("click", function(event) {
+    // Prevent the default context menu from appearing
+    event.preventDefault();
+  
+    // Get the x-coordinate of the mouse click relative to the SVG element
+    const x = event.clientX - beeswarm.getBoundingClientRect().left;
+
+    // Check if there are already two lines on the SVG
+    if (lines.length == 2)  {
+      alert("You can only add two lines.");
+      return;
+    }
+    console.log(formatTime(xScale.invert(x)));
+    // Create a new line element
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  
+    // Set the line's coordinates and styling
+    line.setAttribute("x1", x);
+    line.setAttribute("x2", x);
+    line.setAttribute("y1", 0);
+    line.setAttribute("y2", beeswarm.clientHeight);
+    line.setAttribute("stroke", "black");
+    line.setAttribute("stroke-width", "4");
+  
+    // Add the line to the SVG element
+    
+    // Add a right-click event listener to the line to remove it
+    line.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+      //line.remove();
+      beeswarm.removeChild(line); // remove the line from the SVG element
+        lines.splice(lines.indexOf(line), 1); // remove the line from the lines array
+    });
+    beeswarm.appendChild(line);
+    lines.push(line);
+  });
+
 }
 
 
