@@ -51,7 +51,11 @@ function drawbeeswarm1(dataset){
     let colors = d3.scaleOrdinal().domain(["hit_and_run", "fire", "pok_rally"])
                                     .range(["orange","blue","red"]);
     draw();
-    d3.selectAll("input").on("change", filter);
+    d3.selectAll("input").on("change", triggerMultipleFunctions);
+    function triggerMultipleFunctions(){
+        filter();
+        drawPieChart();
+    }
     function draw(){
         xAxis = d3.axisBottom(xScale);
         g.append('g')
