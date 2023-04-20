@@ -50,7 +50,7 @@ function drawPieChart(){
 
     const grouped_data1 = d3.group(filtered_data1, d => d.sentiment);
 
-    const counts = Array.from(grouped_data1, ([sentiment, events]) => {
+    const counts1 = Array.from(grouped_data1, ([sentiment, events]) => {
         return {
             sentiment: sentiment,
             count: events.length
@@ -58,32 +58,119 @@ function drawPieChart(){
     });
 
     const colorScale = d3.scaleOrdinal()
-        .domain(counts.map(d => d.sentiment))
+        .domain(counts1.map(d => d.sentiment))
         .range(['#6baed6', '#fd8d3c', '#74c476']);
 
-    console.log("counts",counts);
-
-
-
-    const pie = d3.pie()
+    const pie1 = d3.pie()
         .value(d => d.count);
 
-    console.log("colorScale",pie(counts));
-
-    const arc = d3.arc()
+    const arc1 = d3.arc()
         .innerRadius(0)
-        .outerRadius(200);
+        .outerRadius(180);
 
-    const g = svg1.append('g')
+    const labelArc1 = d3.arc()
+        .innerRadius(90)
+        .outerRadius(180);
+
+    const g1 = svg1.append('g')
         .attr('transform', `translate(200,200)`);
 
-    // Draw the pie chart
-    g.selectAll('path')
-        .data(pie(counts))
+    g1.selectAll('path')
+        .data(pie1(counts1))
         .enter()
         .append('path')
-        .attr('d', arc)
-        .attr('fill', d => colorScale(d.data.sentiment));
+        .attr('d', arc1)
+        .attr('fill', d => colorScale(d.data.sentiment))
+        .append("svg:title")
+        .text(function(d) { return d.data.sentiment + ": " + d.data.count });
+
+    g1.selectAll('text')
+        .data(pie1(counts1))
+        .enter()
+        .append('text')
+        .attr('transform', d => `translate(${labelArc1.centroid(d)})`)
+        .attr('text-anchor', 'middle')
+        .text(d => d.data.sentiment);
+
+    const grouped_data2 = d3.group(filtered_data2, d => d.sentiment);
+
+    const counts2 = Array.from(grouped_data2, ([sentiment, events]) => {
+        return {
+            sentiment: sentiment,
+            count: events.length
+        };
+    });
+
+    const pie2 = d3.pie()
+        .value(d => d.count);
+
+    const arc2 = d3.arc()
+        .innerRadius(0)
+        .outerRadius(180);
+
+    const labelArc2 = d3.arc()
+        .innerRadius(90)
+        .outerRadius(180);
+
+    const g2 = svg2.append('g')
+        .attr('transform', `translate(200,200)`);
+
+    g2.selectAll('path')
+        .data(pie2(counts2))
+        .enter()
+        .append('path')
+        .attr('d', arc2)
+        .attr('fill', d => colorScale(d.data.sentiment))
+        .append("svg:title")
+        .text(function(d) { return d.data.sentiment + ": " + d.data.count });
+
+    g2.selectAll('text')
+        .data(pie2(counts2))
+        .enter()
+        .append('text')
+        .attr('transform', d => `translate(${labelArc2.centroid(d)})`)
+        .attr('text-anchor', 'middle')
+        .text(d => d.data.sentiment);
+
+    const grouped_data3 = d3.group(filtered_data3, d => d.sentiment);
+
+    const counts3 = Array.from(grouped_data3, ([sentiment, events]) => {
+        return {
+            sentiment: sentiment,
+            count: events.length
+        };
+    });
+
+    const pie3 = d3.pie()
+        .value(d => d.count);
+
+    const arc3 = d3.arc()
+        .innerRadius(0)
+        .outerRadius(180);
+
+    const labelArc3 = d3.arc()
+        .innerRadius(90)
+        .outerRadius(180);
+
+    const g3 = svg3.append('g')
+        .attr('transform', `translate(200,200)`);
+
+    g3.selectAll('path')
+        .data(pie3(counts3))
+        .enter()
+        .append('path')
+        .attr('d', arc3)
+        .attr('fill', d => colorScale(d.data.sentiment))
+        .append("svg:title")
+        .text(function(d) { return d.data.sentiment + ": " + d.data.count });
+
+    g3.selectAll('text')
+        .data(pie3(counts3))
+        .enter()
+        .append('text')
+        .attr('transform', d => `translate(${labelArc3.centroid(d)})`)
+        .attr('text-anchor', 'middle')
+        .text(d => d.data.sentiment);
 
 
 
