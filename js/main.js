@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     let data;
-    Promise.all([d3.csv('data/csv-1700-1830.csv'),d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
-        data = values[0].concat(values[1]).concat(values[2]);
+    //Promise.all([d3.csv('data/csv-1700-1830.csv'),d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
+    Promise.all([d3.csv('data/final_dataset.csv')]).then(function (values){
+        data = values[0]//.concat(values[1]).concat(values[2]);
         console.log(data);
         data.forEach(d=>{
             d["date"] = +d["date"];
@@ -58,7 +59,7 @@ function drawbeeswarm1(dataset){
     function draw(){
         xAxis = d3.axisBottom(xScale);
         g.append('g')
-                .attr('transform',`translate(0,${innerHeight})`)
+                .attr('transform',`translate(0,${innerHeight+20})`)
                 .transition().duration(1000)
                 .call(xAxis)
         let simulation = d3.forceSimulation(dataset)
@@ -69,12 +70,13 @@ function drawbeeswarm1(dataset){
             .force("collide", d3.forceCollide(5))
             .stop();
             //simulation.tick(10);
-        for (let i = 0; i < 5; ++i) {
+        for (let i = 0; i < 8; ++i) {
             simulation.tick(10);  
         }
 
         let majoreventcircles = g.selectAll(".events")
-                .data(dataset, function(d){return d["major_events"]});
+                //.data(dataset);
+                .data(dataset, function(d){return d["major_event"]});
 
         majoreventcircles.exit()
                 .transition()
@@ -88,7 +90,12 @@ function drawbeeswarm1(dataset){
             .attr("class", "events")
             .attr("cx", 0)
             .attr("cy", (height / 2) - margin.bottom / 2)
-            .attr("r", 3)
+            .attr("r", function(d){
+                if(d["message"].includes("RT @")){
+                    return 3;
+                }
+                else return 3;
+            })
             .attr("fill", function(d){ return colors(d["major_event"])})
             .merge(majoreventcircles)
             .transition()
@@ -98,9 +105,9 @@ function drawbeeswarm1(dataset){
 
             d3.selectAll(".events").on("mouseover", function(event, d){
                 //d3.select(this).style("color", "green");
-               //tooltip.html("Time: " +parseTime(d.date) + "<br>");
-               tooltip.html(d["major_event"]+": "+d.message + "<br>");
-                console.log("hi")
+               tooltip.html("Time: " +parseTime(d.date) + "<br>");
+               //tooltip.html(d["major_event"]+": "+d.message + "<br>");
+                //console.log("hi")
                 return tooltip.style("visibility", "visible");
             })
             .on("mousemove", function(event) {
@@ -109,6 +116,12 @@ function drawbeeswarm1(dataset){
             })
             .on("mouseout", function() {
                 return tooltip.style("visibility", "hidden");
+            })
+            .on("click", function(event, d){
+                const svg_click = d3.select("#message_svg");
+                svg_click.selectAll('g').remove();
+                const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
+                g.append("text").text(d.message);
             });
     }
     function filter(){
