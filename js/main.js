@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))
             .forEach(d => data2.push(d));
         console.log(data2);
-       drawbeeswarm1(data2);
+        drawbeeswarm1(data2);
     })
 
 })
