@@ -46,8 +46,8 @@ function drawPointMap() {
 
 function showPoints() {
     console.log("Called", currentLimit)
-    d3.selectAll("circle").remove()
-    d3.selectAll("line").remove()
+    d3.select("#point_map_svg").selectAll("circle").remove()
+    d3.select("#point_map_svg").selectAll("line").remove()
     pointData = csvData.filter(r => !r.message.includes("RT"))
     start = currentLimit
     id = setInterval(_ => {
