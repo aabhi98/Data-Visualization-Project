@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 function drawbeeswarm1(dataset){
+    //console.log(dataset);
     const svg = d3.select("#bee_swarm_svg");
     const width = +svg.style('width').replace('px','');
     const height = +svg.style('height').replace('px','');
@@ -29,9 +30,9 @@ function drawbeeswarm1(dataset){
         .attr('transform', 'translate('+margin.left+', '+margin.top+')');
 
     const parseTime = d3.timeParse("%Y%m%d%H%M%S");
-
+    const formatTime = d3.timeFormat("%Y%m%d%H%M%S");
     const dates = dataset.map(d => parseTime(d.date));
-        
+    //console.log(d3.max(dataset, d=>d.date));
     const xScale = d3.scaleTime()
                 .domain(d3.extent(dates))
                 .range([0, innerWidth]);
@@ -51,7 +52,11 @@ function drawbeeswarm1(dataset){
     let colors = d3.scaleOrdinal().domain(["hit_and_run", "fire", "pok_rally"])
                                     .range(["orange","blue","red"]);
     draw();
-    d3.selectAll("input").on("change", filter);
+    d3.selectAll("input").on("change", triggerMultipleFunctions);
+    function triggerMultipleFunctions(){
+        filter();
+        drawPieChart();
+    }
     function draw(){
         xAxis = d3.axisBottom(xScale);
         g.append('g')
@@ -63,10 +68,10 @@ function drawbeeswarm1(dataset){
                     return xScale(parseTime(d.date));
             }).strength(2))
             .force("y", d3.forceY((height / 2) - margin.bottom / 2)) 
-            .force("collide", d3.forceCollide(5))
+            .force("collide", d3.forceCollide(6))
             .stop();
             //simulation.tick(10);
-        for (let i = 0; i < 8; ++i) {
+        for (let i = 0; i < 10; ++i) {
             simulation.tick(10);  
         }
 
@@ -101,8 +106,8 @@ function drawbeeswarm1(dataset){
 
             d3.selectAll(".events").on("mouseover", function(event, d){
                 //d3.select(this).style("color", "green");
-               tooltip.html("Time: " +parseTime(d.date) + "<br>");
-               //tooltip.html(d["major_event"]+": "+d.message + "<br>");
+               //tooltip.html("Time: " +parseTime(d.date) + "<br>");
+               tooltip.html(d["author"]+": "+d.message + "<br>");
                 //console.log("hi")
                 return tooltip.style("visibility", "visible");
             })
@@ -113,15 +118,15 @@ function drawbeeswarm1(dataset){
             .on("mouseout", function() {
                 return tooltip.style("visibility", "hidden");
             })
-            .on("click", function(event, d){
-                const svg_click = d3.select("#message_svg");
-                svg_click.selectAll('g').remove();
-                const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
-                g.append("text").text(d.message);
-            });
+            // .on("click", function(event, d){
+            //     const svg_click = d3.select("#message_svg");
+            //     svg_click.selectAll('g').remove();
+            //     const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
+            //     g.append("text").text(d.author + ": "+d.message);
+            // });
     }
     function filter(){
-        console.log(dataset);
+        //console.log(dataset);
         dataset_copy = dataset;
         function getCheckedBoxes(checkboxName) {
 
@@ -155,6 +160,70 @@ function drawbeeswarm1(dataset){
         draw();
         dataset = dataset_copy;
     }
+
+const beeswarm = document.getElementById("bee_swarm_svg");
+const lines = []; // array to keep track of created lines
+const time_line = [];
+
+beeswarm.addEventListener("click", function(event) {
+    // Prevent the default context menu from appearing
+    event.preventDefault();
+  
+    // Get the x-coordinate of the mouse click relative to the SVG element
+    const x = event.clientX - beeswarm.getBoundingClientRect().left;
+
+    // Check if there are already two lines on the SVG
+    if (lines.length == 2)  {
+      alert("You can only add two lines.");
+      return;
+    }
+    console.log(formatTime(xScale.invert(x)));
+    // Create a new line element
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  
+    // Set the line's coordinates and styling
+    line.setAttribute("x1", x);
+    line.setAttribute("x2", x);
+    line.setAttribute("y1", 0);
+    line.setAttribute("y2", beeswarm.clientHeight);
+    line.setAttribute("stroke", "black");
+    line.setAttribute("stroke-width", "4");
+  
+    // Add the line to the SVG element
+    
+    // Add a right-click event listener to the line to remove it
+    line.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+      //line.remove();
+      beeswarm.removeChild(line); // remove the line from the SVG element
+      time_line.splice(time_line.indexOf(line),1);
+        lines.splice(lines.indexOf(line), 1); // remove the line from the lines array
+        console.log(time_line);
+    });
+    beeswarm.appendChild(line);
+    lines.push(line);
+    time_line.push(formatTime(xScale.invert(x)));
+    if(time_line.length == 2){
+        //console.log(dataset);
+        starttime = 20140123170000;
+        endtime = 20140123213445;
+        filtereddata1 = dataset.filter(function(d) {
+            return d.date >= starttime && d.date < time_line[0];
+        });
+        filtereddata2 = dataset.filter(function(d) {
+            return d.date >= time_line[0] && d.date < time_line[1];
+        });
+        filtereddata3 = dataset.filter(function(d) {
+            return d.date >= time_line[1] && d.date <= endtime;
+        });
+        console.log(filtereddata1,filtereddata2,filtereddata3);
+        //call piechart function
+        //call word cloud
+        //call bar chart
+            
+    }
+  });
+
 }
 
 
