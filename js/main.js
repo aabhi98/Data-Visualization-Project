@@ -68,10 +68,10 @@ function drawbeeswarm1(dataset){
                     return xScale(parseTime(d.date));
             }).strength(2))
             .force("y", d3.forceY((height / 2) - margin.bottom / 2)) 
-            .force("collide", d3.forceCollide(5))
+            .force("collide", d3.forceCollide(6))
             .stop();
             //simulation.tick(10);
-        for (let i = 0; i < 8; ++i) {
+        for (let i = 0; i < 10; ++i) {
             simulation.tick(10);  
         }
 
