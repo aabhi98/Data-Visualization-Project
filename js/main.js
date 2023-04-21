@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 function drawbeeswarm1(dataset){
     //console.log(dataset);
-    const svg = d3.select("#bee_swarm_svg");
-    const width = +svg.style('width').replace('px','');
-    const height = +svg.style('height').replace('px','');
+    const svg_beeswarm = d3.select("#bee_swarm_svg");
+    const width = +svg_beeswarm.style('width').replace('px','');
+    const height = +svg_beeswarm.style('height').replace('px','');
     const margin = { top:50, bottom: 100, right: 30, left: 40 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
     //svg.selectAll('g').remove();
-    const g = svg.append('g')
+    const g = svg_beeswarm.append('g')
         .attr('transform', 'translate('+margin.left+', '+margin.top+')');
 
     const parseTime = d3.timeParse("%Y%m%d%H%M%S");
