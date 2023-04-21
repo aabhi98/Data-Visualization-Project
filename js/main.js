@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
         data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))
             .forEach(d => data2.push(d));
         console.log(data2);
-       drawbeeswarm1(data2);
+        drawbeeswarm1(data2);
     })
 
 })
 function drawbeeswarm1(dataset){
     //console.log(dataset);
-    const svg = d3.select("#bee_swarm_svg");
-    const width = +svg.style('width').replace('px','');
-    const height = +svg.style('height').replace('px','');
+    const svg_beeswarm = d3.select("#bee_swarm_svg");
+    const width = +svg_beeswarm.style('width').replace('px','');
+    const height = +svg_beeswarm.style('height').replace('px','');
     const margin = { top:50, bottom: 100, right: 30, left: 40 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
     //svg.selectAll('g').remove();
-    const g = svg.append('g')
+    const g = svg_beeswarm.append('g')
         .attr('transform', 'translate('+margin.left+', '+margin.top+')');
 
     const parseTime = d3.timeParse("%Y%m%d%H%M%S");
@@ -68,10 +68,10 @@ function drawbeeswarm1(dataset){
                     return xScale(parseTime(d.date));
             }).strength(2))
             .force("y", d3.forceY((height / 2) - margin.bottom / 2)) 
-            .force("collide", d3.forceCollide(5))
+            .force("collide", d3.forceCollide(6))
             .stop();
             //simulation.tick(10);
-        for (let i = 0; i < 8; ++i) {
+        for (let i = 0; i < 10; ++i) {
             simulation.tick(10);  
         }
 
