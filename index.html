@@ -139,6 +139,20 @@
         margin-left: 25px;
       }
 
+      div.tooltip {
+          position: absolute;
+          text-align: center;
+          width: 250px;
+          height: 60px;
+          padding: 10px;
+          font: 16px sans-serif;
+          background: white;
+          border: 2px solid black;
+          stroke: black;
+          border-radius: 8px;
+          pointer-events: none;
+      }
+
     </style>
 </head>
 <body>
@@ -194,6 +208,27 @@
         <svg id="word_cloud_svg_1"></svg>
         <svg id="word_cloud_svg_2"></svg>
         <svg id="word_cloud_svg_3"></svg>
+        <div class="row">
+            <div class="col-1">Trends:</div>
+            <div class="col-3">
+                <select id="country-select" onchange="drawBars()">
+                    <option value="author" selected>Authors</option>
+                    <option value="tag">HashTags</option>
+                </select>
+
+                <style>
+                    div {
+                        width: 100%;
+                    }
+
+                    select {
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                </style>
+
+            </div>
+        </div>
         <svg id="bar_chart_svg_1"></svg>
         <svg id="bar_chart_svg_2"></svg>
         <svg id="bar_chart_svg_3"></svg>
