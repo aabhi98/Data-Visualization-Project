@@ -24,7 +24,7 @@ function drawbeeswarm1(dataset){
     const height = +svg_beeswarm.style('height').replace('px','');
     const margin = { top:50, bottom: 100, right: 30, left: 40 };
     const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
+    const innerHeight = height - margin.bottom;
     //svg.selectAll('g').remove();
     const g = svg_beeswarm.append('g')
         .attr('transform', 'translate('+margin.left+', '+margin.top+')');
@@ -36,39 +36,68 @@ function drawbeeswarm1(dataset){
     const xScale = d3.scaleTime()
                 .domain(d3.extent(dates))
                 .range([0, innerWidth]);
+
+    let messageMap = {};
+    dataset.forEach(r => {
+        let actualMessage = r.message.replace(/RT @([a-z]|[A-Z]|[0-9])+\s/, "")
+        if (!messageMap.hasOwnProperty(actualMessage))
+            messageMap[actualMessage] = 1
+        else
+            messageMap[actualMessage] += 1
+    })
+
+    dataset = dataset.filter(r => !r.message.includes("RT @"))
+    
+    dataset.map(r => {
+        let actualMessage = r.message.replace(/RT @([a-z]|[A-Z]|[0-9])+\s/, "")
+        r.count = messageMap[actualMessage]
+        r.x = xScale(parseTime(r.date))
+        r.y = ((height / 2) - margin.bottom / 2)
+    })
+
+    let tweetFrequencyDomain = d3.extent(dataset.map((d) => +d.count));
+    let size = d3.scaleSqrt().domain(tweetFrequencyDomain).range([7.5, 15]);
+
+    dataset.map(r => r.r = size(r.count))
+
+    console.log(dataset)
     
    //let tooltip = d3.select("#bee_swarm_svg").append("div").attr("class", "tooltip").style("opacity", 0);
-   var tooltip = d3.select("body")
-                        .append("div")
-                        .style("position", "absolute")
-                        .style("z-index", "10")
-                        .style("visibility", "hidden")
-                        .style("background-color", "white")
-                        .style("padding", "8px")
-                        .style("border-radius", "8px")
-                        .style("text-align", "center")
-                        .style("font-size", "14px")
-                        .style("border", "2px solid black")
+    var tooltip = d3.select("body")
+        .append("div")
+        .style("position", "absolute")
+        .style("z-index", "10")
+        .style("visibility", "hidden")
+        .style("background-color", "white")
+        .style("padding", "8px")
+        .style("border-radius", "8px")
+        .style("text-align", "center")
+        .style("font-size", "14px")
+        .style("border", "2px solid black")
+
     let colors = d3.scaleOrdinal().domain(["hit_and_run", "fire", "pok_rally"])
                                     .range(["orange","blue","red"]);
+    
     draw();
+
     d3.selectAll("input").on("change", triggerMultipleFunctions);
+
     function triggerMultipleFunctions(){
         filter();
         drawPieChart();
     }
+
     function draw(){
+        xAxis = d3.axisBottom(xScale);
         xAxis = d3.axisBottom(xScale);
         g.append('g')
                 .attr('transform',`translate(0,${innerHeight+20})`)
                 .transition().duration(1000)
                 .call(xAxis)
         let simulation = d3.forceSimulation(dataset)
-                .force("x", d3.forceX(function(d) {
-                    return xScale(parseTime(d.date));
-            }).strength(2))
-            .force("y", d3.forceY((height / 2) - margin.bottom / 2)) 
-            .force("collide", d3.forceCollide(6))
+            .force("x", d3.forceX(d => d.x).strength(2))
+            .force("y", d3.forceY(d => d.y)) 
+            .force("collide", d3.forceCollide(12))
             .stop();
             //simulation.tick(10);
         for (let i = 0; i < 10; ++i) {
@@ -77,38 +106,32 @@ function drawbeeswarm1(dataset){
 
         let majoreventcircles = g.selectAll(".events")
                 //.data(dataset);
-                .data(dataset, function(d){return d["major_event"]});
+                .data(dataset, function(d){ return d["major_event"]});
 
         majoreventcircles.exit()
-                .transition()
-                .duration(1000)
-                .attr("cx", 0)
-                .attr("cy", (height / 2) - margin.bottom / 2)
-                .remove();
+            .transition()
+            .duration(1000)
+            .attr("cx", 0)
+            .attr("cy", d => d.y)
+            .attr("r", d => d.r)
+            .remove();
 
         majoreventcircles.enter()
             .append("circle")
             .attr("class", "events")
             .attr("cx", 0)
-            .attr("cy", (height / 2) - margin.bottom / 2)
-            .attr("r", function(d){
-                if(d["message"].includes("RT @")){
-                    return 3;
-                }
-                else return 3;
-            })
+            .attr("cy", d => d.y)
+            .attr("r", d => d.r)
             .attr("fill", function(d){ return colors(d["major_event"])})
+            .style("opacity", 0.7)
             .merge(majoreventcircles)
             .transition()
             .duration(2000)
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
 
-            d3.selectAll(".events").on("mouseover", function(event, d){
-                //d3.select(this).style("color", "green");
-               //tooltip.html("Time: " +parseTime(d.date) + "<br>");
+            d3.selectAll(".events").on("mouseover", function(_, d){
                tooltip.html(d["author"]+": "+d.message + "<br>");
-                //console.log("hi")
                 return tooltip.style("visibility", "visible");
             })
             .on("mousemove", function(event) {
@@ -118,13 +141,8 @@ function drawbeeswarm1(dataset){
             .on("mouseout", function() {
                 return tooltip.style("visibility", "hidden");
             })
-            // .on("click", function(event, d){
-            //     const svg_click = d3.select("#message_svg");
-            //     svg_click.selectAll('g').remove();
-            //     const g = svg_click.append("g").attr('transform', 'translate('+margin.left+', '+margin.top+')');
-            //     g.append("text").text(d.author + ": "+d.message);
-            // });
     }
+
     function filter(){
         //console.log(dataset);
         dataset_copy = dataset;
@@ -160,6 +178,53 @@ function drawbeeswarm1(dataset){
         draw();
         dataset = dataset_copy;
     }
+
+    // function dodge(data) {
+    //     // console.log(data)
+    //     let padding = 1.5
+    //     // console.log((height / 2) - margin.bottom / 2)
+    //     let yVal = (height / 2) - margin.bottom / 2
+    //     const circles = data.map(d => ({x: xScale(parseTime(d.date)), y: yVal, r: size(d.count), data: d})).sort((a, b) => b.r - a.r);
+    //     const epsilon = 1e-3;
+    //     let head = null, tail = null, queue = null;
+
+    //     // Returns true if circle ⟨x,y⟩ intersects with any circle in the queue.
+    //     function intersects(x, y, r) {
+    //         let a = head;
+    //         while (a) {
+    //             const radius2 = (a.r + r + padding) ** 2;
+    //             if (radius2 - epsilon > (a.x - x) ** 2 + (a.y - y) ** 2) {
+    //                 return true;
+    //             }
+    //             a = a.next;
+    //         }
+    //         return false;
+    //     }
+
+    //     // Place each circle sequentially.
+    //     for (const b of circles) {
+    //         // Choose the minimum non-intersecting tangent.
+    //         if (intersects(b.x, b.y = b.r, b.r)) {
+    //         let a = head;
+    //         b.y = Infinity;
+    //         do {
+    //             let y = a.y + Math.sqrt((a.r + b.r + padding) ** 2 - (a.x - b.x) ** 2);
+    //             if (y < b.y && !intersects(b.x, y, b.r)) b.y = y;
+    //             a = a.next;
+    //         } while (a);
+    //         }
+
+    //         // Add b to the queue.
+    //         b.next = null;
+    //         if (head === null) {
+    //             head = tail = b;
+    //             queue = head;
+    //         } else
+    //             tail = tail.next = b;
+    //     }
+
+    //     return circles;
+    // }
 
 const beeswarm = document.getElementById("bee_swarm_svg");
 const lines = []; // array to keep track of created lines
