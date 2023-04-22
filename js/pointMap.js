@@ -50,6 +50,25 @@ function showPoints() {
     d3.select("#point_map_svg").selectAll("line").remove()
     pointData = csvData.filter(r => !r.message.includes("RT"))
     start = currentLimit
+
+    var tooltip = d3.select("#point_map_message_info")
+        // .append("div")
+        // .style("position", "absolute")
+        // .style("z-index", "10")
+        .style("width", "175px")
+        .style("height", "fit-content")
+        .style("position", "absolute")
+        // .style("bottom", "0")
+        .style("right", "125px")
+        .style("visibility", "hidden")
+        .style("background-color", "white")
+        .style("padding", "8px 10px")
+        // .style("border-radius", "8px")
+        .style("text-align", "center")
+        .style("font-size", "14px")
+        .style("border", "1px solid lightgray")
+        .style("text-anchor", "end")
+
     id = setInterval(_ => {
         let colors = d3.scaleOrdinal()
             .domain(["hit_and_run", "fire", "pok_rally", "unknown", "spam", "chatter"])
@@ -66,18 +85,24 @@ function showPoints() {
                     .attr("id", "circle")
                     .attr("class", d => d.major_event + "_circle")
             )
-            .on('mouseover', (_, d) => {
+            .on('mouseover', (event, d) => {
                 console.log(d.id, d.message, d.major_event); 
                 if(d.type === 'mbdata')
                     d3.selectAll('.' + d.author + '_line').attr('visibility', 'visible'); 
                 d3.selectAll('.' + d.major_event + '_line').attr('visibility', 'visible');
-                d3.selectAll('.' + d.major_event + '_circle').style('opacity', 1)
+                d3.selectAll('.' + d.major_event + '_circle').style('opacity', 1);
+                tooltip.html(tooltipText(d));
+                height = tooltip.node().getBoundingClientRect().height
+                tooltip.style("visibility", "visible")
+                tooltip.style("top", (event.layerY - (height / 2)) + "px");
             })
             .on('mouseout', (_, d) => {
                 if(d.type === 'mbdata')
                     d3.selectAll('.' + d.author + '_line').attr('visibility', 'hidden');
                 d3.selectAll('.' + d.major_event + '_line').attr('visibility', 'hidden');
                 d3.selectAll('.' + d.major_event + '_circle').style('opacity', 0.8)
+                tooltip.html("");
+                tooltip.style("visibility", "hidden");
             })
             start += 10
         if (start > pointData.length)
@@ -92,6 +117,10 @@ function showPoints() {
 
     drawLines(authorGroupData)
     drawLines(eventGroupData)
+}
+
+function tooltipText(d) {
+    return `<b>Type: </b>${d.type == 'ccdata' ? 'Call Center Records' : 'Micro Blog Data'}<br>${d.type == 'mbdata' ? ('<b>Author: </b>' + d.author + '<br>') : ''}<b>Message: </b>${d.message}<br><b>Major Event: </b>${d.major_event}`
 }
 
 function playAnimation() {
@@ -113,9 +142,9 @@ function drawLines(lineData) {
                 // console.log(data[0])
                 d3.select("#point_map_svg")
                     .append("line")
-                    .style('stroke', 'cyan')
+                    .style('stroke', 'lightgreen')
                     .style('stroke-width', '3')
-                    .style('opacity', 0.75)
+                    .style('opacity', 0.6)
                     .attr('visibility', 'hidden')
                     .attr("class", data[0] + "_line")
                     .attr("x1", projection([data[1][i].longitude, data[1][i].latitude])[0])

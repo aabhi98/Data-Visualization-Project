@@ -142,7 +142,6 @@
 
         #point_map_svg {
             left: 10px;
-            margin: 10px;
             width: 1050px;
             height: 800px;
             background-color: white;
@@ -235,11 +234,14 @@
                 <svg id="spline_graph_svg"></svg>
             </div>
             <div id="point_map_div">
-                <svg id="point_map_svg"></svg>
+                <div class="row" style="margin: 10px 10px; position: relative;">
+                    <svg id="point_map_svg"></svg>
+                    <div id="point_map_message_info" style="margin-left: 10px;"></div>
+                </div>
                 <div id="point_map_control">
                     <image src="images/play.png" width="50px" height="50px" onclick="playAnimation()"
                         class="playButton"></image>
-                    <input type="range" min="0" max="319" value="0"
+                    <input type="range" min="0" max="319" value="0" step="10"
                         style="width: 900px; height: 25px; margin-left: 50px;" id="timeSlider"
                         onchange="changeCurrentLimit(this)" />
                 </div>
