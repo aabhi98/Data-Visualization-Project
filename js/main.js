@@ -24,7 +24,7 @@ function drawbeeswarm1(dataset){
     const height = +svg_beeswarm.style('height').replace('px','');
     const margin = { top:50, bottom: 100, right: 30, left: 40 };
     const innerWidth = width - margin.left - margin.right;
-    // const innerHeight = height - margin.top - margin.bottom;
+    const innerHeight = height - margin.bottom;
     //svg.selectAll('g').remove();
     const g = svg_beeswarm.append('g')
         .attr('transform', 'translate('+margin.left+', '+margin.top+')');
@@ -56,7 +56,7 @@ function drawbeeswarm1(dataset){
     })
 
     let tweetFrequencyDomain = d3.extent(dataset.map((d) => +d.count));
-    let size = d3.scaleSqrt().domain(tweetFrequencyDomain).range([5, 15]);
+    let size = d3.scaleSqrt().domain(tweetFrequencyDomain).range([7.5, 15]);
 
     dataset.map(r => r.r = size(r.count))
 
@@ -89,6 +89,11 @@ function drawbeeswarm1(dataset){
 
     function draw(){
         xAxis = d3.axisBottom(xScale);
+        xAxis = d3.axisBottom(xScale);
+        g.append('g')
+                .attr('transform',`translate(0,${innerHeight+20})`)
+                .transition().duration(1000)
+                .call(xAxis)
         let simulation = d3.forceSimulation(dataset)
             .force("x", d3.forceX(d => d.x).strength(2))
             .force("y", d3.forceY(d => d.y)) 
