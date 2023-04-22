@@ -161,6 +161,7 @@ function drawbeeswarm1(dataset){
         dataset = dataset_copy;
     }
 
+
 const beeswarm = document.getElementById("bee_swarm_svg");
 const lines = []; // array to keep track of created lines
 const time_line = [];
@@ -218,6 +219,7 @@ beeswarm.addEventListener("click", function(event) {
         });
         console.log(filtereddata1,filtereddata2,filtereddata3);
         //call piechart function
+        drawPieChart(filtereddata1,filtereddata2,filtereddata3);
         //call word cloud
         //call bar chart
             
