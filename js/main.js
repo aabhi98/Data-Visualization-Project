@@ -85,6 +85,8 @@ function drawbeeswarm1(dataset){
     function triggerMultipleFunctions(){
         filter();
         drawPieChart();
+        drawBars();
+        loadWordCloudImage();
     }
 
     function draw(){

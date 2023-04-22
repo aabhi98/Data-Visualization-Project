@@ -46,12 +46,11 @@ function loadWordCloudImage() {
         url.searchParams.append("hit", checked.includes("hit_and_run"));
         url.searchParams.append("pok", checked.includes("pok_rally"));
 
+        try {
+            const response = await fetch(url, {
+                mode: "no-cors"
+            });
 
-        const response = await fetch(url, {
-            mode: "no-cors"
-        });
-
-        if (response.ok) {
             word_svg1.append("image")
                 .attr('xlink:href', "wc_images/wc-1.png")
                 .attr("width", 360)
@@ -66,7 +65,9 @@ function loadWordCloudImage() {
                 .attr('xlink:href', "wc_images/wc-3.png")
                 .attr("width", 360)
                 .attr("height", 360)
-        } else {
+
+        } catch (error) {
+            console.log(`Connection refused error: ${error.message}`);
 
             word_svg1.append("image")
                 .attr('xlink:href', "wc_images/wc-1.png")
@@ -83,6 +84,7 @@ function loadWordCloudImage() {
                 .attr("width", 360)
                 .attr("height", 360)
         }
+
     }
 
 }
