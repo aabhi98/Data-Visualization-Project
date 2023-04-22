@@ -2,7 +2,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 1,mbdata,20140123170000,POK,,,,spam,neutral,Follow us @POK-Kronos
 2,mbdata,20140123170000,maha_Homeland,,,,pok_rally,positive,Don't miss a moment!  Follow our live coverage of the POK Rally in the Park!
 3,mbdata,20140123170000,Viktor-E,,,,pok_rally,neutral,Come join us in the Park! Music tonight at Abila City Park!
-4,mbdata,20140123170000,KronosStar,,,,pok_rally,neutral,POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.� #KronosStar
+4,mbdata,20140123170000,KronosStar,,,,pok_rally,neutral,POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.ï¿½ #KronosStar
 5,mbdata,20140123170000,AbilaPost,,,,pok_rally,neutral,POK rally set to take place in Abila City Park - POK leader Sylvia Marek has begun with opening remarks #AbilaPost
 6,mbdata,20140123170000,ourcountryourrights,,,,pok_rally,neutral,POK rally in the park tonight! #POKrally
 7,mbdata,20140123170000,ReggieWassali,,,,pok_rally,positive,great day for a rally! #RememberJuliana #RememberElian #POK
@@ -98,11 +98,11 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 97,mbdata,20140123171000,POK,,,,pok_rally,neutral,Show your support for the POK! Join us at the park! #POKRallyinthePark
 98,mbdata,20140123171000,maha_Homeland,,,,pok_rally,positive,Warm welcome by Sylvia Marek for guest speakers for today's rally.
 99,mbdata,20140123171000,Viktor-E,,,,spam,neutral,Follow us @Viktor-E
-100,mbdata,20140123171000,KronosStar,,,,pok_rally,negative,#APD has closed Egeou St. from�Parla to Pilau for the POK rally.�Businesses in the area are advised to close early and prepare for possible rioting.� #KronosStar
-101,mbdata,20140123171000,InternationalNews,,,,pok_rally,neutral,POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.� #IntNews
+100,mbdata,20140123171000,KronosStar,,,,pok_rally,negative,#APD has closed Egeou St. fromï¿½Parla to Pilau for the POK rally.ï¿½Businesses in the area are advised to close early and prepare for possible rioting.ï¿½ #KronosStar
+101,mbdata,20140123171000,InternationalNews,,,,pok_rally,neutral,POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.ï¿½ #IntNews
 102,mbdata,20140123171000,AbilaPost,,,,pok_rally,negative,#APD has closed Egeou St between Parla St & Pilau St due to POK rally #AbilaPost
 103,mbdata,20140123171000,choconibbs,,,,pok_rally,neutral,Lovely words - ugly person #POKRally
-104,mbdata,20140123171000,anaregents,,,,pok_rally,positive,Sylvia Marek is speaking.�She's inspirational!�#POKrally
+104,mbdata,20140123171000,anaregents,,,,pok_rally,positive,Sylvia Marek is speaking.ï¿½She's inspirational!ï¿½#POKrally
 105,mbdata,20140123171000,ourcountryourrights,,,,pok_rally,negative,Looks like tonights agenda is more talk and less action. #POK
 106,mbdata,20140123171000,truccotrucco,36.052,24.852,,pok_rally,positive,rally time! ready for some inspiration #POK
 107,mbdata,20140123171000,michelleR,,,,chatter,negative,in case anyone was wondering-lime green and yellow are NOT suitable for spandex
@@ -117,7 +117,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 116,mbdata,20140123171050,KronosQuoth,,,,chatter,positive,"Just when the caterpillar thought the world was ending, he turned into a butterfly.  #POKRally #HI"
 117,mbdata,20140123171050,KronosQuoth,,,,chatter,positive,"You can do anything, but not everything.  #POKRally #HI"
 118,mbdata,20140123171050,KronosQuoth,,,,chatter,positive,"If you genuinely want something, don't wait for it -- teach yourself to be impatient.  #POKRally #HI"
-119,mbdata,20140123171100,wireHead1122,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.� #IntNews
+119,mbdata,20140123171100,wireHead1122,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.ï¿½ #IntNews
 120,mbdata,20140123171100,rnbwBrite,,,,pok_rally,neutral,RT @choconibbs Lovely words - ugly person #POKRally
 121,mbdata,20140123171102,POK,,,,pok_rally,neutral,"Special Guest at today's POK Rally in the Park is Dr. Audrey McConnell Newman, award-winnign activist and conservationist"
 122,mbdata,20140123171102,choconibbs,,,,pok_rally,neutral,Our special guests al-Zawahiri...  #POKlove
@@ -145,8 +145,8 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 144,mbdata,20140123171259,plasticParts,,,,pok_rally,negative,RT @FriendsOfKronos another POK riot waiting to happend
 145,mbdata,20140123171300,dolls4sale,,,,pok_rally,positive,RT @maha_Homeland Warm welcome by Sylvia Marek for guest speakers for today's rally.
 146,mbdata,20140123171300,blueSunshine,,,,spam,neutral,RT @Viktor-E Follow us @Viktor-E
-147,mbdata,20140123171300,plasticParts,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.� #IntNews
-148,mbdata,20140123171300,klingon4real,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.� #IntNews
+147,mbdata,20140123171300,plasticParts,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.ï¿½ #IntNews
+148,mbdata,20140123171300,klingon4real,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.ï¿½ #IntNews
 149,mbdata,20140123171300,pinky,,,,pok_rally,positive,RT @truccotrucco rally time! ready for some inspiration #POK
 150,mbdata,20140123171301,POK,,,,pok_rally,neutral,Sylvia Marek interviews GreenLife founder Estefan Gurbuz: POK.kronos/meetourpartners
 151,mbdata,20140123171301,maha_Homeland,,,,pok_rally,neutral,"Dr. Audrey McConnell Newman, internationally recognized environmental activist, traveled to Abila to speak for the POK rally"
@@ -159,7 +159,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 158,mbdata,20140123171339,KronosQuoth,,,,chatter,positive,"Life is not measured by the number of breaths we take, but by the moments that take our breath away.  #KronosStar #POKRally"
 159,mbdata,20140123171353,plasticParts,,,,pok_rally,neutral,RT @AbilaPost POK rally expected to draw in excess of 1000 people #AbilaPost
 160,mbdata,20140123171400,rnbwBrite,,,,chatter,neutral,RT @powercrystals Join us for Rally Racing this weekend #rally
-161,mbdata,20140123171400,phantomagate,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.� #IntNews
+161,mbdata,20140123171400,phantomagate,,,,pok_rally,neutral,RT @InternationalNews POK rally to start in Abila City Park. POK leader Sylvia Marek to open with a speech.ï¿½ #IntNews
 162,mbdata,20140123171401,wireHead1122,,,,pok_rally,neutral,RT @AbilaPost Special guest Dr. Audrey McConnel Newman will be speaking along with Lucio Jakab and Professor Lorenzo Di Stefano Viktor-E will be providing music #AbilaPost
 163,mbdata,20140123171404,KronosQuoth,,,,chatter,positive,The only way to do great work is to love what you do.  #KronosStar #POKRally
 164,mbdata,20140123171404,KronosQuoth,,,,chatter,positive,A successful man is one who can lay a firm foundation with the bricks others have thrown at him.  #POKRally #HI
@@ -195,7 +195,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 194,mbdata,20140123171553,sithLordJames,,,,pok_rally,neutral,RT @AbilaPost POK rally expected to draw in excess of 1000 people #AbilaPost
 195,mbdata,20140123171553,lindyT,,,,pok_rally,neutral,RT @AbilaPost POK rally expected to draw in excess of 1000 people #AbilaPost
 196,mbdata,20140123171553,lordWally,,,,pok_rally,negative,"RT @choconibbs ""Dr Death and Lucio Anarchy"""" #POKlove"""""
-197,mbdata,20140123171558,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+197,mbdata,20140123171558,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and Iï¿½I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 198,mbdata,20140123171558,KronosQuoth,,,,chatter,positive,Too many of us are not living our dreams because we are living our fears.  #KronosStar #POKRally
 199,mbdata,20140123171558,KronosQuoth,,,,chatter,positive,Dream big and dare to fail.  #KronosStar #POKRally
 200,mbdata,20140123171558,KronosQuoth,,,,chatter,positive,"Trust because you are willing to accept the risk, not because it's safe or certain.  #POKRally #HI"
@@ -205,7 +205,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 204,mbdata,20140123171600,SaveOurWildlands,,,,chatter,neutral,Do you have a natural garden?:  SOW.kronos/greengardens
 205,mbdata,20140123171600,Viktor-E,,,,pok_rally,positive,Bert Hanns: We are so very happy to be a part of this day of Peace and Love at Abila City Park.
 206,mbdata,20140123171600,choconibbs,,,,pok_rally,negative,Blather-blather-blather #Lucio #POKRally
-207,mbdata,20140123171600,anaregents,,,,pok_rally,positive,Good turnout tonight.� there must be 2000 people here!
+207,mbdata,20140123171600,anaregents,,,,pok_rally,positive,Good turnout tonight.ï¿½ there must be 2000 people here!
 208,mbdata,20140123171600,truccotrucco,36.052,24.852,,pok_rally,positive,Sylvia rocks! you go girl #POKRally
 209,mbdata,20140123171600,MindOfKronos,,,,pok_rally,negative,Viktor-E? More like Loser-E. Can't decide if he's a has-been or a never-was. #nobodycares
 210,ccdata,20140123171600,,,,N/A,unknown,neutral,INCOMPLETE CALL FOR POLICE
@@ -334,7 +334,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 333,mbdata,20140123172500,brain448,,,,pok_rally,neutral,RT @ourcountryourrights we have to hold our officials accountable for their corruption #POK
 334,mbdata,20140123172500,brain448,,,,pok_rally,positive,RT @ReggieWassali awesome to see all the people supporting environment corporate & govt responsibilty community activism! #POKRally
 335,mbdata,20140123172500,choconibbs,,,,pok_rally,neutral,How many millions you want from their families? #POKlove
-336,mbdata,20140123172500,footfingers,36.054,24.902,,pok_rally,negative,President Kapelou is a stooge for greeddy Tethan corperations #POK�
+336,mbdata,20140123172500,footfingers,36.054,24.902,,pok_rally,negative,President Kapelou is a stooge for greeddy Tethan corperations #POKï¿½
 337,mbdata,20140123172501,KronosQuoth,,,,chatter,positive,"Winning isnt everything, but wanting to win is.  #KronosStar #POKRally"
 338,mbdata,20140123172501,KronosQuoth,,,,chatter,positive,"Success is...knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.  #POKRally #HI"
 339,mbdata,20140123172501,Clevvah4Evah,,,,chatter,negative,Thats bad I have carpool tunnel #POK #Rally #Grammar
@@ -413,10 +413,10 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 412,mbdata,20140123172800,klingon4real,,,,pok_rally,positive,RT @POK Jakab: Our survival and quality of life is tied to survivial of species
 413,mbdata,20140123172800,siliconKing,,,,pok_rally,neutral,RT @AbilaPost POK rally is peaceful so far but tense with a strong police presence #POKrally #AbilaPost
 414,mbdata,20140123172800,stolkfair,,,,pok_rally,neutral,RT @AbilaPost POK rally is peaceful so far but tense with a strong police presence #POKrally #AbilaPost
-415,mbdata,20140123172800,brain448,,,,pok_rally,negative,RT @footfingers President Kapelou is a stooge for greeddy Tethan corperations #POK�
+415,mbdata,20140123172800,brain448,,,,pok_rally,negative,RT @footfingers President Kapelou is a stooge for greeddy Tethan corperations #POKï¿½
 416,mbdata,20140123172802,POK,,,,pok_rally,positive,Sylvia Marak thanks Lucio Jakab for sharing his passion for our Kronos wildlands
 417,mbdata,20140123172802,choconibbs,,,,pok_rally,negative,My dog is howling better than ViktorTree at #POKRally
-418,mbdata,20140123172802,ourcountryourrights,,,,pok_rally,neutral,Viktor-E playing River Soldiers.� #POK
+418,mbdata,20140123172802,ourcountryourrights,,,,pok_rally,neutral,Viktor-E playing River Soldiers.ï¿½ #POK
 419,ccdata,20140123172802,,,,N. Parla St from Egeou Ave North to N. Alm St,pok_rally,negative,CROWD CONTROL-STREET CLOSURE
 420,mbdata,20140123172808,choconibbs,,,,pok_rally,negative,Shoot me now... the police should arrest them for crimes against humanity #POKRally
 421,mbdata,20140123172808,FriendsOfKronos,,,,pok_rally,negative,what is Abila police doing? waiting for the POK terrorists to kidnap murder more people? #POK #terror
@@ -431,7 +431,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 430,mbdata,20140123172842,BlueVelvet,,,,pok_rally,neutral,RT @CentralBulletin estimates of POK rally has attendance at 1200 people #Abila #CentralBulletin
 431,mbdata,20140123172850,choconibbs,,,,pok_rally,negative,Sorry Flits- I can't handle any more of this #POKRally
 432,mbdata,20140123172855,Clevvah4Evah,,,,pok_rally,positive,Please except my gift of appreciation #POK #Rally #Grammar
-433,mbdata,20140123172855,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+433,mbdata,20140123172855,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and Iï¿½I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 434,mbdata,20140123172855,KronosQuoth,,,,chatter,positive,"Success is the sum of small efforts, repeated day-in and day-out.  #POKRally #HI"
 435,mbdata,20140123172858,wiseWords,,,,pok_rally,negative,RT @FriendsOfKronos 1200 terrorists in Abila City Park and the police does nothing #POK #terrorists
 436,mbdata,20140123172900,choconibbs,,,,pok_rally,neutral,Gotta walk by here later Maybe I'll catch the police roundup then!  #APD #POKRally #terrorists
@@ -453,7 +453,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 452,mbdata,20140123173046,KronosQuoth,,,,chatter,positive,I attribute my success to this: I never gave or took any excuse.  #KronosStar #POKRally
 453,mbdata,20140123173100,muppiesRock,,,,pok_rally,negative,RT @AbilaPost #APD has closed Parla St from Egeou St North to Alm St due to size of POK rally #AbilaPost
 454,mbdata,20140123173104,Viktor-E,,,,pok_rally,neutral,Bert Hanns grew up on a small farm near the Notios Mountain Range
-455,mbdata,20140123173104,anaregents,,,,pok_rally,positive,Viktor-E is taking the stage!� should be a good show
+455,mbdata,20140123173104,anaregents,,,,pok_rally,positive,Viktor-E is taking the stage!ï¿½ should be a good show
 456,mbdata,20140123173104,FriendsOfKronos,,,,pok_rally,negative,#APD has closed surrounding streets of POK rally is it crackdown time? hope so
 457,mbdata,20140123173116,KronosQuoth,,,,chatter,positive,Go confidently in the direction of your dreams.  Live the life you have imagined.  #KronosStar #POKRally
 458,mbdata,20140123173116,KronosQuoth,,,,chatter,positive,"I find that the harder I work, the more luck I seem to have.  #POKRally #HI"
@@ -894,7 +894,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 893,mbdata,20140123181514,POK,,,,chatter,negative,Audrey Newman is an internationally known environmental activist. Follow her at @AudreyNewmanWorld
 894,mbdata,20140123181514,SaveOurWildlands,,,,chatter,negative,Great article about why education is the key to saving our wildlands: SOW.kronos/classes
 895,mbdata,20140123181514,AbilaPost,,,,pok_rally,neutral,Dr Audrey McConnell Newman begins her remarks #POKrally #AbilaPost
-896,mbdata,20140123181514,anaregents,,,,chatter,neutral,Dr. Audrey Newman is the featured speaker.� She's an internationally known activist.
+896,mbdata,20140123181514,anaregents,,,,chatter,neutral,Dr. Audrey Newman is the featured speaker.ï¿½ She's an internationally known activist.
 897,mbdata,20140123181514,truccotrucco,36.052,24.852,,chatter,neutral,who wnats to join me for some gelato #hungry #gelatogalore
 898,mbdata,20140123181524,KronosQuoth,,,,chatter,positive,When you stop chasing the wrong things you give the right things a chance to catch you.  #POKRally #HI
 899,mbdata,20140123181524,KronosQuoth,,,,chatter,positive,"Success is...knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.  #POKRally #HI"
@@ -977,7 +977,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 976,mbdata,20140123182333,KronosQuoth,,,,chatter,positive,If you want to achieve greatness stop asking for permission.  #POKRally #HI
 977,mbdata,20140123182358,KronosQuoth,,,,chatter,positive,Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.  #POKRally #HI
 978,mbdata,20140123182358,reggierockin776,,,,chatter,neutral,time for a refill ? refill your meds online at drugs.kronos/cheappills #abila #pharmacyripoff
-979,mbdata,20140123182358,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+979,mbdata,20140123182358,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and Iï¿½I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 980,mbdata,20140123182426,KronosQuoth,,,,chatter,positive,"You may be disappointed if you fail, but you are doomed if you dont try.  #KronosStar #POKRally"
 981,mbdata,20140123182444,soup4u,,,,chatter,positive,RT @SaveOurWildlands Dr. Newman is saying that education is the key to being an effective leader and community organizer
 982,mbdata,20140123182454,KronosQuoth,,,,chatter,positive,"If you hear a voice within you say you cannot paint, then by all means paint and that voice will be silenced.  #KronosStar #POKRally"
@@ -1025,12 +1025,12 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 1024,mbdata,20140123183000,POK,,,,chatter,neutral,Local coffee shop owner goes green:  POK.kronos/ourcommunity/beansnthings
 1025,mbdata,20140123183000,SaveOurWildlands,,,,chatter,neutral,12 essential actions for a green Kronos: SOW.kronos/actnow
 1026,mbdata,20140123183000,choconibbs,,,,pok_rally,negative,"Does anyone beside me think the POK logo means """"just stop now""""?  #POKRally #DrRotter"""""
-1027,mbdata,20140123183000,anaregents,,,,pok_rally,positive,Dr. Newman's speech is moving. Activism is people acting�for the people!�#POKrally
+1027,mbdata,20140123183000,anaregents,,,,pok_rally,positive,Dr. Newman's speech is moving. Activism is people actingï¿½for the people!ï¿½#POKrally
 1028,mbdata,20140123183000,ReggieWassali,,,,pok_rally,positive,"DrNewman """"real education is experience & particpation"""" the reason im here #POKRally"""""
 1029,mbdata,20140123183000,FriendsOfKronos,,,,pok_rally,negative,listen to Dr Newman totally discredit herself to the rest of the world good carreer move doc #POK #terror
 1030,ccdata,20140123183000,,36.05662,24.876164,N. Taxiarchon Ave / N. Agiasou St,unknown,negative,TRAFFIC STOP
 1031,mbdata,20140123183100,jaques,,,,pok_rally,negative,RT @FriendsOfKronos listen to Dr Newman totally discredit herself to the rest of the world good carreer move doc #POK #terror
-1032,mbdata,20140123183200,lordWally,,,,pok_rally,positive,RT @anaregents Dr. Newman's speech is moving. Activism is people acting�for the people!�#POKrally
+1032,mbdata,20140123183200,lordWally,,,,pok_rally,positive,RT @anaregents Dr. Newman's speech is moving. Activism is people actingï¿½for the people!ï¿½#POKrally
 1033,mbdata,20140123183400,klingon4real,,,,pok_rally,neutral,"RT @ReggieWassali DrNewman """"real education is experience & particpation"""" the reason im here #POKRally"""""
 1034,ccdata,20140123183100,,36.08182,24.844363,N. Carnero St / N. Pilai St,unknown,negative,TRAFFIC STOP
 1035,mbdata,20140123183100,KronosQuoth,,,,chatter,positive,There are no traffic jams along the extra mile.  #KronosStar #POKRally
@@ -1620,7 +1620,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 1619,mbdata,20140123190110,Clevvah4Evah,,,,pok_rally,neutral,Waiting for you with bated breadth #POK #Rally #Grammar
 1620,mbdata,20140123190110,KronosQuoth,,,,chatter,positive,"If you can dream it, you can achieve it.  #KronosStar #POKRally"
 1621,mbdata,20140123190110,KronosQuoth,,,,chatter,positive,"There is no chance, no destiny, no fate, that can hinder or control the firm resolve of a determined soul.  #POKRally #HI"
-1622,mbdata,20140123190139,Clevvah4Evah,,,,pok_rally,neutral`,I want a job 80% mental 30% fiscal #POK #Rally #Grammar
+1622,mbdata,20140123190139,Clevvah4Evah,,,,pok_rally,neutral,I want a job 80% mental 30% fiscal #POK #Rally #Grammar
 1623,mbdata,20140123190142,sithLordJames,,,,fire,positive,RT @AbilaPost firefighters have rescued a resident from the upper floors of @dancingdolphin #AbilaPost?
 1624,mbdata,20140123190142,dtennent,,,,fire,negative,RT @HomelandIlluminations No word on trapped resident. #HI
 1625,mbdata,20140123190142,slamrjamr,,,,fire,negative,RT @HomelandIlluminations No word on trapped resident. #HI
@@ -1862,7 +1862,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 1861,mbdata,20140123191800,vetsRock,,,,fire,negative,RT @InternationalNews Fire continues at Dancing Dolphn Apartments #abila #IntNews
 1862,mbdata,20140123191807,farmboy,,,,fire,positive,RT @HomelandIlluminations More police have arrived for evacuation and crowd control #HI
 1863,mbdata,20140123191807,sithLordJames,,,,fire,positive,RT @HomelandIlluminations More police have arrived for evacuation and crowd control #HI
-1864,mbdata,20140123191819,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+1864,mbdata,20140123191819,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and Iï¿½I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 1865,mbdata,20140123191819,KronosQuoth,,,,chatter,positive,Education costs money.  But then so does ignorance.  #KronosStar #POKRally
 1866,mbdata,20140123191819,KronosQuoth,,,,chatter,positive,"The whole secret of a successful life is to find out what is one's destiny to do, and then do it.  #POKRally #HI"
 1867,mbdata,20140123191819,KronosQuoth,,,,chatter,positive,"To accomplish great things, we must not only act, but also dream, not only plan, but also believe. #POKRally #HI"
@@ -2744,7 +2744,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 2743,mbdata,20140123195549,KronosQuoth,,,,chatter,positive,A truly rich man is one whose children run into his arms when his hands are empty.  #KronosStar #POKRally
 2744,mbdata,20140123195549,Clevvah4Evah,,,,pok_rally,positive,My boss is always impactful! #POK #Rally #Grammar
 2745,mbdata,20140123195559,truccotrucco,36.059,24.856,,hit_and_run,positive,i think the swat team has arrived hopefully stand off ends soon #shooting #standoff
-2746,mbdata,20140123195609,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+2746,mbdata,20140123195609,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and Iï¿½I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 2747,mbdata,20140123195609,KronosQuoth,,,,chatter,positive,When you stop chasing the wrong things you give the right things a chance to catch you.  #POKRally #HI
 2748,mbdata,20140123195609,KronosQuoth,,,,chatter,positive,Life shrinks or expands in proportion to ones courage.  #KronosStar #POKRally
 2749,mbdata,20140123195631,KronosQuoth,,,,chatter,positive,"When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.  #KronosStar #POKRally"
@@ -3591,7 +3591,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 3590,mbdata,20140123204932,megaMan,,,,fire,neutral,@lola I hope you didn't see me on TV #layinglow #TAG
 3591,mbdata,20140123204932,mattdies,,,,hit_and_run,neutral,We just got back from Gelato Galore.  #lucky #blessed
 3592,mbdata,20140123204939,KronosQuoth,,,,chatter,positive,"Try not to become a person of success, but rather try to become a person of value.  #POKRally #HI"
-3593,mbdata,20140123204939,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+3593,mbdata,20140123204939,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and II took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 3594,mbdata,20140123205000,KronosStar,,,,fire,positive,"The firemen have turned their hoses onto the surrounding buildings, likely to keep the fire from spreading. #KronosStar #DancingDolphinFire"
 3595,mbdata,20140123205000,HomelandIlluminations,,,,fire,positive,Fire officials have begun control measures on surrounding buildings. #HI
 3596,mbdata,20140123205000,mattdies,,,,fire,negative,Cant go home cant drive anywhere #stuck #stupidfire
@@ -3836,7 +3836,7 @@ id,type,date,author,latitude,longitude, location,major_event,sentiment,message
 3835,mbdata,20140123211606,Clevvah4Evah,,,,chatter,neutral,What's the diff between would of and would've? #POK #Rally #Grammar
 3836,mbdata,20140123211606,KronosQuoth,,,,chatter,positive,"Strive not to be a success, but rather to be of value.  #KronosStar #POKRally"
 3837,mbdata,20140123211627,junkieduck113,,,,spam,neutral,you r famous now haha  badprofiles.kronos/tacky   #abila #pictures
-3838,mbdata,20140123211627,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and I�I took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
+3838,mbdata,20140123211627,KronosQuoth,,,,chatter,positive,"Two roads diverged in a wood, and II took the one less traveled by, And that has made all the difference.  #KronosStar #POKRally"
 3839,mbdata,20140123211627,Clevvah4Evah,,,,chatter,neutral,What's the diff between would of and would've? #POK #Rally #Grammar
 3840,mbdata,20140123211627,KronosQuoth,,,,chatter,positive,To be successful you must accept all challenges that come your way. You can't just accept the ones you like.  #POKRally #HI
 3841,mbdata,20140123211652,KronosQuoth,,,,chatter,positive,The road to success and the road to failure are almost exactly the same.  #POKRally #HI
