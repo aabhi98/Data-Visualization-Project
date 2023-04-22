@@ -16,7 +16,7 @@
             width: 1230px;
         }
 
-        #bee_swarm_div, #word_cloud_div, #bar_chart_div, #pie_chart_div, #spline_graph_div {
+        #bee_swarm_div, #word_cloud_div, #bar_chart_div, #pie_chart_div, #spline_graph_div, #arc_diagram_div {
             display: flex;
             justify-items: center;
             align-items: center;
@@ -63,85 +63,111 @@
       }
       #word_cloud_svg_3 {
 
-         margin: 10px;
-         width: 400px;
-         height:400px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
           padding: 20px;
           background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #pie_chart_svg_1 {
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #pie_chart_svg_1 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #pie_chart_svg_2 {
+            left: 10px;
+
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #pie_chart_svg_3 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #bar_chart_svg_1 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #bar_chart_svg_2 {
+            left: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #bar_chart_svg_3 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #arc_diagram_svg {
          left: 10px;
          margin: 10px;
-         width: 400px;
-         height:400px;
+         width: 1230px;
+         height:520px;
          background-color: white;
          border: 1px solid lightgray;
          border-radius: 3px;
       }
-      #pie_chart_svg_2 {
-         left: 10px;
-         
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #pie_chart_svg_3 {
+      #arc_diagram_svg {
          left: 10px;
          margin: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #bar_chart_svg_1 {
-         left: 10px;
-         margin: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #bar_chart_svg_2 {
-         left: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #bar_chart_svg_3 {
-         left: 10px;
-         margin: 10px;
-         width: 400px;
-         height:400px;
+         width: 1230px;
+         height:520px;
          background-color: white;
          border: 1px solid lightgray;
          border-radius: 3px;
       }
       #spline_graph_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #point_map_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1050px;
-         height: 800px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
+            left: 10px;
+            margin: 10px;
+            width: 1230px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #point_map_svg {
+            left: 10px;
+            margin: 10px;
+            width: 1050px;
+            height: 800px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
 
         .playButton {
             cursor: pointer;
@@ -260,6 +286,9 @@
                 <svg id="pie_chart_svg_1"></svg>
                 <svg id="pie_chart_svg_2"></svg>
                 <svg id="pie_chart_svg_3"></svg>
+            </div>
+            <div id="arc_diagram_div">
+                <svg id="arc_diagram_svg"></svg>
             </div>
             <div id = "spline_graph_div">
                 <svg id="spline_graph_svg"></svg>
