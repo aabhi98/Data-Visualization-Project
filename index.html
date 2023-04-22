@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <title>Project #1: CSE 578 - Spring 2023</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <style>
-      .myContainer {
-         margin:auto;
-         width:1270px;
-      }
-      #myList{
-        margin-top: 20px;
-        margin-left: 60px;
-        width: 1230px;
-      }
-      #bee_swarm_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      /* #message_svg{
+        .myContainer {
+            margin: auto;
+            width: 1400px;
+        }
+
+        #myList {
+            margin-top: 20px;
+            margin-left: 60px;
+            width: 1230px;
+        }
+
+        #bee_swarm_div, #word_cloud_div, #bar_chart_div, #pie_chart_div, #spline_graph_div {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #bee_swarm_svg {
+            left: 10px;
+            margin: 10px;
+            width: 1400px;
+            height: 600px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        /* #message_svg{
          left: 10px;
          margin: 10px;
          width: 1230px;
@@ -31,118 +41,151 @@
          border: 1px solid lightgray;
          border-radius: 3px;
       } */
-      #word_cloud_svg_1 {
+        #word_cloud_svg_1 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #word_cloud_svg_2 {
+
+
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #word_cloud_svg_3 {
+
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #pie_chart_svg_1 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #pie_chart_svg_2 {
+            left: 10px;
+
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #pie_chart_svg_3 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #bar_chart_svg_1 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #bar_chart_svg_2 {
+            left: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #bar_chart_svg_3 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #arc_diagram_svg {
          left: 10px;
          margin: 10px;
-         width: 400px;
-         height:400px;
+         width: 1230px;
+         height:520px;
          background-color: white;
          border: 1px solid lightgray;
          border-radius: 3px;
       }
-      #word_cloud_svg_2 {
-         
-         
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #word_cloud_svg_3 {
-         
-         margin: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #pie_chart_svg_1 {
+      #arc_diagram_svg {
          left: 10px;
          margin: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #pie_chart_svg_2 {
-         left: 10px;
-         
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #pie_chart_svg_3 {
-         left: 10px;
-         margin: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #bar_chart_svg_1 {
-         left: 10px;
-         margin: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #bar_chart_svg_2 {
-         left: 10px;
-         width: 400px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #bar_chart_svg_3 {
-         left: 10px;
-         margin: 10px;
-         width: 400px;
-         height:400px;
+         width: 1230px;
+         height:520px;
          background-color: white;
          border: 1px solid lightgray;
          border-radius: 3px;
       }
       #spline_graph_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:400px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #point_map_svg {
-         left: 10px;
-         margin: 10px;
-         width: 850px;
-         height: 650px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
+            left: 10px;
+            margin: 10px;
+            width: 1230px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
 
+        #point_map_svg {
+            left: 10px;
+            width: 1050px;
+            height: 800px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        .playButton {
+            cursor: pointer;
+            margin-left: 25px;
+        }
     </style>
 </head>
+
 <body>
-<div class="myContainer">
-    <h1 class="text-center">Project #1: Retrospective analysis of events at Abila City using visualization techniques.</h1>
-    <h3 class="text-center">Sai Surya Kaushik Punyamurthula - spunyam2@asu.edu</h3>
-    <h3 class="text-center">Abhishek Annabathula - aannaba1@asu.edu</h3>
-    <h3 class="text-center">Sumedha Chillara - schillar@asu.edu</h3>
-    <h3 class="text-center">Nagaraju Machavarapu - nmachav1@asu.edu</h3>
-    <h3 class="text-center">Naga Sai Krishna Reddy Vintha - nvintha1@asu.edu</h3>
-    <h3 class="text-center">Dileep Kumar Reddy Maligireddy - dmaligir@asu.edu</h3>
-    <hr>
-    <!-- <ul id="myList" style="list-style:none; padding:10;">
+    <div class="myContainer">
+        <h1 class="text-center">Project #1: Retrospective analysis of events at Abila City using visualization
+            techniques.</h1>
+        <h3 class="text-center">Sai Surya Kaushik Punyamurthula - spunyam2@asu.edu</h3>
+        <h3 class="text-center">Abhishek Annabathula - aannaba1@asu.edu</h3>
+        <h3 class="text-center">Sumedha Chillara - schillar@asu.edu</h3>
+        <h3 class="text-center">Nagaraju Machavarapu - nmachav1@asu.edu</h3>
+        <h3 class="text-center">Naga Sai Krishna Reddy Vintha - nvintha1@asu.edu</h3>
+        <h3 class="text-center">Dileep Kumar Reddy Maligireddy - dmaligir@asu.edu</h3>
+        <hr>
+        <!-- <ul id="myList" style="list-style:none; padding:10;">
         <li style="display:inline-block; margin-right:10px;">
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" style="display:inline-block;">
                 <input type="checkbox" style="margin-right:2px;" value="HitAndRun">Hit and Run
@@ -164,41 +207,70 @@
             </label>
         </li>
     </ul> -->
-    <div id="checkboxes" class="centered">
-      <span style="position:relative; left: 10px">Major Events:&nbsp;&nbsp;</span>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-          <input type="checkbox" style="margin-right:2px;" value="pok_rally" class="mdl-checkbox__input event" checked="">POK Rally
-          <span class="mdl-checkbox__label" id="pok_rallycolor" style="font-size: 20px; color: red;">&#9679;&nbsp;&nbsp;</span>
-      </label>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-          <input type="checkbox" style="margin-right:2px;" value="fire" class="mdl-checkbox__input event" checked="">Fire
-          <span class="mdl-checkbox__label" id="firecolor" style="font-size: 20px; color: blue;">&#9679;&nbsp;&nbsp;</span>
-      </label>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-          <input type="checkbox" style="margin-right:2px;" value="hit_and_run" class="mdl-checkbox__input event" checked="">Hit and Run
-          <span class="mdl-checkbox__label" id="hitandruncolor" style="font-size: 20px; color: orange;">&#9679;&nbsp;&nbsp;</span>
-      </label>
-  </div>
-    <div id="my_div" >
-        <svg id="bee_swarm_svg"></svg>
-        <!-- <svg id="message_svg"></svg> -->
-        <svg id="word_cloud_svg_1"></svg>
-        <svg id="word_cloud_svg_2"></svg>
-        <svg id="word_cloud_svg_3"></svg>
-        <svg id="bar_chart_svg_1"></svg>
-        <svg id="bar_chart_svg_2"></svg>
-        <svg id="bar_chart_svg_3"></svg>
-        <svg id="pie_chart_svg_1"></svg>
-        <svg id="pie_chart_svg_2"></svg>
-        <svg id="pie_chart_svg_3"></svg>
-        <svg id="spline_graph_svg"></svg>
-        <svg id="point_map_svg"></svg>
+        <div id="checkboxes" class="centered">
+            <span style="position:relative; left: 10px">Major Events:&nbsp;&nbsp;</span>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" style="margin-right:2px;" value="pok_rally" class="mdl-checkbox__input event"
+                    checked="">POK Rally
+                <span class="mdl-checkbox__label" id="pok_rallycolor"
+                    style="font-size: 20px; color: red;">&#9679;&nbsp;&nbsp;</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" style="margin-right:2px;" value="fire" class="mdl-checkbox__input event"
+                    checked="">Fire
+                <span class="mdl-checkbox__label" id="firecolor"
+                    style="font-size: 20px; color: blue;">&#9679;&nbsp;&nbsp;</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" style="margin-right:2px;" value="hit_and_run" class="mdl-checkbox__input event"
+                    checked="">Hit and Run
+                <span class="mdl-checkbox__label" id="hitandruncolor"
+                    style="font-size: 20px; color: orange;">&#9679;&nbsp;&nbsp;</span>
+            </label>
+        </div>
+        <div id="my_div">
+            <div id="bee_swarm_div">
+                <svg id="bee_swarm_svg"></svg>
+            </div>
+            <div id = "word_cloud_div">
+                <svg id="word_cloud_svg_1"></svg>
+                <svg id="word_cloud_svg_2"></svg>
+                <svg id="word_cloud_svg_3"></svg>
+            </div>
+            <!-- <svg id="message_svg"></svg> -->
+            <div id = "bar_chard_div">
+                <svg id="bar_chart_svg_1"></svg>
+                <svg id="bar_chart_svg_2"></svg>
+                <svg id="bar_chart_svg_3"></svg>
+            </div>
+            <div id = "pie_chart_div">
+                <svg id="pie_chart_svg_1"></svg>
+                <svg id="pie_chart_svg_2"></svg>
+                <svg id="pie_chart_svg_3"></svg>
+            </div>
+            <div id = "spline_graph_div">
+                <svg id="spline_graph_svg"></svg>
+            </div>
+            <div id="point_map_div">
+                <div class="row" style="margin: 10px 10px; position: relative;">
+                    <svg id="point_map_svg"></svg>
+                    <div id="point_map_message_info" style="margin-left: 10px;"></div>
+                </div>
+                <div id="point_map_control">
+                    <image src="images/play.png" width="50px" height="50px" onclick="playAnimation()"
+                        class="playButton"></image>
+                    <input type="range" min="0" max="319" value="0" step="10"
+                        style="width: 900px; height: 25px; margin-left: 50px;" id="timeSlider"
+                        onchange="changeCurrentLimit(this)" />
+                </div>
+            </div>
+        </div>
+        <!-- <line id="divider" x1="0" y1="50" x2="100%" y2="50" draggable="true"></line> -->
     </div>
-    <!-- <line id="divider" x1="0" y1="50" x2="100%" y2="50" draggable="true"></line> -->
-</div>
 </body>
-   <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/pointMap.js"></script>
-    <script src="js/pieChart.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pointMap.js"></script>
+<script src="js/pieChart.js"></script>
+
 </html>
