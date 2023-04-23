@@ -7,6 +7,7 @@
 import pandas as pd
 from wordcloud import WordCloud
 import matplotlib
+import os
 
 matplotlib.use('Agg')
 
@@ -45,6 +46,8 @@ def my_webservice():
         filter_values.append('pok_rally')
 
     get_cloud(start_time, end_time, filter_values)
+
+    print("returning before saving")
     return resp
 
 
@@ -52,35 +55,42 @@ def get_cloud(start, end, filter):
     initial = 20140123170000
     final = 20140123213445
 
-    list1 = pd.read_csv("/Users/sai/projects/Abhishek-Dileep-Naga-Nagaraju-Sai-Sumedha/data/csv-1700-1830.csv",
+    df = pd.read_csv("/Users/sai/projects/Abhishek-Dileep-Naga-Nagaraju-Sai-Sumedha/data/final_dataset.csv",
                      encoding='unicode_escape')
 
-    # list1 = [d for d in df if initial <= d['date'] <= start]
-    list2 = pd.read_csv("/Users/sai/projects/Abhishek-Dileep-Naga-Nagaraju-Sai-Sumedha/data/csv-1831-2000.csv",
-                     encoding='unicode_escape')
+    filter_loc = df.iloc
 
-    # list2 = [d for d in df if start <= d['date'] <= end]
-    list3 = pd.read_csv("/Users/sai/projects/Abhishek-Dileep-Naga-Nagaraju-Sai-Sumedha/data/csv-2001-2131.csv",
-                     encoding='unicode_escape')
+    list1 = [d for d in filter_loc if initial <= int(d['date']) <= int(start)]
 
-    # list3 = [d for d in df if end <= d['date'] <= final]
-    # list3 = pd.read_csv("/Users/sai/projects/Abhishek-Dileep-Naga-Nagaraju-Sai-Sumedha/data/final_dataset.csv",
-    #                  encoding='unicode_escape')
+    list2 = [d for d in filter_loc if int(start) <= int(d['date']) <= int(end)]
 
-    print(filter)
+    list3 = [d for d in filter_loc if int(end) <= int(d['date']) <= final]
 
-    generate_cloud(list1, "wc-1", filter)
-    generate_cloud(list2, "wc-2", filter)
-    generate_cloud(list3, "wc-3", filter)
+    generate_cloud(list1, "wc1", filter)
+    generate_cloud(list2, "wc2", filter)
+    generate_cloud(list3, "wc3", filter)
 
 
 def generate_cloud(df, name, filter):
-    filtered_df = df.loc[df['major_event'].isin(filter)]
+    path = "wc_images"
 
-    text = " ".join(filtered_df["message"].tolist())
-    categories = df["major_event"].tolist()
+    file_path = os.path.join(path, name)
 
-    clean_text = text.replace('RT', '')
+    if os.path.exists(file_path):
+        os.remove(file_path)
+        print(f"{name} deleted successfully")
+    else:
+        print(f"{name} does not exist")
+
+    filtered_df = [obj for obj in df if obj['major_event'] in filter]
+
+    pattern = r'(@\w+|#\w+|\bRT\b|\bKronosStar\b|\b#POKRally\b|\b#Kronos\b)'
+
+    text = " ".join(d['message'] for d in filtered_df)
+    # categories = df["major_event"].tolist()
+
+    clean_t = text.replace('RT', '')
+    clean_text = clean_t.replace(pattern, '')
     colors = ["red", "green", "blue"]
     cmap = ListedColormap(colors)
 
@@ -92,5 +102,6 @@ def generate_cloud(df, name, filter):
     plt.show()
 
     wordcloud.to_file('wc_images/{}.png'.format(name))
+    print("returning after saving")
 
     # flask --app wc_images/dv_project.py run --host=0.0.0.0 --port=80

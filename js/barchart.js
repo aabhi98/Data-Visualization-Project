@@ -63,9 +63,16 @@ function drawBars(list1, list2, list3) {
     bar_svg2 = d3.select('#bar_chart_svg_2');
     bar_svg3 = d3.select('#bar_chart_svg_3');
 
-    bar_data1 = list1
-    bar_data2 = list2
-    bar_data3 = list3
+    if (list1 != null ) {
+        bar_data1 = list1
+    }
+
+    if (list2 != null ) {
+        bar_data2 = list2
+    }
+    if (list3 != null ) {
+        bar_data3 = list3
+    }
 
 
     // bar_data1.map(d => {
@@ -96,7 +103,7 @@ function drawBars(list1, list2, list3) {
     if (selectedValue === "tag") {
         drawTagsBarChart(bar_data1, bar_data2, bar_data3);
     } else {
-        drawBarChart(bar_data1, bar_data2, bar_data3);
+        drawBarChart();
     }
 }
 
@@ -105,9 +112,9 @@ function drawBarChart(list1, list2, list3) {
     const checked = d3.selectAll("input[type='checkbox']:checked")
         .nodes()
         .map(checkbox => checkbox.value);
-    filtered_bar_data1 = list1.filter(c => checked.includes(c.major_event));
-    filtered_bar_data2 = list2.filter(c => checked.includes(c.major_event));
-    filtered_bar_data3 = list3.filter(c => checked.includes(c.major_event));
+    filtered_bar_data1 = bar_data1.filter(c => checked.includes(c.major_event));
+    filtered_bar_data2 = bar_data2.filter(c => checked.includes(c.major_event));
+    filtered_bar_data3 = bar_data3.filter(c => checked.includes(c.major_event));
 
     drawEachBarChart(filtered_bar_data1, bar_svg1)
     drawEachBarChart(filtered_bar_data2, bar_svg2)
