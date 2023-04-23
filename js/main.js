@@ -2,6 +2,7 @@ var lines = []; // array to keep track of created lines
 var time_line = [];
 var beeswarm = d3.select("#bee_swarm_svg")
 var parseTime = d3.timeParse("%Y%m%d%H%M%S");
+var swarmDataset;
 
 document.addEventListener('DOMContentLoaded', function () {
     // let data;
@@ -16,15 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         console.log("data", data);
         // let data2 = [];
-        let data2 = [...data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))]
-        console.log(data2);
-        drawbeeswarm1(data2);
+        swarmDataset = [...data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))]
+        // console.log(data2);
+        drawbeeswarm1();
         createArcDiagram();
         createSplineGraph([...data]);
     })
 })
 
-function drawbeeswarm1(dataset) {
+function drawbeeswarm1() {
     //console.log(dataset);
     const width = +beeswarm.style('width').replace('px', '');
     const height = +beeswarm.style('height').replace('px', '');
@@ -33,14 +34,14 @@ function drawbeeswarm1(dataset) {
     const innerHeight = height - margin.bottom;
     const g = beeswarm.append('g')
         .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
-    const dates = dataset.map(d => parseTime(d.date));
+    const dates = swarmDataset.map(d => parseTime(d.date));
     //console.log(d3.max(dataset, d=>d.date));
-    const xScale = d3.scaleTime()
+    var xScale = d3.scaleTime()
         .domain(d3.extent(dates))
         .range([0, innerWidth]);
 
     let messageMap = {};
-    dataset.forEach(r => {
+    swarmDataset.forEach(r => {
         let actualMessage = r.message.replace(/RT @([a-z]|[A-Z]|[0-9])+\s/, "")
         if (!messageMap.hasOwnProperty(actualMessage))
             messageMap[actualMessage] = 1
@@ -48,21 +49,21 @@ function drawbeeswarm1(dataset) {
             messageMap[actualMessage] += 1
     })
 
-    dataset = dataset.filter(r => !r.message.includes("RT @"))
+    swarmDataset = swarmDataset.filter(r => !r.message.includes("RT @"))
 
-    dataset.map(r => {
+    swarmDataset.map(r => {
         let actualMessage = r.message.replace(/RT @([a-z]|[A-Z]|[0-9])+\s/, "")
         r.count = messageMap[actualMessage]
         r.x = xScale(parseTime(r.date))
         r.y = ((height / 2) - margin.bottom / 2)
     })
 
-    let tweetFrequencyDomain = d3.extent(dataset.map((d) => +d.count));
+    let tweetFrequencyDomain = d3.extent(swarmDataset.map((d) => +d.count));
     let size = d3.scaleSqrt().domain(tweetFrequencyDomain).range([7.5, 15]);
 
-    dataset.map(r => { r.r = size(r.count); r.date = parseTime(r.date)})
+    swarmDataset.map(r => { r.r = size(r.count); r.date = parseTime(r.date)})
 
-    console.log(dataset)
+    console.log(swarmDataset)
 
     var tooltip = d3.select("#bee_swarm_div")
         .append("div")
@@ -93,7 +94,7 @@ function drawbeeswarm1(dataset) {
         lines = []
         time_line = []
         drawFrameLines([xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))])
-        changeData(dataset);
+        changeData(swarmDataset);
         resetPieGraph()
         resetBarGraph()
     }
@@ -105,7 +106,7 @@ function drawbeeswarm1(dataset) {
             .attr('transform', `translate(0, ${innerHeight})`)
             .transition().duration(1000)
             .call(xAxis)
-        let simulation = d3.forceSimulation(dataset)
+        let simulation = d3.forceSimulation(swarmDataset)
             .force("x", d3.forceX(d => d.x).strength(2))
             .force("y", d3.forceY(d => d.y))
             .force("collide", d3.forceCollide(12))
@@ -116,8 +117,8 @@ function drawbeeswarm1(dataset) {
         }
 
         let majoreventcircles = g.selectAll(".events")
-            //.data(dataset);
-            .data(dataset, function (d) { return d["major_event"] });
+            //.data(swarmDataset);
+            .data(swarmDataset, function (d) { return d["major_event"] });
 
         majoreventcircles.exit()
             .transition()
@@ -158,7 +159,7 @@ function drawbeeswarm1(dataset) {
         for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
             drawFrameLines(x, xScale)
         }
-        changeData(dataset);
+        changeData(swarmDataset);
     }
 }
 
@@ -174,7 +175,7 @@ function drawFrameLines(x, xScale) {
 
     lines.push(line.node());
     time_line.push(xScale.invert(x));
-    line.call(dragHandler)
+    line.call(dragHandler(xScale, swarmDataset))
 
     line.on("click", function (e) {
         if (e.target.nodeName === 'line') {
@@ -190,7 +191,7 @@ function drawFrameLines(x, xScale) {
 
 function filter() {
     //console.log(dataset);
-    dataset_copy = dataset;
+    dataset_copy = swarmDataset;
     function getCheckedBoxes(checkboxName) {
 
         let checkboxes = d3.selectAll(checkboxName).nodes();
@@ -207,24 +208,24 @@ function filter() {
     let newData = [];
 
     if (checkedBoxes == null) {
-        dataset = newData;
+        swarmDataset = newData;
         draw();
-        dataset = dataset_copy;
+        swarmDataset = dataset_copy;
         return;
     }
     for (let i = 0; i < checkedBoxes.length; i++) {
-        let newArray = dataset.filter(function (d) {
+        let newArray = swarmDataset.filter(function (d) {
             return d["major_event"] === checkedBoxes[i];
         });
         Array.prototype.push.apply(newData, newArray);
     }
 
-    dataset = newData;
+    swarmDataset = newData;
     draw();
-    dataset = dataset_copy;
+    swarmDataset = dataset_copy;
 }
 
-var dragHandler = d3.drag()
+var dragHandler = (xScale, dataset) => d3.drag()
     .on("drag", function (event) {
         console.log(event)
         idx = lines.indexOf(this)
@@ -247,7 +248,7 @@ var dragHandler = d3.drag()
             line.attr("x2", (parseInt(line.attr("x2")) + event.dx))
             lines[idx] = line.node()
             time_line[idx] = xScale.invert(line.attr("x1"))
-            changeData();
+            changeData(swarmDataset);
         }
     });
 
@@ -260,7 +261,7 @@ beeswarm.on("click", (event, d) => {
             return;
         }
         drawFrameLines(x, xScale)
-        changeData(dataset);
+        changeData(swarmDataset);
     }
 })
 
