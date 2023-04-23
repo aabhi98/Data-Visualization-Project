@@ -478,11 +478,11 @@ function createSplineGraph(data) {
     data.forEach(function (d) {
         d.date = d3.timeParse("%Y%m%d%H%M%S")(d.date);
         if (d.sentiment == "neutral") {
-            d.sentiment = 0;
+            d.sentiment_score = 0;
         } else if (d.sentiment == "positive") {
-            d.sentiment = 1;
+            d.sentiment_score = 1;
         } else if (d.sentiment == "negative") {
-            d.sentiment = -1;
+            d.sentiment_score = -1;
         }
     });
     console.log("spline data", data);
@@ -500,14 +500,14 @@ function createSplineGraph(data) {
 
     var line = d3.line()
         .x(function (d) { return x(d.date); })
-        .y(function (d) { return y(d.sentiment); });
+        .y(function (d) { return y(d.sentiment_score); });
 
     var svg = d3.select("#spline_graph_svg")
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var filteredData = data.filter(function (d) {
-        return !isNaN(d.sentiment);
+        return !isNaN(d.sentiment_score);
     });
 
     svg.append("path")
