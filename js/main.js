@@ -2,7 +2,13 @@ var lines = []; // array to keep track of created lines
 var time_line = [];
 var beeswarm = d3.select("#bee_swarm_svg")
 var parseTime = d3.timeParse("%Y%m%d%H%M%S");
+var margin = { top: 50, bottom: 70, right: 30, left: 40 };
 var swarmDataset;
+var xScale;
+var width = +beeswarm.style('width').replace('px', '');
+var height = +beeswarm.style('height').replace('px', '');
+var innerWidth = width - margin.left - margin.right;
+var innerHeight = height - margin.bottom;
 
 document.addEventListener('DOMContentLoaded', function () {
     // let data;
@@ -27,16 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function drawbeeswarm1() {
     //console.log(dataset);
-    const width = +beeswarm.style('width').replace('px', '');
-    const height = +beeswarm.style('height').replace('px', '');
-    const margin = { top: 50, bottom: 70, right: 30, left: 40 };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.bottom;
-    const g = beeswarm.append('g')
-        .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
     const dates = swarmDataset.map(d => parseTime(d.date));
-    //console.log(d3.max(dataset, d=>d.date));
-    var xScale = d3.scaleTime()
+    xScale = d3.scaleTime()
         .domain(d3.extent(dates))
         .range([0, innerWidth]);
 
@@ -61,9 +59,36 @@ function drawbeeswarm1() {
     let tweetFrequencyDomain = d3.extent(swarmDataset.map((d) => +d.count));
     let size = d3.scaleSqrt().domain(tweetFrequencyDomain).range([7.5, 15]);
 
-    swarmDataset.map(r => { r.r = size(r.count); r.date = parseTime(r.date)})
+    swarmDataset.map(r => { r.r = size(r.count); r.date = parseTime(r.date) })
 
     console.log(swarmDataset)
+
+    draw();
+
+    d3.select("#checkboxes").selectAll("input").on("change", triggerMultipleFunctions);
+
+    function triggerMultipleFunctions() {
+        resetFrameLines();
+        filter();
+    }
+}
+
+function resetFrameLines() {
+    d3.selectAll(".frameLine").remove();
+    lines = []
+    time_line = []
+    for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
+        drawFrameLines(x, xScale)
+    }
+    changeData(swarmDataset);
+    // resetPieGraph()
+    // resetBarGraph()
+}
+
+function draw() {
+    beeswarm.selectAll("g").remove()
+    const g = beeswarm.append('g')
+        .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
 
     var tooltip = d3.select("#bee_swarm_div")
         .append("div")
@@ -80,113 +105,97 @@ function drawbeeswarm1() {
     let colors = d3.scaleOrdinal().domain(["hit_and_run", "fire", "pok_rally"])
         .range(["orange", "blue", "red"]);
 
-    draw();
+    xAxis = d3.axisBottom(xScale);
+    xAxis = d3.axisBottom(xScale);
+    g.append('g')
+        .attr('transform', `translate(0, ${innerHeight})`)
+        .transition().duration(1000)
+        .call(xAxis)
 
-    d3.select("#checkboxes").selectAll("input").on("change", triggerMultipleFunctions);
+    let simulation = d3.forceSimulation(swarmDataset)
+        .force("x", d3.forceX(d => d.x).strength(2))
+        .force("y", d3.forceY(d => d.y))
+        .force("collide", d3.forceCollide(12))
+        .stop();
 
-    function triggerMultipleFunctions() {
-        filter();
-        resetFrameLines()
+    for (let i = 0; i < 10; ++i) {
+        simulation.tick(10);
     }
 
-    function resetFrameLines() {
-        d3.selectAll(".frameLine").remove();
-        lines = []
-        time_line = []
-        drawFrameLines([xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))])
-        changeData(swarmDataset);
-        resetPieGraph()
-        resetBarGraph()
+    let majoreventcircles = g.selectAll(".events")
+        .data(swarmDataset, function (d) { return d["major_event"] });
+
+    majoreventcircles.exit()
+        .transition()
+        .duration(1000)
+        .attr("cx", 0)
+        .attr("cy", d => d.y)
+        .attr("r", d => d.r)
+        .remove();
+
+    majoreventcircles.enter()
+        .append("circle")
+        .attr("class", "events")
+        .attr("cx", 0)
+        .attr("cy", d => d.y)
+        .attr("r", d => d.r)
+        .attr("fill", function (d) { return colors(d["major_event"]) })
+        .style("opacity", 0.7)
+        .merge(majoreventcircles)
+        .transition()
+        .duration(2000)
+        .attr("cx", function (d) { return d.x; })
+        .attr("cy", function (d) { return d.y; });
+
+    d3.selectAll(".events")
+        .on("mouseover", function (_, d) {
+            console.log(d)
+            tooltip.html(`@${d.author} : ${d.message}`);
+            return tooltip.style("visibility", "visible");
+        })
+        .on("mousemove", function (event) {
+            return tooltip.style("top", (event.pageY - 60) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function () {
+            return tooltip.style("visibility", "hidden");
+        });
+
+    resetFrameLines()
+    for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
+        drawFrameLines(x, xScale)
     }
-
-    function draw() {
-        xAxis = d3.axisBottom(xScale);
-        xAxis = d3.axisBottom(xScale);
-        g.append('g')
-            .attr('transform', `translate(0, ${innerHeight})`)
-            .transition().duration(1000)
-            .call(xAxis)
-        let simulation = d3.forceSimulation(swarmDataset)
-            .force("x", d3.forceX(d => d.x).strength(2))
-            .force("y", d3.forceY(d => d.y))
-            .force("collide", d3.forceCollide(12))
-            .stop();
-        //simulation.tick(10);
-        for (let i = 0; i < 10; ++i) {
-            simulation.tick(10);
-        }
-
-        let majoreventcircles = g.selectAll(".events")
-            //.data(swarmDataset);
-            .data(swarmDataset, function (d) { return d["major_event"] });
-
-        majoreventcircles.exit()
-            .transition()
-            .duration(1000)
-            .attr("cx", 0)
-            .attr("cy", d => d.y)
-            .attr("r", d => d.r)
-            .remove();
-
-        majoreventcircles.enter()
-            .append("circle")
-            .attr("class", "events")
-            .attr("cx", 0)
-            .attr("cy", d => d.y)
-            .attr("r", d => d.r)
-            .attr("fill", function (d) { return colors(d["major_event"]) })
-            .style("opacity", 0.7)
-            .merge(majoreventcircles)
-            .transition()
-            .duration(2000)
-            .attr("cx", function (d) { return d.x; })
-            .attr("cy", function (d) { return d.y; });
-
-        d3.selectAll(".events")
-            .on("mouseover", function (_, d) {
-                console.log(d)
-                tooltip.html(`@${d.author} : ${d.message}`);
-                return tooltip.style("visibility", "visible");
-            })
-            .on("mousemove", function (event) {
-                return tooltip.style("top", (event.pageY - 60) + "px")
-                    .style("left", (event.pageX + 10) + "px");
-            })
-            .on("mouseout", function () {
-                return tooltip.style("visibility", "hidden");
-            });
-
-        for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
-            drawFrameLines(x, xScale)
-        }
-        changeData(swarmDataset);
-    }
+    changeData(swarmDataset);
 }
 
 function drawFrameLines(x, xScale) {
-    let line = beeswarm.append("line")
-        .attr("x1", x)
-        .attr("y1", 0)
-        .attr("x2", x)
-        .attr("y2", innerHeight + 10)
-        .attr("class", "frameLine")
-        .style("stroke", "black")
-        .style("stroke-width", 4)
+    if (lines.length < 2 && time_line.length < 2) {
+        x = parseFloat(x)
+        let line = beeswarm.append("line")
+            .attr("x1", x)
+            .attr("y1", 0)
+            .attr("x2", x)
+            .attr("y2", innerHeight + 10)
+            .attr("class", "frameLine")
+            .style("stroke", "black")
+            .style("stroke-width", 4)
 
-    lines.push(line.node());
-    time_line.push(xScale.invert(x));
-    line.call(dragHandler(xScale, swarmDataset))
+        console.log(lines, time_line)
+        lines.push(line.node());
+        time_line.push(xScale.invert(x));
+        line.call(dragHandler(xScale))
 
-    line.on("click", function (e) {
-        if (e.target.nodeName === 'line') {
-            idx = lines.indexOf(this)
-            console.log(lines, idx, this)
-            lines.splice(idx, 1)
-            time_line.splice(idx, 1)
-            console.log(lines.length)
-            e.target.remove()
-        }
-    })
+        line.on("click", function (e) {
+            if (e.target.nodeName === 'line') {
+                idx = lines.indexOf(this)
+                console.log(lines, idx, this)
+                lines.splice(idx, 1)
+                time_line.splice(idx, 1)
+                console.log(lines.length)
+                e.target.remove()
+            }
+        })
+    }
 }
 
 function filter() {
@@ -225,9 +234,9 @@ function filter() {
     swarmDataset = dataset_copy;
 }
 
-var dragHandler = (xScale, dataset) => d3.drag()
+var dragHandler = (xScale) => d3.drag()
     .on("drag", function (event) {
-        console.log(event)
+        console.log(event, lines)
         idx = lines.indexOf(this)
         firstLine = true;
         if (idx == 0) {
@@ -237,10 +246,10 @@ var dragHandler = (xScale, dataset) => d3.drag()
             otherLineX = d3.select(lines[0]).attr("x1")
         }
         if (firstLine && event.x >= otherLineX) {
-            dragHandler.on("drag", null);
+            // dragHandler.on("drag", null);
             alert("Start Line can not be placed after End Line")
         } else if (!firstLine && event.x <= otherLineX) {
-            dragHandler.on("drag", null);
+            // dragHandler.on("drag", null);
             alert("End Line can not be placed before Start Line")
         } else {
             let line = d3.select(this)
