@@ -182,7 +182,7 @@
             margin-left: 25px;
         }
 
-        /* div.tooltip {
+        div.tooltip {
           position: absolute;
           text-align: center;
           width: 250px;
@@ -194,7 +194,7 @@
           stroke: black;
           border-radius: 8px;
           pointer-events: none;
-      } */
+        }
     </style>
 </head>
 
@@ -266,7 +266,7 @@
                 <div class="row">
                     <div class="col-1">Trends:</div>
                     <div class="col-3">
-                        <select id="country-select" onchange="drawBars()">
+                        <select id="country-select" onchange="drawBarsChanged()">
                             <option value="author" selected>Authors</option>
                             <option value="tag">HashTags</option>
                         </select>

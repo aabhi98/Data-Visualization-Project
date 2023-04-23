@@ -4,6 +4,11 @@ bar_svg_height = 400
 bar_svg_margin = 10
 bar_height = 350
 
+let bar_data1 = null
+let bar_data2 = null
+let bar_data3 = null
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 
 //     bar_svg1 = d3.select('#bar_chart_svg_1');
@@ -45,35 +50,48 @@ bar_height = 350
 //         });
 // });
 
+function drawBarsChanged() {
 
-function drawBars(bar_data1, bar_data2, bar_data3) {
+    if (bar_data1 != null) {
+        drawBars(bar_data1, bar_data2, bar_data3)
+    }
+}
+
+
+function drawBars(list1, list2, list3) {
     bar_svg1 = d3.select('#bar_chart_svg_1');
     bar_svg2 = d3.select('#bar_chart_svg_2');
     bar_svg3 = d3.select('#bar_chart_svg_3');
-    bar_data1.map(d => {
-        return {
-            majorEvent: d.major_event,
-            author: d.author,
-            sentiment: d.sentiment,
-            message: d.message
-        }
-    })
-    bar_data2.map(d => {
-        return {
-            majorEvent: d.major_event,
-            author: d.author,
-            sentiment: d.sentiment,
-            message: d.message
-        }
-    })
-    bar_data3.map(d => {
-        return {
-            majorEvent: d.major_event,
-            author: d.author,
-            sentiment: d.sentiment,
-            message: d.message
-        }
-    })
+
+    bar_data1 = list1
+    bar_data2 = list2
+    bar_data3 = list3
+
+
+    // bar_data1.map(d => {
+    //     return {
+    //         majorEvent: d.major_event,
+    //         author: d.author,
+    //         sentiment: d.sentiment,
+    //         message: d.message
+    //     }
+    // })
+    // bar_data2.map(d => {
+    //     return {
+    //         majorEvent: d.major_event,
+    //         author: d.author,
+    //         sentiment: d.sentiment,
+    //         message: d.message
+    //     }
+    // })
+    // bar_data3.map(d => {
+    //     return {
+    //         majorEvent: d.major_event,
+    //         author: d.author,
+    //         sentiment: d.sentiment,
+    //         message: d.message
+    //     }
+    // })
     const selectedValue = d3.select('#country-select').property('value');
     if (selectedValue === "tag") {
         drawTagsBarChart(bar_data1, bar_data2, bar_data3);
@@ -87,9 +105,9 @@ function drawBarChart(list1, list2, list3) {
     const checked = d3.selectAll("input[type='checkbox']:checked")
         .nodes()
         .map(checkbox => checkbox.value);
-    filtered_bar_data1 = list1.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data2 = list2.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data3 = list3.filter(c => checked.includes(c.majorEvent));
+    filtered_bar_data1 = list1.filter(c => checked.includes(c.major_event));
+    filtered_bar_data2 = list2.filter(c => checked.includes(c.major_event));
+    filtered_bar_data3 = list3.filter(c => checked.includes(c.major_event));
 
     drawEachBarChart(filtered_bar_data1, bar_svg1)
     drawEachBarChart(filtered_bar_data2, bar_svg2)
@@ -212,9 +230,9 @@ function drawTagsBarChart(list1, list2, list3) {
         .nodes()
         .map(checkbox => checkbox.value);
 
-    filtered_bar_data1 = list1.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data2 = list2.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data3 = list3.filter(c => checked.includes(c.majorEvent));
+    filtered_bar_data1 = list1.filter(c => checked.includes(c.major_event));
+    filtered_bar_data2 = list2.filter(c => checked.includes(c.major_event));
+    filtered_bar_data3 = list3.filter(c => checked.includes(c.major_event));
 
     console.log(countTags(filtered_bar_data1))
 
