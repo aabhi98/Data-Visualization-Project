@@ -293,6 +293,10 @@ function changeData(dataset) {
         console.log(filtereddata3);
         drawPieChart(filtereddata1, filtereddata2, filtereddata3)
         drawBars(filtereddata1, filtereddata2, filtereddata3)
+
+        const formatDate = d3.timeFormat("%Y%m%d%H%M%S");
+
+        loadWordCloudImage(formatDate(time_line[0]), formatDate(time_line[1]))
     }
 }
 

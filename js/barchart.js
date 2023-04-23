@@ -299,7 +299,9 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("y", function (d) { return tag_yScale(d.tag); })
         .attr("height", tag_yScale.bandwidth())
         .attr("x", bar_svg_margin)
-        .attr("width", function (d) { return tag_xScale(d.count) - 10; })
+        .attr("width", function (d) {
+            return tag_xScale(d.count) - 20;
+        })
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
@@ -325,7 +327,7 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("x", function (d) {
 
             if (tag_xScale(d.count) < bar_svg_width - bar_svg_margin - 50) {
-                return tag_xScale(d.count) + 10
+                return tag_xScale(d.count)
             }
             return bar_svg_width - bar_svg_margin - 80;
         })
