@@ -40,7 +40,7 @@
 //         });
 // });
 
-function drawPieChart(data1,data2,data3){
+function drawPieChart(data1, data2, data3) {
     // const checked = d3.selectAll("input[type='checkbox']:checked")
     //     .nodes()
     //     .map(checkbox => checkbox.value);
@@ -129,36 +129,36 @@ function drawPieChart(data1,data2,data3){
         .attr('cx', -210)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','green');
+        .attr('fill', 'green');
 
     legend1.append('text')
         .attr('x', -200)
         .attr('y', 365)
-        .text('positive'+ ' ' + positivePercentage1 + '%')
+        .text('positive' + ' ' + positivePercentage1 + '%')
         .style('font-size', '14px');
 
     legend1.append('circle')
         .attr('cx', -85)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','red');
+        .attr('fill', 'red');
 
     legend1.append('text')
         .attr('x', -75)
         .attr('y', 365)
-        .text('negative'+ ' ' + negativePercentage1 + '%')
+        .text('negative' + ' ' + negativePercentage1 + '%')
         .style('font-size', '14px');
 
     legend1.append('circle')
         .attr('cx', 40)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','orange');
+        .attr('fill', 'orange');
 
     legend1.append('text')
         .attr('x', 50)
         .attr('y', 365)
-        .text('neutral'+ ' ' + neutralPercentage1 + '%')
+        .text('neutral' + ' ' + neutralPercentage1 + '%')
         .style('font-size', '14px');
 
     const grouped_data2 = d3.group(data2, d => d.sentiment);
@@ -228,36 +228,36 @@ function drawPieChart(data1,data2,data3){
         .attr('cx', -210)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','green');
+        .attr('fill', 'green');
 
     legend2.append('text')
         .attr('x', -200)
         .attr('y', 365)
-        .text('positive'+ ' ' + positivePercentage2 + '%')
+        .text('positive' + ' ' + positivePercentage2 + '%')
         .style('font-size', '14px');
 
     legend2.append('circle')
         .attr('cx', -85)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','red');
+        .attr('fill', 'red');
 
     legend2.append('text')
         .attr('x', -75)
         .attr('y', 365)
-        .text('negative'+ ' ' + negativePercentage2 + '%')
+        .text('negative' + ' ' + negativePercentage2 + '%')
         .style('font-size', '14px');
 
     legend2.append('circle')
         .attr('cx', 40)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','orange');
+        .attr('fill', 'orange');
 
     legend2.append('text')
         .attr('x', 50)
         .attr('y', 365)
-        .text('neutral'+ ' ' + neutralPercentage2 + '%')
+        .text('neutral' + ' ' + neutralPercentage2 + '%')
         .style('font-size', '14px');
 
 
@@ -282,7 +282,7 @@ function drawPieChart(data1,data2,data3){
     const negativePercentage3 = +(negativeCount3 / totalCount3 * 100).toFixed(2);
     const neutralPercentage3 = +(neutralCount3 / totalCount3 * 100).toFixed(2);
 
-    console.log("datavalues",grouped_data1,grouped_data2,grouped_data3);
+    console.log("datavalues", grouped_data1, grouped_data2, grouped_data3);
     const pie3 = d3.pie()
         .value(d => d.count);
 
@@ -329,36 +329,36 @@ function drawPieChart(data1,data2,data3){
         .attr('cx', -210)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','green');
+        .attr('fill', 'green');
 
     legend3.append('text')
         .attr('x', -200)
         .attr('y', 365)
-        .text('positive'+ ' ' + positivePercentage3 + '%')
+        .text('positive' + ' ' + positivePercentage3 + '%')
         .style('font-size', '14px');
 
     legend3.append('circle')
         .attr('cx', -85)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','red');
+        .attr('fill', 'red');
 
     legend3.append('text')
         .attr('x', -75)
         .attr('y', 365)
-        .text('negative'+ ' ' + negativePercentage3 + '%')
+        .text('negative' + ' ' + negativePercentage3 + '%')
         .style('font-size', '14px');
 
     legend3.append('circle')
         .attr('cx', 40)
         .attr('cy', 360)
         .attr('r', 5)
-        .attr('fill','orange');
+        .attr('fill', 'orange');
 
     legend3.append('text')
         .attr('x', 50)
         .attr('y', 365)
-        .text('neutral'+ ' ' + neutralPercentage3 + '%')
+        .text('neutral' + ' ' + neutralPercentage3 + '%')
         .style('font-size', '14px');
 
 }

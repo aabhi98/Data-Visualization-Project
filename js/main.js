@@ -73,7 +73,7 @@ function drawbeeswarm1(dataset) {
         .style("background-color", "white")
         .style("padding", "8px")
         .style("border-radius", "8px")
-        .style("text-align", "center")
+        .style("width", "fit-content")
         .style("font-size", "14px")
         .style("border", "2px solid black")
 
@@ -136,7 +136,7 @@ function drawbeeswarm1(dataset) {
 
         d3.selectAll(".events").on("mouseover", function (_, d) {
             console.log(d)
-            tooltip.html("Hi");
+            tooltip.html(`@${d.author} : ${d.message}`);
             return tooltip.style("visibility", "visible");
         })
             .on("mousemove", function (event) {
@@ -244,6 +244,7 @@ function drawbeeswarm1(dataset) {
                 });
                 console.log(filtereddata3);
                 drawPieChart(filtereddata1, filtereddata2, filtereddata3)
+                drawBars(filtereddata1, filtereddata2, filtereddata3)
                 //call piechart function
                 //call word cloud
                 //call bar chart

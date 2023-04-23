@@ -16,7 +16,11 @@
             width: 1230px;
         }
 
-        #bee_swarm_div, #word_cloud_div, #pie_chart_div, #spline_graph_div, #arc_diagram_div {
+        #bee_swarm_div,
+        #word_cloud_div,
+        #pie_chart_div,
+        #spline_graph_div,
+        #arc_diagram_div {
             display: flex;
             justify-items: center;
             align-items: center;
@@ -41,33 +45,35 @@
          border: 1px solid lightgray;
          border-radius: 3px;
       } */
-      #word_cloud_svg_1 {
-         left: 10px;
-         margin: 10px;
-         width: 400px;
-         height:400px;
-          padding: 20px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #word_cloud_svg_2 {
+        #word_cloud_svg_1 {
+            left: 10px;
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #word_cloud_svg_2 {
 
 
-         width: 400px;
-         height:400px;
-          padding: 20px;
-          background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #word_cloud_svg_3 {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #word_cloud_svg_3 {
 
             margin: 10px;
             width: 400px;
             height: 400px;
-          padding: 20px;
-          background-color: white;
+            padding: 20px;
+            background-color: white;
             border: 1px solid lightgray;
             border-radius: 3px;
         }
@@ -133,24 +139,26 @@
         }
 
         #arc_diagram_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:520px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #arc_diagram_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:520px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #spline_graph_svg {
+            left: 10px;
+            margin: 10px;
+            width: 1230px;
+            height: 520px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #arc_diagram_svg {
+            left: 10px;
+            margin: 10px;
+            width: 1230px;
+            height: 520px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #spline_graph_svg {
             left: 10px;
             margin: 10px;
             width: 1230px;
@@ -174,7 +182,7 @@
             margin-left: 25px;
         }
 
-      div.tooltip {
+        /* div.tooltip {
           position: absolute;
           text-align: center;
           width: 250px;
@@ -186,8 +194,7 @@
           stroke: black;
           border-radius: 8px;
           pointer-events: none;
-      }
-
+      } */
     </style>
 </head>
 
@@ -249,13 +256,13 @@
             <div id="bee_swarm_div">
                 <svg id="bee_swarm_svg"></svg>
             </div>
-            <div id = "word_cloud_div">
+            <div id="word_cloud_div">
                 <svg id="word_cloud_svg_1"></svg>
                 <svg id="word_cloud_svg_2"></svg>
                 <svg id="word_cloud_svg_3"></svg>
             </div>
             <!-- <svg id="message_svg"></svg> -->
-            <div id = "bar_chart_div">
+            <div id="bar_chart_div">
                 <div class="row">
                     <div class="col-1">Trends:</div>
                     <div class="col-3">
@@ -263,18 +270,18 @@
                             <option value="author" selected>Authors</option>
                             <option value="tag">HashTags</option>
                         </select>
-    
+
                         <style>
                             div {
                                 width: 100%;
                             }
-    
+
                             select {
                                 width: 100%;
                                 box-sizing: border-box;
                             }
                         </style>
-    
+
                     </div>
                 </div>
                 <div class="row">
@@ -283,7 +290,7 @@
                     <svg id="bar_chart_svg_3"></svg>
                 </div>
             </div>
-            <div id = "pie_chart_div">
+            <div id="pie_chart_div">
                 <svg id="pie_chart_svg_1"></svg>
                 <svg id="pie_chart_svg_2"></svg>
                 <svg id="pie_chart_svg_3"></svg>
@@ -291,7 +298,7 @@
             <div id="arc_diagram_div">
                 <svg id="arc_diagram_svg"></svg>
             </div>
-            <div id = "spline_graph_div">
+            <div id="spline_graph_div">
                 <svg id="spline_graph_svg"></svg>
             </div>
             <div id="point_map_div">
@@ -311,10 +318,11 @@
         <!-- <line id="divider" x1="0" y1="50" x2="100%" y2="50" draggable="true"></line> -->
     </div>
 </body>
-   <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/pointMap.js"></script>
-    <script src="js/pieChart.js"></script>
-    <script src="js/wordCloud.js"></script>
-    <script src="js/barchart.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pointMap.js"></script>
+<script src="js/pieChart.js"></script>
+<script src="js/wordCloud.js"></script>
+<script src="js/barchart.js"></script>
+
 </html>

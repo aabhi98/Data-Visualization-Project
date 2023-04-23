@@ -1,52 +1,79 @@
 
-bar_svg_width=400
-bar_svg_height=400
-bar_svg_margin=10
-bar_height=350
+bar_svg_width = 400
+bar_svg_height = 400
+bar_svg_margin = 10
+bar_height = 350
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
 
+//     bar_svg1 = d3.select('#bar_chart_svg_1');
+//     bar_svg2 = d3.select('#bar_chart_svg_2');
+//     bar_svg3 = d3.select('#bar_chart_svg_3');
+
+
+//     Promise.all([d3.csv('data/final_dataset.csv',(d)=> {
+//         return {
+//             majorEvent: d.major_event,
+//             author: d.author,
+//             sentiment: d.sentiment,
+//             message: d.message
+
+//         };
+//     }),  d3.csv('data/csv-1831-2000.csv',(d)=> {
+//         return {
+//             majorEvent: d.major_event,
+//             author: d.author,
+//             sentiment: d.sentiment,
+//             message: d.message
+//         };
+//     }),  d3.csv('data/csv-2001-2131.csv',(d) => {
+//         return {
+//             majorEvent: d.major_event,
+//             author: d.author,
+//             sentiment: d.sentiment,
+//             message: d.message
+//         };
+//     })])
+//         .then(function (values) {
+//             bar_data1 = values[0];
+
+//             bar_data2 = values[1];
+
+//             bar_data3 = values[2];
+
+//             drawBars()
+//         });
+// });
+
+
+function drawBars(bar_data1, bar_data2, bar_data3) {
     bar_svg1 = d3.select('#bar_chart_svg_1');
     bar_svg2 = d3.select('#bar_chart_svg_2');
     bar_svg3 = d3.select('#bar_chart_svg_3');
-
-
-    Promise.all([d3.csv('data/csv-1700-1830.csv',(d)=> {
+    bar_data1.map(d => {
         return {
             majorEvent: d.major_event,
             author: d.author,
             sentiment: d.sentiment,
             message: d.message
-        };
-    }),  d3.csv('data/csv-1831-2000.csv',(d)=> {
+        }
+    })
+    bar_data2.map(d => {
         return {
             majorEvent: d.major_event,
             author: d.author,
             sentiment: d.sentiment,
             message: d.message
-        };
-    }),  d3.csv('data/csv-2001-2131.csv',(d) => {
+        }
+    })
+    bar_data3.map(d => {
         return {
             majorEvent: d.major_event,
             author: d.author,
             sentiment: d.sentiment,
             message: d.message
-        };
-    })])
-        .then(function (values) {
-            bar_data1 = values[0];
-
-            bar_data2 = values[1];
-
-            bar_data3 = values[2];
-
-            drawBars()
-        });
-});
-
-
-function drawBars() {
-
+        }
+    })
     const selectedValue = d3.select('#country-select').property('value');
     if (selectedValue === "tag") {
         drawTagsBarChart(bar_data1, bar_data2, bar_data3);
@@ -56,6 +83,7 @@ function drawBars() {
 }
 
 function drawBarChart(list1, list2, list3) {
+    console.log(list1, list2, list3)
     const checked = d3.selectAll("input[type='checkbox']:checked")
         .nodes()
         .map(checkbox => checkbox.value);
@@ -89,7 +117,7 @@ function drawEachBarChart(bar_data, barSvg) {
     const list = counts.filter(obj => obj.author !== '');
 
 
-    top_six = list.slice(0,6)
+    top_six = list.slice(0, 6)
 
     top_six.reverse()
 
@@ -99,7 +127,7 @@ function drawEachBarChart(bar_data, barSvg) {
     barSvg.selectAll(".label").remove();
 
     var yScale = d3.scaleBand()
-        .range([bar_svg_height-bar_svg_margin, bar_svg_margin])
+        .range([bar_svg_height - bar_svg_margin, bar_svg_margin])
         .domain(top_six.map(function (d) {
             return d.author;
         }))
@@ -123,20 +151,20 @@ function drawEachBarChart(bar_data, barSvg) {
         .attr("height", yScale.bandwidth())
         .attr("x", bar_svg_margin)
         .attr("width", function (d) {
-            return xScale(d.count)-10;
+            return xScale(d.count) - 10;
         })
-        .on("mousemove", function(event, d) {
+        .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
             bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Author: " + d.author + "<br>" + "Tweets: " + d.count);
         })
-        .on("mouseover", function(event,d) {
+        .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
         })
-        .on("mouseout", function(d) {
+        .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
@@ -154,23 +182,23 @@ function drawEachBarChart(bar_data, barSvg) {
             }
             return bar_svg_width - bar_svg_margin - 80;
         })
-        .attr("y", function (d) { return yScale(d.author) + yScale.bandwidth()/2 + 5; })
+        .attr("y", function (d) { return yScale(d.author) + yScale.bandwidth() / 2 + 5; })
         .text(function (d) { return d.author; })
         .style("text-anchor", "start")
         .style("font-size", "12px")
         .style("fill", "black")
-        .on("mousemove", function(event, d) {
+        .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
             bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Author: " + d.author + "<br>" + "Tweets: " + d.count);
         })
-        .on("mouseover", function(event,d) {
+        .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
         })
-        .on("mouseout", function(d) {
+        .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
@@ -206,7 +234,7 @@ function drawEachTagChart(bar_data, barSvg) {
     bar_data.sort((a, b) => b.count - a.count);
 
 
-    top_six_tags=bar_data.slice(0,6)
+    top_six_tags = bar_data.slice(0, 6)
 
     top_six_tags.reverse()
 
@@ -217,7 +245,7 @@ function drawEachTagChart(bar_data, barSvg) {
     barSvg.selectAll(".label").remove();
 
     var tag_yScale = d3.scaleBand()
-        .range([bar_svg_height-bar_svg_margin, bar_svg_margin])
+        .range([bar_svg_height - bar_svg_margin, bar_svg_margin])
         .domain(top_six_tags.map(function (d) {
             return d.tag;
         }))
@@ -240,19 +268,19 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("y", function (d) { return tag_yScale(d.tag); })
         .attr("height", tag_yScale.bandwidth())
         .attr("x", bar_svg_margin)
-        .attr("width", function (d) {return tag_xScale(d.count)-10;})
-        .on("mousemove", function(event, d) {
+        .attr("width", function (d) { return tag_xScale(d.count) - 10; })
+        .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
             bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Tag: " + d.tag + "<br>" + "Tweets: " + d.count);
         })
-        .on("mouseover", function(event,d) {
+        .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
         })
-        .on("mouseout", function(d) {
+        .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
@@ -270,23 +298,23 @@ function drawEachTagChart(bar_data, barSvg) {
             }
             return bar_svg_width - bar_svg_margin - 80;
         })
-        .attr("y", function (d) { return tag_yScale(d.tag) + tag_yScale.bandwidth()/2 + 5; })
+        .attr("y", function (d) { return tag_yScale(d.tag) + tag_yScale.bandwidth() / 2 + 5; })
         .text(function (d) { return d.tag; })
         .style("text-anchor", "start")
         .style("font-size", "12px")
         .style("fill", "black")
-        .on("mousemove", function(event, d) {
+        .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
             bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Tag: " + d.tag + "<br>" + "Tweets: " + d.count);
         })
-        .on("mouseover", function(event,d) {
+        .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
         })
-        .on("mouseout", function(d) {
+        .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
