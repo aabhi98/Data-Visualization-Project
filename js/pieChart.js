@@ -67,6 +67,7 @@ function drawPieChart(data1, data2, data3) {
 
     const totalCount1 = counts1.reduce((acc, curr) => acc + curr.count, 0);
 
+    // d3.select("#checkboxes").selectAll("input").on("change", filter);
 
     const positiveCount1 = counts1.filter(d => d.sentiment === 'positive')[0].count;
     const negativeCount1 = counts1.filter(d => d.sentiment === 'negative')[0].count;
@@ -361,4 +362,10 @@ function drawPieChart(data1, data2, data3) {
         .text('neutral' + ' ' + neutralPercentage3 + '%')
         .style('font-size', '14px');
 
+}
+
+function resetPieGraph() {
+    d3.select('#pie_chart_svg_1').selectAll('g').remove();
+    d3.select('#pie_chart_svg_2').selectAll('g').remove();
+    d3.select('#pie_chart_svg_3').selectAll('g').remove();
 }
