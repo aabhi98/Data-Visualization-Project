@@ -47,7 +47,7 @@ function drawPieChart(data1,data2,data3){
     // filtered_data1 = data1.filter(c => checked.includes(c.majorEvent));
     // filtered_data2 = data2.filter(c => checked.includes(c.majorEvent));
     // filtered_data3 = data3.filter(c => checked.includes(c.majorEvent));
-
+    console.log(data1, data2, data3)
     const svg1 = d3.select('#pie_chart_svg_1');
     const svg2 = d3.select('#pie_chart_svg_2');
     const svg3 = d3.select('#pie_chart_svg_3');
@@ -106,7 +106,7 @@ function drawPieChart(data1,data2,data3){
         .attr('stroke', 'black')
         .attr('stroke-width', 2)
         .append("svg:title")
-        .text(function(d) { return d.data.sentiment + ": " + d.data.count });
+        .text(function (d) { return d.data.sentiment + ": " + d.data.count });
 
     g1.append('circle')
         .attr('cx', 0)
@@ -205,7 +205,7 @@ function drawPieChart(data1,data2,data3){
         .attr('stroke', 'black')
         .attr('stroke-width', 2)
         .append("svg:title")
-        .text(function(d) { return d.data.sentiment + ": " + d.data.count });
+        .text(function (d) { return d.data.sentiment + ": " + d.data.count });
 
     g2.append('circle')
         .attr('cx', 0)
@@ -306,7 +306,7 @@ function drawPieChart(data1,data2,data3){
         .attr('stroke', 'black')
         .attr('stroke-width', 2)
         .append("svg:title")
-        .text(function(d) { return d.data.sentiment + ": " + d.data.count });
+        .text(function (d) { return d.data.sentiment + ": " + d.data.count });
 
     g3.append('circle')
         .attr('cx', 0)
