@@ -4,6 +4,11 @@ bar_svg_height = 400
 bar_svg_margin = 10
 bar_height = 350
 
+let bar_data1 = null
+let bar_data2 = null
+let bar_data3 = null
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 
 //     bar_svg1 = d3.select('#bar_chart_svg_1');
@@ -45,51 +50,71 @@ bar_height = 350
 //         });
 // });
 
+function drawBarsChanged() {
 
-function drawBars(bar_data1, bar_data2, bar_data3) {
+    if (bar_data1 != null) {
+        drawBars(bar_data1, bar_data2, bar_data3)
+    }
+}
+
+
+function drawBars(list1, list2, list3) {
     bar_svg1 = d3.select('#bar_chart_svg_1');
     bar_svg2 = d3.select('#bar_chart_svg_2');
     bar_svg3 = d3.select('#bar_chart_svg_3');
-    bar_data1.map(d => {
-        return {
-            majorEvent: d.major_event,
-            author: d.author,
-            sentiment: d.sentiment,
-            message: d.message
-        }
-    })
-    bar_data2.map(d => {
-        return {
-            majorEvent: d.major_event,
-            author: d.author,
-            sentiment: d.sentiment,
-            message: d.message
-        }
-    })
-    bar_data3.map(d => {
-        return {
-            majorEvent: d.major_event,
-            author: d.author,
-            sentiment: d.sentiment,
-            message: d.message
-        }
-    })
+
+    if (list1 != null ) {
+        bar_data1 = list1
+    }
+
+    if (list2 != null ) {
+        bar_data2 = list2
+    }
+    if (list3 != null ) {
+        bar_data3 = list3
+    }
+
+
+    // bar_data1.map(d => {
+    //     return {
+    //         majorEvent: d.major_event,
+    //         author: d.author,
+    //         sentiment: d.sentiment,
+    //         message: d.message
+    //     }
+    // })
+    // bar_data2.map(d => {
+    //     return {
+    //         majorEvent: d.major_event,
+    //         author: d.author,
+    //         sentiment: d.sentiment,
+    //         message: d.message
+    //     }
+    // })
+    // bar_data3.map(d => {
+    //     return {
+    //         majorEvent: d.major_event,
+    //         author: d.author,
+    //         sentiment: d.sentiment,
+    //         message: d.message
+    //     }
+    // })
     const selectedValue = d3.select('#country-select').property('value');
     if (selectedValue === "tag") {
         drawTagsBarChart(bar_data1, bar_data2, bar_data3);
     } else {
-        drawBarChart(bar_data1, bar_data2, bar_data3);
+        drawBarChart();
     }
 }
 
 function drawBarChart(list1, list2, list3) {
-    console.log(list1, list2, list3)
+    // console.log(list1, list2, list3)
     const checked = d3.selectAll("input[type='checkbox']:checked")
         .nodes()
         .map(checkbox => checkbox.value);
-    filtered_bar_data1 = list1.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data2 = list2.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data3 = list3.filter(c => checked.includes(c.majorEvent));
+    filtered_bar_data1 = bar_data1.filter(c => checked.includes(c.major_event));
+    filtered_bar_data2 = bar_data2.filter(c => checked.includes(c.major_event));
+    filtered_bar_data3 = bar_data3.filter(c => checked.includes(c.major_event));
 
     drawEachBarChart(filtered_bar_data1, bar_svg1)
     drawEachBarChart(filtered_bar_data2, bar_svg2)
@@ -99,9 +124,17 @@ function drawBarChart(list1, list2, list3) {
 
 function drawEachBarChart(bar_data, barSvg) {
 
-    var bar_tooltip = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
+    var bar_tooltip = d3.select("#bar_chart_div")
+    .append("div")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("background-color", "white")
+    .style("padding", "8px")
+    .style("border-radius", "8px")
+    .style("width", "fit-content")
+    .style("font-size", "14px")
+    .style("border", "2px solid black")
 
     const grouped_bar_data = d3.group(bar_data, d => d.author);
 
@@ -134,7 +167,7 @@ function drawEachBarChart(bar_data, barSvg) {
         .padding(0.1);
 
     var xScale = d3.scaleLinear()
-        .range([0, bar_svg_width - bar_svg_margin])
+        .range([0, bar_svg_width - bar_svg_margin - 15])
         .domain([0, d3.max(top_six, function (d) {
             return d.count;
         })]);
@@ -156,18 +189,17 @@ function drawEachBarChart(bar_data, barSvg) {
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
-            bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Author: " + d.author + "<br>" + "Tweets: " + d.count);
         })
         .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
-                .style("opacity", 1);
+                .style("visibility", "visible");
         })
         .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
-                .style("opacity", 0);
+                .style("visibility", "hidden");
         });
 
     barSvg.selectAll(".label")
@@ -190,18 +222,17 @@ function drawEachBarChart(bar_data, barSvg) {
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
-            bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Author: " + d.author + "<br>" + "Tweets: " + d.count);
         })
         .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
-                .style("opacity", 1);
+                .style("visibility", "visible");
         })
         .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
-                .style("opacity", 0);
+                .style("visibility", "hidden");
         });
 
 }
@@ -212,9 +243,9 @@ function drawTagsBarChart(list1, list2, list3) {
         .nodes()
         .map(checkbox => checkbox.value);
 
-    filtered_bar_data1 = list1.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data2 = list2.filter(c => checked.includes(c.majorEvent));
-    filtered_bar_data3 = list3.filter(c => checked.includes(c.majorEvent));
+    filtered_bar_data1 = list1.filter(c => checked.includes(c.major_event));
+    filtered_bar_data2 = list2.filter(c => checked.includes(c.major_event));
+    filtered_bar_data3 = list3.filter(c => checked.includes(c.major_event));
 
     console.log(countTags(filtered_bar_data1))
 
@@ -268,7 +299,9 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("y", function (d) { return tag_yScale(d.tag); })
         .attr("height", tag_yScale.bandwidth())
         .attr("x", bar_svg_margin)
-        .attr("width", function (d) { return tag_xScale(d.count) - 10; })
+        .attr("width", function (d) {
+            return tag_xScale(d.count) - 20;
+        })
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
@@ -294,7 +327,7 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("x", function (d) {
 
             if (tag_xScale(d.count) < bar_svg_width - bar_svg_margin - 50) {
-                return tag_xScale(d.count) + 10
+                return tag_xScale(d.count)
             }
             return bar_svg_width - bar_svg_margin - 80;
         })
@@ -322,9 +355,6 @@ function drawEachTagChart(bar_data, barSvg) {
 
 }
 
-
-
-
 function countTags(data) {
     const tagCounts = {};
 
@@ -348,7 +378,12 @@ function countTags(data) {
     return Object.entries(tagCounts).map(([tag, count]) => ({ tag, count }));
 }
 
-
-
-
-
+function resetBarGraph() {
+    list = [d3.select('#bar_chart_svg_1').node(), d3.select('#bar_chart_svg_2').node(), d3.select('#bar_chart_svg_3').node()]
+    for(let ele of list) {
+        barSvg = d3.select(ele)
+        barSvg.selectAll("g").remove();
+        barSvg.selectAll(".bar").remove();
+        barSvg.selectAll(".label").remove();
+    }
+}

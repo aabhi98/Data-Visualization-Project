@@ -72,7 +72,7 @@ function showPoints() {
     id = setInterval(_ => {
         let colors = d3.scaleOrdinal()
             .domain(["hit_and_run", "fire", "pok_rally", "unknown", "spam", "chatter"])
-            .range(["orange","blue","red", "grey", "grey", "grey"]);
+            .range(["orange","blue","red", "black", "black", "black"]);
         d3.select("#point_map_svg").append('g')
             .selectAll("circle")
             .data(pointData.slice(start, start + 10))
@@ -142,8 +142,8 @@ function drawLines(lineData) {
                 // console.log(data[0])
                 d3.select("#point_map_svg")
                     .append("line")
-                    .style('stroke', 'lightgreen')
-                    .style('stroke-width', '3')
+                    .style('stroke', 'maroon')
+                    .style('stroke-width', '2')
                     .style('opacity', 0.6)
                     .attr('visibility', 'hidden')
                     .attr("class", data[0] + "_line")

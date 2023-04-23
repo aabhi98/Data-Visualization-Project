@@ -7,7 +7,7 @@
     <style>
         .myContainer {
             margin: auto;
-            width: 1400px;
+            width: 1230px;
         }
 
         #myList {
@@ -30,56 +30,13 @@
             left: 10px;
             margin: 10px;
             width: 1400px;
-            height: 600px;
+            height: 700px;
             background-color: white;
             border: 1px solid lightgray;
             border-radius: 3px;
         }
 
-        /* #message_svg{
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:70px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      } */
-        #word_cloud_svg_1 {
-            left: 10px;
-            margin: 10px;
-            width: 400px;
-            height: 400px;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid lightgray;
-            border-radius: 3px;
-        }
-
-        #word_cloud_svg_2 {
-
-
-            width: 400px;
-            height: 400px;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid lightgray;
-            border-radius: 3px;
-        }
-
-        #word_cloud_svg_3 {
-
-            margin: 10px;
-            width: 400px;
-            height: 400px;
-            padding: 20px;
-            background-color: white;
-            border: 1px solid lightgray;
-            border-radius: 3px;
-        }
-
-        #pie_chart_svg_1 {
-            left: 10px;
+        #word_cloud_svg_1, #pie_chart_svg_1, #bar_chart_svg_1 {
             margin: 10px;
             width: 400px;
             height: 400px;
@@ -88,18 +45,7 @@
             border-radius: 3px;
         }
 
-        #pie_chart_svg_2 {
-            left: 10px;
-
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
-            border-radius: 3px;
-        }
-
-        #pie_chart_svg_3 {
-            left: 10px;
+        #word_cloud_svg_2, #pie_chart_svg_2, #bar_chart_svg_2 {
             margin: 10px;
             width: 400px;
             height: 400px;
@@ -108,46 +54,35 @@
             border-radius: 3px;
         }
 
-        #bar_chart_svg_1 {
-            left: 10px;
+        #word_cloud_svg_3, #pie_chart_svg_3, #bar_chart_svg_3 {
             margin: 10px;
-            width: 430px;
+            width: 400px;
             height: 400px;
             background-color: white;
             border: 1px solid lightgray;
             border-radius: 3px;
         }
 
-        #bar_chart_svg_2 {
-            left: 10px;
-            margin: 10px;
-            width: 430px;
-            height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
-            border-radius: 3px;
+        #bar_chart_svg_1, #bar_chart_svg_2, #bar_chart_svg_3 {
+            width: 390px;
+            margin: 8px;
         }
 
-        #bar_chart_svg_3 {
-            left: 10px;
-            margin: 10px;
-            width: 430px;
-            height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
-            border-radius: 3px;
+        #word_cloud_svg_1, #word_cloud_svg_2, #word_cloud_svg_3 {
+            padding: 10px;
         }
 
         #arc_diagram_svg {
-         left: 10px;
-         margin: 10px;
-         width: 1230px;
-         height:520px;
-         background-color: white;
-         border: 1px solid lightgray;
-         border-radius: 3px;
-      }
-      #spline_graph_svg {
+            left: 10px;
+            margin: 10px;
+            width: 1230px;
+            height: 520px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        #spline_graph_svg {
             left: 10px;
             margin: 10px;
             width: 1230px;
@@ -171,7 +106,7 @@
             margin-left: 25px;
         }
 
-        /* div.tooltip {
+        div.tooltip {
           position: absolute;
           text-align: center;
           width: 250px;
@@ -183,7 +118,7 @@
           stroke: black;
           border-radius: 8px;
           pointer-events: none;
-      } */
+        }
     </style>
 </head>
 
@@ -198,28 +133,6 @@
         <h3 class="text-center">Naga Sai Krishna Reddy Vintha - nvintha1@asu.edu</h3>
         <h3 class="text-center">Dileep Kumar Reddy Maligireddy - dmaligir@asu.edu</h3>
         <hr>
-        <!-- <ul id="myList" style="list-style:none; padding:10;">
-        <li style="display:inline-block; margin-right:10px;">
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" style="display:inline-block;">
-                <input type="checkbox" style="margin-right:2px;" value="HitAndRun">Hit and Run
-            </label>
-        </li>
-        <li style="display:inline-block; margin-right:10px;">
-            <label style="display:inline-block;">
-                <input type="checkbox" style="margin-right:2px;" value="POKRally">POK Rally
-            </label>
-        </li>
-        <li style="display:inline-block; margin-right:10px;">
-            <label style="display:inline-block;">
-                <input type="checkbox" style="margin-right:2px;" value="Fire">Fire
-            </label>
-        </li>
-        <li style="display:inline-block; margin-right:10px;">
-            <label style="display:inline-block;">
-                <input type="checkbox" style="margin-right:2px;" value="SafeHouse">SafeHouse
-            </label>
-        </li>
-    </ul> -->
         <div id="checkboxes" class="centered">
             <span style="position:relative; left: 10px">Major Events:&nbsp;&nbsp;</span>
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -250,12 +163,11 @@
                 <svg id="word_cloud_svg_2"></svg>
                 <svg id="word_cloud_svg_3"></svg>
             </div>
-            <!-- <svg id="message_svg"></svg> -->
             <div id="bar_chart_div">
-                <div class="row">
+                <div class="row" style="margin-left: 10px;">
                     <div class="col-1">Trends:</div>
                     <div class="col-3">
-                        <select id="country-select" onchange="drawBars()">
+                        <select id="country-select" onchange="drawBarsChanged()">
                             <option value="author" selected>Authors</option>
                             <option value="tag">HashTags</option>
                         </select>
@@ -273,11 +185,9 @@
 
                     </div>
                 </div>
-                <div class="row">
-                    <svg id="bar_chart_svg_1"></svg>
-                    <svg id="bar_chart_svg_2"></svg>
-                    <svg id="bar_chart_svg_3"></svg>
-                </div>
+                <svg id="bar_chart_svg_1" style="margin-left: 10px;"></svg>
+                <svg id="bar_chart_svg_2"></svg>
+                <svg id="bar_chart_svg_3"></svg>
             </div>
             <div id="pie_chart_div">
                 <svg id="pie_chart_svg_1"></svg>
