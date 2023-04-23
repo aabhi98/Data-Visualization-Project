@@ -1,8 +1,20 @@
+var lines = []; // array to keep track of created lines
+var time_line = [];
+var beeswarm = d3.select("#bee_swarm_svg")
+var parseTime = d3.timeParse("%Y%m%d%H%M%S");
+var margin = { top: 50, bottom: 70, right: 30, left: 40 };
+var swarmDataset;
+var xScale;
+var width = +beeswarm.style('width').replace('px', '');
+var height = +beeswarm.style('height').replace('px', '');
+var innerWidth = width - margin.left - margin.right;
+var innerHeight = height - margin.bottom;
+
 document.addEventListener('DOMContentLoaded', function () {
-    let data;
+    // let data;
     //Promise.all([d3.csv('data/csv-1700-1830.csv'),d3.csv('data/csv-1831-2000.csv'),d3.csv('data/csv-2001-2131.csv')]).then(function (values){
     Promise.all([d3.csv('data/final_dataset.csv')]).then(function (values) {
-        data = values[0]//.concat(values[1]).concat(values[2]);
+        let data = values[0]//.concat(values[1]).concat(values[2]);
 
         data.forEach(d => {
             d["date"] = +d["date"];
@@ -11,36 +23,23 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         console.log("data", data);
         // let data2 = [];
-        let data2 = data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))
-        console.log(data2);
-        drawbeeswarm1(data2);
+        swarmDataset = [...data.filter(d => d["major_event"].includes("pok_rally") || d["major_event"].includes("fire") || d["major_event"].includes("hit_and_run"))]
+        // console.log(data2);
+        drawbeeswarm1();
         createArcDiagram();
-        createSplineGraph(data);
+        createSplineGraph([...data]);
     })
 })
 
-function drawbeeswarm1(dataset) {
+function drawbeeswarm1() {
     //console.log(dataset);
-    const svg_beeswarm = d3.select("#bee_swarm_svg");
-    const width = +svg_beeswarm.style('width').replace('px', '');
-    const height = +svg_beeswarm.style('height').replace('px', '');
-    const margin = { top: 50, bottom: 100, right: 30, left: 40 };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.bottom;
-    //svg.selectAll('g').remove();
-    const g = svg_beeswarm.append('g')
-        .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
-
-    const parseTime = d3.timeParse("%Y%m%d%H%M%S");
-    const formatTime = d3.timeFormat("%Y%m%d%H%M%S");
-    const dates = dataset.map(d => parseTime(d.date));
-    //console.log(d3.max(dataset, d=>d.date));
-    const xScale = d3.scaleTime()
+    const dates = swarmDataset.map(d => parseTime(d.date));
+    xScale = d3.scaleTime()
         .domain(d3.extent(dates))
         .range([0, innerWidth]);
 
     let messageMap = {};
-    dataset.forEach(r => {
+    swarmDataset.forEach(r => {
         let actualMessage = r.message.replace(/RT @([a-z]|[A-Z]|[0-9])+\s/, "")
         if (!messageMap.hasOwnProperty(actualMessage))
             messageMap[actualMessage] = 1
@@ -48,23 +47,49 @@ function drawbeeswarm1(dataset) {
             messageMap[actualMessage] += 1
     })
 
-    dataset = dataset.filter(r => !r.message.includes("RT @"))
+    swarmDataset = swarmDataset.filter(r => !r.message.includes("RT @"))
 
-    dataset.map(r => {
+    swarmDataset.map(r => {
         let actualMessage = r.message.replace(/RT @([a-z]|[A-Z]|[0-9])+\s/, "")
         r.count = messageMap[actualMessage]
         r.x = xScale(parseTime(r.date))
         r.y = ((height / 2) - margin.bottom / 2)
     })
 
-    let tweetFrequencyDomain = d3.extent(dataset.map((d) => +d.count));
+    let tweetFrequencyDomain = d3.extent(swarmDataset.map((d) => +d.count));
     let size = d3.scaleSqrt().domain(tweetFrequencyDomain).range([7.5, 15]);
 
-    dataset.map(r => r.r = size(r.count))
+    swarmDataset.map(r => { r.r = size(r.count); r.date = parseTime(r.date) })
 
-    console.log(dataset)
+    console.log(swarmDataset)
 
-    //let tooltip = d3.select("#bee_swarm_svg").append("div").attr("class", "tooltip").style("opacity", 0);
+    draw();
+
+    d3.select("#checkboxes").selectAll("input").on("change", triggerMultipleFunctions);
+
+    function triggerMultipleFunctions() {
+        resetFrameLines();
+        filter();
+    }
+}
+
+function resetFrameLines() {
+    d3.selectAll(".frameLine").remove();
+    lines = []
+    time_line = []
+    for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
+        drawFrameLines(x, xScale)
+    }
+    changeData(swarmDataset);
+    // resetPieGraph()
+    // resetBarGraph()
+}
+
+function draw() {
+    beeswarm.selectAll("g").remove()
+    const g = beeswarm.append('g')
+        .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+
     var tooltip = d3.select("#bee_swarm_div")
         .append("div")
         .style("position", "absolute")
@@ -80,285 +105,196 @@ function drawbeeswarm1(dataset) {
     let colors = d3.scaleOrdinal().domain(["hit_and_run", "fire", "pok_rally"])
         .range(["orange", "blue", "red"]);
 
-    draw();
+    xAxis = d3.axisBottom(xScale);
+    xAxis = d3.axisBottom(xScale);
+    g.append('g')
+        .attr('transform', `translate(0, ${innerHeight})`)
+        .transition().duration(1000)
+        .call(xAxis)
 
-    d3.select("#checkboxes").selectAll("input").on("change", triggerMultipleFunctions);
+    let simulation = d3.forceSimulation(swarmDataset)
+        .force("x", d3.forceX(d => d.x).strength(2))
+        .force("y", d3.forceY(d => d.y))
+        .force("collide", d3.forceCollide(12))
+        .stop();
 
-    function triggerMultipleFunctions() {
-        filter();
-        // drawPieChart();
-
+    for (let i = 0; i < 10; ++i) {
+        simulation.tick(10);
     }
 
-    function draw() {
-        xAxis = d3.axisBottom(xScale);
-        xAxis = d3.axisBottom(xScale);
-        g.append('g')
-            .attr('transform', `translate(0,${innerHeight + 20})`)
-            .transition().duration(1000)
-            .call(xAxis)
-        let simulation = d3.forceSimulation(dataset)
-            .force("x", d3.forceX(d => d.x).strength(2))
-            .force("y", d3.forceY(d => d.y))
-            .force("collide", d3.forceCollide(12))
-            .stop();
-        //simulation.tick(10);
-        for (let i = 0; i < 10; ++i) {
-            simulation.tick(10);
-        }
+    let majoreventcircles = g.selectAll(".events")
+        .data(swarmDataset, function (d) { return d["major_event"] });
 
-        let majoreventcircles = g.selectAll(".events")
-            //.data(dataset);
-            .data(dataset, function (d) { return d["major_event"] });
+    majoreventcircles.exit()
+        .transition()
+        .duration(1000)
+        .attr("cx", 0)
+        .attr("cy", d => d.y)
+        .attr("r", d => d.r)
+        .remove();
 
-        majoreventcircles.exit()
-            .transition()
-            .duration(1000)
-            .attr("cx", 0)
-            .attr("cy", d => d.y)
-            .attr("r", d => d.r)
-            .remove();
+    majoreventcircles.enter()
+        .append("circle")
+        .attr("class", "events")
+        .attr("cx", 0)
+        .attr("cy", d => d.y)
+        .attr("r", d => d.r)
+        .attr("fill", function (d) { return colors(d["major_event"]) })
+        .style("opacity", 0.7)
+        .merge(majoreventcircles)
+        .transition()
+        .duration(2000)
+        .attr("cx", function (d) { return d.x; })
+        .attr("cy", function (d) { return d.y; });
 
-        majoreventcircles.enter()
-            .append("circle")
-            .attr("class", "events")
-            .attr("cx", 0)
-            .attr("cy", d => d.y)
-            .attr("r", d => d.r)
-            .attr("fill", function (d) { return colors(d["major_event"]) })
-            .style("opacity", 0.7)
-            .merge(majoreventcircles)
-            .transition()
-            .duration(2000)
-            .attr("cx", function (d) { return d.x; })
-            .attr("cy", function (d) { return d.y; });
-
-        d3.selectAll(".events").on("mouseover", function (_, d) {
+    d3.selectAll(".events")
+        .on("mouseover", function (_, d) {
             console.log(d)
             tooltip.html(`@${d.author} : ${d.message}`);
             return tooltip.style("visibility", "visible");
         })
-            .on("mousemove", function (event) {
-                return tooltip.style("top", (event.pageY - 60) + "px")
-                    .style("left", (event.pageX + 10) + "px");
-            })
-            .on("mouseout", function () {
-                return tooltip.style("visibility", "hidden");
-            })
+        .on("mousemove", function (event) {
+            return tooltip.style("top", (event.pageY - 60) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function () {
+            return tooltip.style("visibility", "hidden");
+        });
+
+    resetFrameLines()
+    for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
+        drawFrameLines(x, xScale)
     }
+    changeData(swarmDataset);
+}
 
-    function filter() {
-        //console.log(dataset);
-        dataset_copy = dataset;
-        function getCheckedBoxes(checkboxName) {
+function drawFrameLines(x, xScale) {
+    if (lines.length < 2 && time_line.length < 2) {
+        x = parseFloat(x)
+        let line = beeswarm.append("line")
+            .attr("x1", x)
+            .attr("y1", 0)
+            .attr("x2", x)
+            .attr("y2", innerHeight + 10)
+            .attr("class", "frameLine")
+            .style("stroke", "black")
+            .style("stroke-width", 4)
 
-            let checkboxes = d3.selectAll(checkboxName).nodes();
-            let checkboxesChecked = [];
-            for (let i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i].checked) {
-                    checkboxesChecked.push(checkboxes[i].defaultValue);
-                }
+        console.log(lines, time_line)
+        lines.push(line.node());
+        time_line.push(xScale.invert(x));
+        line.call(dragHandler(xScale))
+
+        line.on("click", function (e) {
+            if (e.target.nodeName === 'line') {
+                idx = lines.indexOf(this)
+                console.log(lines, idx, this)
+                lines.splice(idx, 1)
+                time_line.splice(idx, 1)
+                console.log(lines.length)
+                e.target.remove()
             }
-            return checkboxesChecked.length > 0 ? checkboxesChecked : null;
-        }
-        let checkedBoxes = getCheckedBoxes(".event");
-        console.log(checkedBoxes);
-        let newData = [];
+        })
+    }
+}
 
-        if (checkedBoxes == null) {
-            dataset = newData;
-            draw();
-            dataset = dataset_copy;
-            return;
-        }
-        for (let i = 0; i < checkedBoxes.length; i++) {
-            let newArray = dataset.filter(function (d) {
-                return d["major_event"] === checkedBoxes[i];
-            });
-            Array.prototype.push.apply(newData, newArray);
-        }
+function filter() {
+    //console.log(dataset);
+    dataset_copy = swarmDataset;
+    function getCheckedBoxes(checkboxName) {
 
-        dataset = newData;
+        let checkboxes = d3.selectAll(checkboxName).nodes();
+        let checkboxesChecked = [];
+        for (let i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                checkboxesChecked.push(checkboxes[i].defaultValue);
+            }
+        }
+        return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+    }
+    let checkedBoxes = getCheckedBoxes(".event");
+    console.log(checkedBoxes);
+    let newData = [];
+
+    if (checkedBoxes == null) {
+        swarmDataset = newData;
         draw();
-        dataset = dataset_copy;
+        swarmDataset = dataset_copy;
+        return;
+    }
+    for (let i = 0; i < checkedBoxes.length; i++) {
+        let newArray = swarmDataset.filter(function (d) {
+            return d["major_event"] === checkedBoxes[i];
+        });
+        Array.prototype.push.apply(newData, newArray);
     }
 
-    // const beeswarm = document.getElementById("bee_swarm_svg");
-    const beeswarm = d3.select("#bee_swarm_svg")
-    const lines = []; // array to keep track of created lines
-    const time_line = [];
+    swarmDataset = newData;
+    draw();
+    swarmDataset = dataset_copy;
+}
 
-    var dragHandler = d3.drag()
-        .on("drag", function (event) {
+var dragHandler = (xScale) => d3.drag()
+    .on("drag", function (event) {
+        console.log(event, lines)
+        idx = lines.indexOf(this)
+        firstLine = true;
+        if (idx == 0) {
+            otherLineX = d3.select(lines[1]).attr("x1")
+        } else {
+            firstLine = false;
+            otherLineX = d3.select(lines[0]).attr("x1")
+        }
+        if (firstLine && event.x >= otherLineX) {
+            // dragHandler.on("drag", null);
+            alert("Start Line can not be placed after End Line")
+        } else if (!firstLine && event.x <= otherLineX) {
+            // dragHandler.on("drag", null);
+            alert("End Line can not be placed before Start Line")
+        } else {
             let line = d3.select(this)
             line.attr("x1", (parseInt(line.attr("x1")) + event.dx))
             line.attr("x2", (parseInt(line.attr("x2")) + event.dx))
-        });
-
-    beeswarm.on("click", (event, d) => {
-        // console.log(event.target.nodeName)
-        if (event.target.nodeName === 'svg') {
-            const x = event.clientX - beeswarm.node().getBoundingClientRect().left;
-            if (lines.length == 2) {
-                alert("You can only add two lines.");
-                return;
-            }
-            const line = beeswarm.append("line")
-                .attr("x1", x)
-                .attr("y1", 0)
-                .attr("x2", x)
-                .attr("y2", innerHeight + 70)
-                .attr("class", "frameLine")
-                .style("stroke", "black")
-                .style("stroke-width", 4)
-
-            lines.push(line.node());
-            time_line.push(xScale.invert(x));
-            line.call(dragHandler)
-
-            line.on("click", function (e) {
-                if (e.target.nodeName === 'line') {
-                    idx = lines.indexOf(this)
-                    console.log(lines, idx, this)
-                    lines.splice(idx, 1)
-                    time_line.splice(idx, 1)
-                    console.log(lines.length)
-                    e.target.remove()
-                }
-            })
-            if (time_line.length == 2) {
-                console.log(dataset, time_line);
-                let starttime = parseTime('20140123170000');
-                let endtime = parseTime('20140123213445');
-                filtereddata1 = dataset.filter(function (d) {
-                    return d.date >= starttime && d.date < time_line[0];
-                });
-                console.log(filtereddata1);
-                filtereddata2 = dataset.filter(function (d) {
-                    return d.date >= time_line[0] && d.date < time_line[1];
-                });
-                console.log(filtereddata2);
-                filtereddata3 = dataset.filter(function (d) {
-                    return d.date >= time_line[1] && d.date <= endtime;
-                });
-                console.log(filtereddata3);
-                drawPieChart(filtereddata1, filtereddata2, filtereddata3)
-
-
-                drawBars(filtereddata1, filtereddata2, filtereddata3)
-
-                //call piechart function
-                //call word cloud
-                //call bar chart
-            }
+            lines[idx] = line.node()
+            time_line[idx] = xScale.invert(line.attr("x1"))
+            changeData(swarmDataset);
         }
-    })
+    });
 
-    // beeswarm.addEventListener("click", function(event) {
-    //     // Prevent the default context menu from appearing
-    //     event.preventDefault();
+beeswarm.on("click", (event, d) => {
+    // console.log(event.target.nodeName)
+    if (event.target.nodeName === 'svg') {
+        const x = event.clientX - beeswarm.node().getBoundingClientRect().left;
+        if (lines.length == 2) {
+            alert("You can only add two lines.");
+            return;
+        }
+        drawFrameLines(x, xScale)
+        changeData(swarmDataset);
+    }
+})
 
-
-    //     // Get the x-coordinate of the mouse click relative to the SVG element
-    //     const x = event.clientX - beeswarm.getBoundingClientRect().left;
-
-    //     // Check if there are already two lines on the SVG
-    //     if (lines.length == 2)  {
-    //       alert("You can only add two lines.");
-    //       return;
-    //     }
-    //     console.log(formatTime(xScale.invert(x)));
-    //     // Create a new line element
-    //     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-
-    //     // Set the line's coordinates and styling
-    //     line.setAttribute("x1", x);
-    //     line.setAttribute("x2", x);
-    //     line.setAttribute("y1", 0);
-    //     line.setAttribute("y2", beeswarm.clientHeight);
-    //     line.setAttribute("stroke", "black");
-    //     line.setAttribute("stroke-width", "4");
-    //     line.setAttribute("class", "frameLine")
-
-    //     // Add the line to the SVG element
-
-    //     // Add a right-click event listener to the line to remove it
-    //     line.addEventListener("click", function(event) {
-    //       event.preventDefault();
-    //       //line.remove();
-    //       beeswarm.removeChild(line); // remove the line from the SVG element
-    //       time_line.splice(time_line.indexOf(line),1);
-    //         lines.splice(lines.indexOf(line), 1); // remove the line from the lines array
-    //         console.log(time_line);
-    //     });
-    //     beeswarm.appendChild(line);
-    //     lines.push(line);
-    //     time_line.push(formatTime(xScale.invert(x)));
-    //     if(time_line.length == 2){
-    //         //console.log(dataset);
-    //         starttime = 20140123170000;
-    //         endtime = 20140123213445;
-    //         filtereddata1 = dataset.filter(function(d) {
-    //             return d.date >= starttime && d.date < time_line[0];
-    //         });
-    //         filtereddata2 = dataset.filter(function(d) {
-    //             return d.date >= time_line[0] && d.date < time_line[1];
-    //         });
-    //         filtereddata3 = dataset.filter(function(d) {
-    //             return d.date >= time_line[1] && d.date <= endtime;
-    //         });
-    //         console.log(filtereddata1,filtereddata2,filtereddata3);
-    //         for (let ele of d3.selectAll(".frameLine")) {
-    //             console.log(ele)
-    //             dragHandler(ele)
-    //         }
-    //         //call piechart function
-    //         //call word cloud
-    //         //call bar chart
-
-    //     }
-    //   });
-
+function changeData(dataset) {
+    if (time_line.length == 2) {
+        console.log(dataset, time_line);
+        let starttime = parseTime('20140123170000');
+        let endtime = parseTime('20140123213445');
+        filtereddata1 = dataset.filter(function (d) {
+            return d.date >= starttime && d.date < time_line[0];
+        });
+        console.log(filtereddata1);
+        filtereddata2 = dataset.filter(function (d) {
+            return d.date >= time_line[0] && d.date < time_line[1];
+        });
+        console.log(filtereddata2);
+        filtereddata3 = dataset.filter(function (d) {
+            return d.date >= time_line[1] && d.date <= endtime;
+        });
+        console.log(filtereddata3);
+        drawPieChart(filtereddata1, filtereddata2, filtereddata3)
+        drawBars(filtereddata1, filtereddata2, filtereddata3)
+    }
 }
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-// let svg_bee = d3.select("#bee_swarm_svg");
-// //console.log(svg_bee.style('width'));
-// const width_bee = +svg_bee.style('width').replace('px','');
-// const height_bee = +svg_bee.style('height').replace('px','');
-// const margin_bee = { top:50, bottom: 100, right: 30, left: 70 };
-// const innerWidth_bee = width_bee - margin_bee.left - margin_bee.right;
-// const innerHeight_bee = height_bee - margin_bee.top - margin_bee.bottom;
-// const g = svg_bee.append('g')
-//     .attr('transform', 'translate('+margin_bee.left+', '+margin_bee.top+')');
-// let xScale_bee = d3.scaleTime()
-//                // .domain(d3.extent(dates))
-//                 .range([0, innerWidth_bee]);
-// svg_bee.append("g").attr("class", "x axis").attr('transform',`translate(0,${innerHeight-100})`)
-// let colors = d3.scaleOrdinal().domain(["hit_and_run", "fire", "pok_rally"])
-//                                     .range(["orange","blue","red"]);
-// d3.csv('data/csv-2001-2131.csv').then(function (data){
-//     let dataset = data;
-//     dataset.forEach(d=>{
-//         d["date"] = +d["date"];
-//     })
-//     console.log(dataset);
-//     const parseTime = d3.timeParse("%Y%m%d%H%M%S");
-//     const dates = dataset.map(d => parseTime(d.date));
-//     xScale_bee.domain(d3.extent(dates));
-//     drawbeeswarm();
-
-//     function drawbeeswarm(){
-//         let xAxis;
-//         xAxis = d3.axisBottom(xScale_bee);
-//         d3.transition(g).select(".x.axis")
-//             .transition()
-//             .duration(1000)
-//             .call(xAxis);
-//     }
-// })
-// })
 
 function createArcDiagram() {
 
@@ -478,8 +414,8 @@ function createArcDiagram() {
 }
 
 function createSplineGraph(data) {
+    console.log(data)
     data.forEach(function (d) {
-        d.date = d3.timeParse("%Y%m%d%H%M%S")(d.date);
         if (d.sentiment == "neutral") {
             d.sentiment_score = 0;
         } else if (d.sentiment == "positive") {

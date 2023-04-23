@@ -108,7 +108,7 @@ function drawBars(list1, list2, list3) {
 }
 
 function drawBarChart(list1, list2, list3) {
-    console.log(list1, list2, list3)
+    // console.log(list1, list2, list3)
     const checked = d3.selectAll("input[type='checkbox']:checked")
         .nodes()
         .map(checkbox => checkbox.value);
@@ -124,9 +124,17 @@ function drawBarChart(list1, list2, list3) {
 
 function drawEachBarChart(bar_data, barSvg) {
 
-    var bar_tooltip = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
+    var bar_tooltip = d3.select("#bar_chart_div")
+    .append("div")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("background-color", "white")
+    .style("padding", "8px")
+    .style("border-radius", "8px")
+    .style("width", "fit-content")
+    .style("font-size", "14px")
+    .style("border", "2px solid black")
 
     const grouped_bar_data = d3.group(bar_data, d => d.author);
 
@@ -159,7 +167,7 @@ function drawEachBarChart(bar_data, barSvg) {
         .padding(0.1);
 
     var xScale = d3.scaleLinear()
-        .range([0, bar_svg_width - bar_svg_margin])
+        .range([0, bar_svg_width - bar_svg_margin - 15])
         .domain([0, d3.max(top_six, function (d) {
             return d.count;
         })]);
@@ -181,18 +189,17 @@ function drawEachBarChart(bar_data, barSvg) {
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
-            bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Author: " + d.author + "<br>" + "Tweets: " + d.count);
         })
         .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
-                .style("opacity", 1);
+                .style("visibility", "visible");
         })
         .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
-                .style("opacity", 0);
+                .style("visibility", "hidden");
         });
 
     barSvg.selectAll(".label")
@@ -215,18 +222,17 @@ function drawEachBarChart(bar_data, barSvg) {
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
-            bar_tooltip.style("display", "inline-block");
             bar_tooltip.html("Author: " + d.author + "<br>" + "Tweets: " + d.count);
         })
         .on("mouseover", function (event, d) {
             bar_tooltip.transition()
                 .duration(200)
-                .style("opacity", 1);
+                .style("visibility", "visible");
         })
         .on("mouseout", function (d) {
             bar_tooltip.transition()
                 .duration(500)
-                .style("opacity", 0);
+                .style("visibility", "hidden");
         });
 
 }
@@ -347,9 +353,6 @@ function drawEachTagChart(bar_data, barSvg) {
 
 }
 
-
-
-
 function countTags(data) {
     const tagCounts = {};
 
@@ -373,7 +376,12 @@ function countTags(data) {
     return Object.entries(tagCounts).map(([tag, count]) => ({ tag, count }));
 }
 
-
-
-
-
+function resetBarGraph() {
+    list = [d3.select('#bar_chart_svg_1').node(), d3.select('#bar_chart_svg_2').node(), d3.select('#bar_chart_svg_3').node()]
+    for(let ele of list) {
+        barSvg = d3.select(ele)
+        barSvg.selectAll("g").remove();
+        barSvg.selectAll(".bar").remove();
+        barSvg.selectAll(".label").remove();
+    }
+}
