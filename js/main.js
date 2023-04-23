@@ -87,8 +87,7 @@ function drawbeeswarm1(dataset) {
     function triggerMultipleFunctions() {
         filter();
         // drawPieChart();
-        drawBars(null, null, null);
-        loadWordCloudImage(null, null);
+
     }
 
     function draw() {
@@ -245,10 +244,9 @@ function drawbeeswarm1(dataset) {
                 console.log(filtereddata3);
                 drawPieChart(filtereddata1, filtereddata2, filtereddata3)
 
-                const formatDate = d3.timeFormat("%Y%m%d%H%M%S");
 
                 drawBars(filtereddata1, filtereddata2, filtereddata3)
-                loadWordCloudImage(formatDate(time_line[0]), formatDate(time_line[1]))
+
                 //call piechart function
                 //call word cloud
                 //call bar chart
