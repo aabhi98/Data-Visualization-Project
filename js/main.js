@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(data2);
         drawbeeswarm1();
         createArcDiagram();
-        createSplineGraph([...data]);
+        //createSplineGraph(spline_data);
     })
 })
 
@@ -290,9 +290,10 @@ function changeData(dataset) {
         filtereddata3 = dataset.filter(function (d) {
             return d.date >= time_line[1] && d.date <= endtime;
         });
-        console.log(filtereddata3);
-        drawPieChart(filtereddata1, filtereddata2, filtereddata3)
-        drawBars(filtereddata1, filtereddata2, filtereddata3)
+        console.log("filtereddata3",filtereddata3);
+        drawPieChart(filtereddata1, filtereddata2, filtereddata3);
+        drawBars(filtereddata1, filtereddata2, filtereddata3);
+        //createSplineGraph(filtereddata2);
 
         const formatDate = d3.timeFormat("%Y%m%d%H%M%S");
 
@@ -302,10 +303,10 @@ function changeData(dataset) {
 
 function createArcDiagram() {
 
-    // set the dimensions and margins of the graph
-    const margin = { top: 10, right: 30, bottom: 10, left: 150 },
-        width = 1100 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+// set the dimensions and margins of the graph
+const margin = { top: 10, right: 30, bottom: 10, left: 30 },
+    width = 1150 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
     const svg = d3.select("#arc_diagram_svg")
@@ -325,7 +326,8 @@ function createArcDiagram() {
         let allGroups = data.nodes.map(d => d.grp)
         allGroups = [...new Set(allGroups)]
 
-        // A color scale for groups:
+        console.log("allGroups",allGroups);
+  // A color scale for groups:
         const color = d3.scaleOrdinal()
             .domain(allGroups)
             .range(d3.schemeSet3);
@@ -377,17 +379,57 @@ function createArcDiagram() {
             .style("fill", d => color(d.grp))
             .attr("stroke", "black")
 
-        // And give them a label
-        const labels = svg
-            .selectAll("mylabels")
-            .data(data.nodes)
-            .join("text")
-            .attr("x", 0)
-            .attr("y", 0)
-            .text(d => d.name)
-            .style("text-anchor", "end")
-            .attr("transform", d => `translate(${x(d.name)},${height - 15}) rotate(-45)`)
-            .style("font-size", 6)
+  // And give them a label
+  const labels = svg
+    .selectAll("mylabels")
+    .data(data.nodes)
+    .join("text")
+      .attr("x", 0)
+      .attr("y", 0)
+      .text(d=>d.name)
+      .style("text-anchor", "end")
+      .attr("transform",d=>`translate(${x(d.name)},${height-15}) rotate(-45)`)
+      .style("font-size", 12);
+
+  const legend = svg.append("g")
+      .attr("class", "legend")
+      .attr("transform", `translate(${width + margin.right - 10}, ${margin.top})`);
+
+  const legendItems = legend.selectAll(".legend-item")
+      .data(allGroups)
+      .enter().append("g")
+      .attr("class", "legend-item")
+      .attr("transform", (d, i) => `translate(0, ${i * 25})`);
+    
+  legendItems.append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", 20)
+      .attr("height", 20)
+      .style("fill", color);
+    
+      legendItems.append("text")
+      .attr("x", 30)
+      .attr("y", 14)
+      .text(d => {
+        switch(d){
+          case 0:
+            return 'pok_rally';
+          case 1:
+            return 'chatter';
+          case 2:
+            return 'fire';
+          case 3:
+            return 'unknown';
+          case 4:
+            return 'spam';
+          case 5:
+            return 'hit_and_run';
+        }
+      })
+      .style("font-size", "14px");
+    
+    
 
         // Add the highlighting functionality
         nodes.on('mouseover', function (event, d) {
@@ -415,53 +457,4 @@ function createArcDiagram() {
                     .style("font-size", 6)
             })
     })
-}
-
-function createSplineGraph(data) {
-    console.log(data)
-    data.forEach(function (d) {
-        if (d.sentiment == "neutral") {
-            d.sentiment_score = 0;
-        } else if (d.sentiment == "positive") {
-            d.sentiment_score = 1;
-        } else if (d.sentiment == "negative") {
-            d.sentiment_score = -1;
-        }
-    });
-    console.log("spline data", data);
-    var margin = { top: 20, right: 20, bottom: 30, left: 300 },
-        width = 900 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom;
-
-    var x = d3.scaleTime()
-        .domain(d3.extent(data, function (d) { return d.date; }))
-        .range([0, width]);
-
-    var y = d3.scaleLinear()
-        .domain([-1, 1])
-        .range([height, 0]);
-
-    var line = d3.line()
-        .x(function (d) { return x(d.date); })
-        .y(function (d) { return y(d.sentiment_score); });
-
-    var svg = d3.select("#spline_graph_svg")
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    var filteredData = data.filter(function (d) {
-        return !isNaN(d.sentiment_score);
-    });
-
-    svg.append("path")
-        .datum(filteredData)
-        .attr("class", "line")
-        .attr("d", line);
-
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
-
-    svg.append("g")
-        .call(d3.axisLeft(y));
 }
