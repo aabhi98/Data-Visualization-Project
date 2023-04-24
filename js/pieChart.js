@@ -127,7 +127,7 @@ function drawPieChart(data1, data2, data3) {
         legend1.append('text')
             .attr('x', -120)
             .attr('y', 20)
-            .text('sentimental analysis')
+            .text('Sentiment Analysis')
             .style('font-size', '20px');
 
         legend1.append('circle')
