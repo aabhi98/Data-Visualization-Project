@@ -108,7 +108,7 @@ function draw() {
     xAxis = d3.axisBottom(xScale);
     xAxis = d3.axisBottom(xScale);
     g.append('g')
-        .attr('transform', `translate(0, ${innerHeight})`)
+        .attr('transform', `translate(0, ${innerHeight-20})`)
         .transition().duration(1000)
         .call(xAxis)
 
@@ -162,7 +162,7 @@ function draw() {
         });
     g.append('text')
             .attr('x', 1080)
-            .attr('y', 620)
+            .attr('y', 600)
             .text('Time')
             .style('font-size', '20px');
     resetFrameLines()
