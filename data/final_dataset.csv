@@ -1,4 +1,4 @@
-id,type,date,author,latitude,longitude, location,major_event,sentiment,message
+id,type,date,author,latitude,longitude,location,major_event,sentiment,message
 1,mbdata,20140123170000,POK,,,,spam,neutral,Follow us @POK-Kronos
 2,mbdata,20140123170000,maha_Homeland,,,,pok_rally,positive,Don't miss a moment!  Follow our live coverage of the POK Rally in the Park!
 3,mbdata,20140123170000,Viktor-E,,,,pok_rally,neutral,Come join us in the Park! Music tonight at Abila City Park!

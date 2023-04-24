@@ -36,7 +36,9 @@
             border-radius: 3px;
         }
 
-        #word_cloud_svg_1, #pie_chart_svg_1, #bar_chart_svg_1 {
+        #word_cloud_svg_1,
+        #pie_chart_svg_1,
+        #bar_chart_svg_1 {
             margin: 10px;
             width: 400px;
             height: 400px;
@@ -45,7 +47,9 @@
             border-radius: 3px;
         }
 
-        #word_cloud_svg_2, #pie_chart_svg_2, #bar_chart_svg_2 {
+        #word_cloud_svg_2,
+        #pie_chart_svg_2,
+        #bar_chart_svg_2 {
             margin: 10px;
             width: 400px;
             height: 400px;
@@ -54,7 +58,9 @@
             border-radius: 3px;
         }
 
-        #word_cloud_svg_3, #pie_chart_svg_3, #bar_chart_svg_3 {
+        #word_cloud_svg_3,
+        #pie_chart_svg_3,
+        #bar_chart_svg_3 {
             margin: 10px;
             width: 400px;
             height: 400px;
@@ -63,12 +69,16 @@
             border-radius: 3px;
         }
 
-        #bar_chart_svg_1, #bar_chart_svg_2, #bar_chart_svg_3 {
+        #bar_chart_svg_1,
+        #bar_chart_svg_2,
+        #bar_chart_svg_3 {
             width: 390px;
             margin: 8px;
         }
 
-        #word_cloud_svg_1, #word_cloud_svg_2, #word_cloud_svg_3 {
+        #word_cloud_svg_1,
+        #word_cloud_svg_2,
+        #word_cloud_svg_3 {
             padding: 10px;
         }
 
@@ -93,12 +103,19 @@
         }
 
         #point_map_svg {
+            position: relative;
             left: 10px;
-            width: 1050px;
+            width: 1210px;
             height: 800px;
             background-color: white;
             border: 1px solid lightgray;
             border-radius: 3px;
+        }
+
+        #point_map_div {
+            width: 1230px;
+            margin: 10px;
+            margin-bottom: 5%;
         }
 
         .playButton {
@@ -106,18 +123,35 @@
             margin-left: 25px;
         }
 
+        #timeSlider {
+            width: 900px;
+            height: 25px;
+            margin-left: 50px;
+        }
+
+        #tickmarks {
+            margin-top: -20px;
+            margin-left: 115px;
+            padding-left: -5px;
+            display: flex;
+            justify-content: space-between;
+            text-anchor: middle;
+            color: black;
+            width: 930px;
+        }
+
         div.tooltip {
-          position: absolute;
-          text-align: center;
-          width: 250px;
-          height: 60px;
-          padding: 10px;
-          font: 16px sans-serif;
-          background: white;
-          border: 2px solid black;
-          stroke: black;
-          border-radius: 8px;
-          pointer-events: none;
+            position: absolute;
+            text-align: center;
+            width: 250px;
+            height: 60px;
+            padding: 10px;
+            font: 16px sans-serif;
+            background: white;
+            border: 2px solid black;
+            stroke: black;
+            border-radius: 8px;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -201,16 +235,35 @@
                 <svg id="spline_graph_svg"></svg>
             </div>
             <div id="point_map_div">
-                <div class="row" style="margin: 10px 10px; position: relative;">
+                <div class="row" style="position: relative;">
                     <svg id="point_map_svg"></svg>
                     <div id="point_map_message_info" style="margin-left: 10px;"></div>
                 </div>
-                <div id="point_map_control">
+                <div id="point_map_control" style="margin-top: 25px;">
                     <image src="images/play.png" width="50px" height="50px" onclick="playAnimation()"
                         class="playButton"></image>
-                    <input type="range" min="0" max="319" value="0" step="10"
-                        style="width: 900px; height: 25px; margin-left: 50px;" id="timeSlider"
+                    <input type="range" min="0" max="320" value="0" step="20" list="tickmarks" id="timeSlider"
                         onchange="changeCurrentLimit(this)" />
+                    <button class="btn btn-dark" width="100px" height="50px" style="margin-left: 50px;" onclick="drawHitAndRunLines()">Track Van</button>
+                    <datalist id="tickmarks">
+                        <option value="0" label="17:00"></option>
+                        <option value="20"></option>
+                        <option value="40"></option>
+                        <option value="60"></option>
+                        <option value="80"></option>
+                        <option value="100" label="18:30"></option>
+                        <option value="120"></option>
+                        <option value="140"></option>
+                        <option value="160"></option>
+                        <option value="180"></option>
+                        <option value="200" label="20:00"></option>
+                        <option value="220"></option>
+                        <option value="240"></option>
+                        <option value="260"></option>
+                        <option value="280"></option>
+                        <option value="300"></option>
+                        <option value="320" label="21:30"></option>
+                    </datalist>
                 </div>
             </div>
         </div>

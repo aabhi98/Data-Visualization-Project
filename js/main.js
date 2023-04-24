@@ -108,6 +108,7 @@ function draw() {
     xAxis = d3.axisBottom(xScale);
     xAxis = d3.axisBottom(xScale);
     g.append('g')
+        .attr("id", "xAxis")
         .attr('transform', `translate(0, ${innerHeight})`)
         .transition().duration(1000)
         .call(xAxis)
@@ -169,16 +170,18 @@ function draw() {
 }
 
 function drawFrameLines(x, xScale) {
+    console.log(lines.length)
     if (lines.length < 2 && time_line.length < 2) {
         x = parseFloat(x)
         let line = beeswarm.append("line")
             .attr("x1", x)
             .attr("y1", 0)
             .attr("x2", x)
-            .attr("y2", innerHeight + 10)
+            .attr("y2", innerHeight + 90)
             .attr("class", "frameLine")
             .style("stroke", "black")
             .style("stroke-width", 4)
+            .style("cursor", "move")
 
         console.log(lines, time_line)
         lines.push(line.node());
@@ -259,6 +262,9 @@ var dragHandler = (xScale) => d3.drag()
             time_line[idx] = xScale.invert(line.attr("x1"))
             changeData(swarmDataset);
         }
+    })
+    .on("end", function (event) {
+        console.log(event, lines)
     });
 
 beeswarm.on("click", (event, d) => {
