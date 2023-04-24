@@ -9,6 +9,7 @@ var width = +beeswarm.style('width').replace('px', '');
 var height = +beeswarm.style('height').replace('px', '');
 var innerWidth = width - margin.left - margin.right;
 var innerHeight = height - margin.bottom;
+var formatDate = d3.timeFormat("%Y%m%d%H%M%S");
 
 document.addEventListener('DOMContentLoaded', function () {
     // let data;
@@ -172,6 +173,7 @@ function draw() {
         drawFrameLines(x, xScale)
     }
     changeData(swarmDataset);
+    loadWordCloudImage(formatDate(time_line[0]), formatDate(time_line[1]))
 }
 
 function drawFrameLines(x, xScale) {
@@ -270,6 +272,13 @@ var dragHandler = (xScale) => d3.drag()
     })
     .on("end", function (event) {
         console.log(event, lines)
+        idx = lines.indexOf(this)
+        let line = d3.select(this)
+        line.attr("x1", (parseInt(line.attr("x1")) + event.dx))
+        line.attr("x2", (parseInt(line.attr("x2")) + event.dx))
+        lines[idx] = line.node()
+        time_line[idx] = xScale.invert(line.attr("x1"))
+        loadWordCloudImage(formatDate(time_line[0]), formatDate(time_line[1]))
     });
 
 beeswarm.on("click", (event, d) => {
@@ -305,10 +314,7 @@ function changeData(dataset) {
         drawPieChart(filtereddata1, filtereddata2, filtereddata3);
         drawBars(filtereddata1, filtereddata2, filtereddata3);
         //createSplineGraph(filtereddata2);
-
-        const formatDate = d3.timeFormat("%Y%m%d%H%M%S");
-
-        loadWordCloudImage(formatDate(time_line[0]), formatDate(time_line[1]))
+        // loadWordCloudImage(formatDate(time_line[0]), formatDate(time_line[1]))
     }
 }
 
