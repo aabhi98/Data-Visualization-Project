@@ -110,7 +110,7 @@ function draw() {
     xAxis = d3.axisBottom(xScale);
     g.append('g')
         .attr("id", "xAxis")
-        .attr('transform', `translate(0, ${innerHeight-20})`)
+        .attr('transform', `translate(0, ${innerHeight - 20})`)
         .transition().duration(1000)
         .call(xAxis)
 
@@ -163,10 +163,10 @@ function draw() {
             return tooltip.style("visibility", "hidden");
         });
     g.append('text')
-            .attr('x', 1080)
-            .attr('y', 600)
-            .text('Time')
-            .style('font-size', '20px');
+        .attr('x', 1080)
+        .attr('y', 600)
+        .text('Time')
+        .style('font-size', '20px');
     resetFrameLines()
     for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
         drawFrameLines(x, xScale)
@@ -301,7 +301,7 @@ function changeData(dataset) {
         filtereddata3 = dataset.filter(function (d) {
             return d.date >= time_line[1] && d.date <= endtime;
         });
-        console.log("filtereddata3",filtereddata3);
+        console.log("filtereddata3", filtereddata3);
         drawPieChart(filtereddata1, filtereddata2, filtereddata3);
         drawBars(filtereddata1, filtereddata2, filtereddata3);
         //createSplineGraph(filtereddata2);
@@ -314,10 +314,10 @@ function changeData(dataset) {
 
 function createArcDiagram() {
 
-// set the dimensions and margins of the graph
-const margin = { top: 10, right: 30, bottom: 10, left: 30 },
-    width = 1150 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    // set the dimensions and margins of the graph
+    const margin = { top: 10, right: 30, bottom: 10, left: 30 },
+        width = 1150 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
     const svg = d3.select("#arc_diagram_svg")
@@ -337,8 +337,8 @@ const margin = { top: 10, right: 30, bottom: 10, left: 30 },
         let allGroups = data.nodes.map(d => d.grp)
         allGroups = [...new Set(allGroups)]
 
-        console.log("allGroups",allGroups);
-  // A color scale for groups:
+        console.log("allGroups", allGroups);
+        // A color scale for groups:
         const customColors = ['#7fc97f', 'red', 'blue', 'orange', 'black'];
 
         const color = d3.scaleOrdinal()
@@ -392,63 +392,63 @@ const margin = { top: 10, right: 30, bottom: 10, left: 30 },
             .style("fill", d => color(d.grp))
             .attr("stroke", "black")
 
-  // And give them a label
-  const labels = svg
-    .selectAll("mylabels")
-    .data(data.nodes)
-    .join("text")
-      .attr("x", 0)
-      .attr("y", 0)
-      .text(d=>d.name)
-      .style("text-anchor", "end")
-      .attr("transform",d=>`translate(${x(d.name)},${height-15}) rotate(-45)`)
-      .style("font-size", 12);
+        // And give them a label
+        const labels = svg
+            .selectAll("mylabels")
+            .data(data.nodes)
+            .join("text")
+            .attr("x", 0)
+            .attr("y", 0)
+            .text(d => d.name)
+            .style("text-anchor", "end")
+            .attr("transform", d => `translate(${x(d.name)},${height - 15}) rotate(-45)`)
+            .style("font-size", 12);
 
-  const legend = svg.append("g")
-      .attr("class", "legend")
-      .attr("transform", `translate(${width + margin.right - 10}, ${margin.top})`);
+        const legend = svg.append("g")
+            .attr("class", "legend")
+            .attr("transform", `translate(${width + margin.right - 10}, ${margin.top})`);
 
-  const legendItems = legend.selectAll(".legend-item")
-      .data(allGroups)
-      .enter().append("g")
-      .attr("class", "legend-item")
-      .attr("transform", (d, i) => `translate(0, ${i * 25})`);
-    
-  legendItems.append("rect")
-      .attr("x", 0)
-      .attr("y", 0)
-      .attr("width", 20)
-      .attr("height", 20)
-      .style("fill", color);
-    
-      legendItems.append("text")
-      .attr("x", 30)
-      .attr("y", 14)
-      .text(d => {
-        switch(d){
-          case 0:
-            return 'pok_rally';
-          case 1:
-            return 'chatter';
-          case 2:
-            return 'fire';
-          case 3:
-            return 'unknown';
-          case 4:
-            return 'spam';
-          case 5:
-            return 'hit_and_run';
-        }
-      })
-      .style("font-size", "14px");
+        const legendItems = legend.selectAll(".legend-item")
+            .data(allGroups)
+            .enter().append("g")
+            .attr("class", "legend-item")
+            .attr("transform", (d, i) => `translate(0, ${i * 25})`);
 
-      svg.append('text')
+        legendItems.append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", color);
+
+        legendItems.append("text")
+            .attr("x", 30)
+            .attr("y", 14)
+            .text(d => {
+                switch (d) {
+                    case 0:
+                        return 'pok_rally';
+                    case 1:
+                        return 'chatter';
+                    case 2:
+                        return 'fire';
+                    case 3:
+                        return 'unknown';
+                    case 4:
+                        return 'spam';
+                    case 5:
+                        return 'hit_and_run';
+                }
+            })
+            .style("font-size", "14px");
+
+        svg.append('text')
             .attr('x', 1180)
             .attr('y', 560)
             .text('Authors')
             .style('font-size', '24px');
-    
-    
+
+
 
         // Add the highlighting functionality
         nodes.on('mouseover', function (event, d) {
