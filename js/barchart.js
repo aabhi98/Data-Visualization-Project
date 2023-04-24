@@ -63,9 +63,16 @@ function drawBars(list1, list2, list3) {
     bar_svg2 = d3.select('#bar_chart_svg_2');
     bar_svg3 = d3.select('#bar_chart_svg_3');
 
-    bar_data1 = list1
-    bar_data2 = list2
-    bar_data3 = list3
+    if (list1 != null ) {
+        bar_data1 = list1
+    }
+
+    if (list2 != null ) {
+        bar_data2 = list2
+    }
+    if (list3 != null ) {
+        bar_data3 = list3
+    }
 
 
     // bar_data1.map(d => {
@@ -96,7 +103,7 @@ function drawBars(list1, list2, list3) {
     if (selectedValue === "tag") {
         drawTagsBarChart(bar_data1, bar_data2, bar_data3);
     } else {
-        drawBarChart(bar_data1, bar_data2, bar_data3);
+        drawBarChart();
     }
 }
 
@@ -105,9 +112,9 @@ function drawBarChart(list1, list2, list3) {
     const checked = d3.selectAll("input[type='checkbox']:checked")
         .nodes()
         .map(checkbox => checkbox.value);
-    filtered_bar_data1 = list1.filter(c => checked.includes(c.major_event));
-    filtered_bar_data2 = list2.filter(c => checked.includes(c.major_event));
-    filtered_bar_data3 = list3.filter(c => checked.includes(c.major_event));
+    filtered_bar_data1 = bar_data1.filter(c => checked.includes(c.major_event));
+    filtered_bar_data2 = bar_data2.filter(c => checked.includes(c.major_event));
+    filtered_bar_data3 = bar_data3.filter(c => checked.includes(c.major_event));
 
     drawEachBarChart(filtered_bar_data1, bar_svg1)
     drawEachBarChart(filtered_bar_data2, bar_svg2)
@@ -169,7 +176,7 @@ function drawEachBarChart(bar_data, barSvg) {
         .data(top_six)
         .enter()
         .append("rect")
-        .style("fill", "#FFA233")
+        .style("fill", "#92a8d1")
         .attr("class", "bar")
         .style("stroke", "black")
         .style("stroke-width", 1)
@@ -205,7 +212,7 @@ function drawEachBarChart(bar_data, barSvg) {
             if (xScale(d.count) < bar_svg_width - bar_svg_margin - 50) {
                 return xScale(d.count) + 10
             }
-            return bar_svg_width - bar_svg_margin - 80;
+            return bar_svg_width - bar_svg_margin - 90;
         })
         .attr("y", function (d) { return yScale(d.author) + yScale.bandwidth() / 2 + 5; })
         .text(function (d) { return d.author; })
@@ -285,14 +292,16 @@ function drawEachTagChart(bar_data, barSvg) {
         .data(top_six_tags)
         .enter()
         .append("rect")
-        .style("fill", "#FFA233")
+        .style("fill", "#bcc499")
         .attr("class", "bar")
         .style("stroke", "black")
         .style("stroke-width", 1)
         .attr("y", function (d) { return tag_yScale(d.tag); })
         .attr("height", tag_yScale.bandwidth())
         .attr("x", bar_svg_margin)
-        .attr("width", function (d) { return tag_xScale(d.count) - 10; })
+        .attr("width", function (d) {
+            return tag_xScale(d.count) - 20;
+        })
         .on("mousemove", function (event, d) {
             bar_tooltip.style("left", event.pageX + 10 + "px");
             bar_tooltip.style("top", event.pageY - 50 + "px");
@@ -317,8 +326,8 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("class", "label")
         .attr("x", function (d) {
 
-            if (tag_xScale(d.count) < bar_svg_width - bar_svg_margin - 50) {
-                return tag_xScale(d.count) + 10
+            if (tag_xScale(d.count) < bar_svg_width - bar_svg_margin - 30) {
+                return tag_xScale(d.count)
             }
             return bar_svg_width - bar_svg_margin - 80;
         })

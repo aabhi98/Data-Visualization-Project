@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-    <title>Project #1: CSE 578 - Spring 2023</title>
+    <title>Course Project: CSE 578 - Spring 2023</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <style>
         .myContainer {
@@ -15,8 +15,36 @@
             margin-left: 60px;
             width: 1230px;
         }
+        #description {
+            margin :10px;
+            padding :10px;
+            width : 890px;
+            height : 590px;
+            align-items: left;
+            background-color: #F5F5DC;
+            border: 3px solid black;
+            border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #contribution {
+            margin :10px;
+            width : 270px;
+            height : 400px;
+            align-items: right;
+            background-color: #F5F5DC;
+            border: 3px solid black;
+            border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
 
+        }
         #bee_swarm_div,
+        #explaination_div,
         #word_cloud_div,
         #pie_chart_div,
         #spline_graph_div,
@@ -31,9 +59,14 @@
             margin: 10px;
             width: 1400px;
             height: 700px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #word_cloud_svg_1,
@@ -42,9 +75,14 @@
             margin: 10px;
             width: 400px;
             height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #word_cloud_svg_2,
@@ -53,9 +91,14 @@
             margin: 10px;
             width: 400px;
             height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #word_cloud_svg_3,
@@ -64,9 +107,14 @@
             margin: 10px;
             width: 400px;
             height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #bar_chart_svg_1,
@@ -74,12 +122,28 @@
         #bar_chart_svg_3 {
             width: 390px;
             margin: 8px;
+            background-color: #F5F5DC;
+            border: 3px solid black;
+            border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #word_cloud_svg_1,
         #word_cloud_svg_2,
         #word_cloud_svg_3 {
             padding: 10px;
+            background-color: #F5F5DC;
+            border: 3px solid black;
+            border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #arc_diagram_svg {
@@ -87,9 +151,14 @@
             margin: 10px;
             width: 1230px;
             height: 520px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #spline_graph_svg {
@@ -97,9 +166,14 @@
             margin: 10px;
             width: 1230px;
             height: 400px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
         }
 
         #point_map_svg {
@@ -107,15 +181,22 @@
             left: 10px;
             width: 1210px;
             height: 800px;
-            background-color: white;
-            border: 1px solid lightgray;
+            background-color: #F5F5DC;
+            border: 3px solid black;
             border-radius: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         #point_map_div {
             width: 1230px;
             margin: 10px;
             margin-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .playButton {
@@ -153,19 +234,54 @@
             border-radius: 8px;
             pointer-events: none;
         }
+        body {
+            background: linear-gradient(to bottom, #F5F5DC, #F5F5DC);
+        }
     </style>
 </head>
 
 <body>
     <div class="myContainer">
-        <h1 class="text-center">Project #1: Retrospective analysis of events at Abila City using visualization
-            techniques.</h1>
-        <h3 class="text-center">Sai Surya Kaushik Punyamurthula - spunyam2@asu.edu</h3>
-        <h3 class="text-center">Abhishek Annabathula - aannaba1@asu.edu</h3>
-        <h3 class="text-center">Sumedha Chillara - schillar@asu.edu</h3>
-        <h3 class="text-center">Nagaraju Machavarapu - nmachav1@asu.edu</h3>
-        <h3 class="text-center">Naga Sai Krishna Reddy Vintha - nvintha1@asu.edu</h3>
-        <h3 class="text-center">Dileep Kumar Reddy Maligireddy - dmaligir@asu.edu</h3>
+        <hr><hr>
+        <h2 class="text-center">Retrospective Analysis of Events at Abila City Using Visualization
+            Techniques.</h2>
+        <hr><hr>
+        <div class="row">
+        <div id = "description" style="border: 1px solid black; padding: 10px;">
+            <h5>Description:</h5>
+            <p>In this project, we are trying to answer the three questions posed in the VAST 2021 Mini Challenge 3 by using the call center data and the microblog data provided.
+                The dataset contains tweets/messages about the three major events happened at Abila City and also some unrelated spam/chatter information. The beeswarm graph, word cloud,
+                pie chart, bar chart and arc diagram helps the user to analyze the data and answer the first task of the challenge to characterize the data into different events happening at Abila. 
+                The spline graph helps us understand the risk/threat to public at a given point in time by answering the second task of the challenge. Point Map helps to visualize the events at Abila by visually 
+                representing the locations of the messages tweeted. Bigger circles on the point map represents where the three major events happened and helps us answer the third task of the challenge which is to 
+                help the user understand where to send the first responders if there was a chance.
+            </p>
+            <h5>Interactions:</h5>
+            <p> Beeswarm graph has a time slider which can be slided to left or right and this changes the word clouds, pie charts and bar charts. The check boxes on top of the page contains the three major events
+                happening at Abila. When a checkbox is unselected/selected, the changes will be reflected in word clouds, pie charts and bar charts. Word cloud represents the most tweeted words in that time frame. Beeswarm also has a tooltip 
+                that shows the author and message tweeted. Bar chart has dropdown to show most tweeted tags or authors during that time frame. Pie chart shows the distibution of the sentiment Analysis of the tweets in that time frame with a tooltip. 
+                Arc diagram, when hovered on a circle, connects all the authors that tweeted about the same major event that author tweeted. Point Map shows animation of the location of the tweets categorized via event types when the play button is clicked.
+                 The range Slider is used to show animation of the data points from that time to the end of the time frame. The "Track Van" button is used to show the "hit and run" van path over time. When hovered on a circle, lines will be connected to the circles with the 
+                 same type of event. The circle also shows a tooltip with the data related to that message.
+            </p>
+        </div>
+        <div id = "contribution" style="border: 1px solid black; padding: 10px;">
+            <h5>Contributors:</h5>
+            <h6>* Abhishek Annabathula</h6>
+            <h6>* Dileep Kumar Reddy Maligireddy</h6>
+            <h6>* Naga Sai Krishna Reddy Vintha</h6>
+            <h6>* Nagaraju Machavarapu</h6>
+            <h6>* Sai Surya Kaushik Punyamurthula</h6>
+            <h6>* Sumedha Chillara</h6>
+            <h5>Contact Info:</h5>
+            <h6>* aannaba1@asu.edu</h6>
+            <h6>* dmaligir@asu.edu</h6>
+            <h6>* nvintha1@asu.edu</h6>
+            <h6>* nmachav1@asu.edu</h6>
+            <h6>* spunyam2@asu.edu</h6>
+            <h6>* schillar@asu.edu</h6>
+        </div>
+    </div>
         <hr>
         <div id="checkboxes" class="centered">
             <span style="position:relative; left: 10px">Major Events:&nbsp;&nbsp;</span>
@@ -189,19 +305,16 @@
             </label>
         </div>
         <div id="my_div">
-            <div id="bee_swarm_div">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Bee Swarm - Characterization of events</h4>
                 <svg id="bee_swarm_svg"></svg>
             </div>
-            <div id="word_cloud_div">
-                <svg id="word_cloud_svg_1"></svg>
-                <svg id="word_cloud_svg_2"></svg>
-                <svg id="word_cloud_svg_3"></svg>
-            </div>
+
             <div id="bar_chart_div">
                 <div class="row" style="margin-left: 10px;">
                     <div class="col-1">Trends:</div>
                     <div class="col-3">
-                        <select id="country-select" onchange="drawBarsChanged()">
+                        <select id="country-select" onchange="drawBarsChanged()" style="background-color: #F5F5DC ">
                             <option value="author" selected>Authors</option>
                             <option value="tag">HashTags</option>
                         </select>
@@ -218,20 +331,39 @@
                         </style>
 
                     </div>
+                    <div class = "col-5">
+                        <h4>Bar Graphs - Distribution of top authors/tags</h4>
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
                 <svg id="bar_chart_svg_1" style="margin-left: 10px;"></svg>
                 <svg id="bar_chart_svg_2"></svg>
                 <svg id="bar_chart_svg_3"></svg>
             </div>
-            <div id="pie_chart_div">
-                <svg id="pie_chart_svg_1"></svg>
-                <svg id="pie_chart_svg_2"></svg>
-                <svg id="pie_chart_svg_3"></svg>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4 style="margin-top: 0;">Pie Charts - Sentiment Analysis</h4>
+                <div id="pie_chart_div">
+                    <svg id="pie_chart_svg_1"></svg>
+                    <svg id="pie_chart_svg_2"></svg>
+                    <svg id="pie_chart_svg_3"></svg>
+                </div>
             </div>
-            <div id="arc_diagram_div">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Word Clouds - Frequency of Words</h4>
+                <div id="word_cloud_div">
+                    <svg id="word_cloud_svg_1"></svg>
+                    <svg id="word_cloud_svg_2"></svg>
+                    <svg id="word_cloud_svg_3"></svg>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Arc Diagram - Connecting Similar Author Messages</h4>
                 <svg id="arc_diagram_svg"></svg>
             </div>
-            <div id="spline_graph_div">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Spline Graph - Risk Analysis</h4>
                 <svg id="spline_graph_svg"></svg>
             </div>
             <div id="point_map_div">
@@ -276,5 +408,6 @@
 <script src="js/pieChart.js"></script>
 <script src="js/wordCloud.js"></script>
 <script src="js/barchart.js"></script>
+<script src="js/linechart.js"></script>
 
 </html>

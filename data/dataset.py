@@ -58,7 +58,7 @@ if __name__ == '__main__':
         if event not in event_map:
             event_map[event] = event_counter
             event_counter += 1
-    print(event_map)
+    print("event map",event_map)
     print(set(authors_grp.values()))
     authors_dict = get_author_dict(count_map.keys(), authors_grp)
 
