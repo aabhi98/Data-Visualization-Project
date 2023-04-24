@@ -283,7 +283,7 @@ function drawEachTagChart(bar_data, barSvg) {
         .padding(0.1);
 
     var tag_xScale = d3.scaleLinear()
-        .range([0, bar_svg_width - bar_svg_margin])
+        .range([0, bar_svg_width - bar_svg_margin - 15])
         .domain([0, d3.max(top_six_tags, function (d) {
             return d.count;
         })]);
