@@ -70,6 +70,7 @@ function drawbeeswarm1() {
     function triggerMultipleFunctions() {
         resetFrameLines();
         filter();
+        reDrawSplineGraph();
     }
 }
 
