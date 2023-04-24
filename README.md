@@ -46,4 +46,4 @@
 2. install the required python modules by running the command <br />
    ```pip install flask pandas WordCloud matplotlib```
 3. Then the run the following command to start the python server <br /> ```flask --app wc_images/dv_project.py run --host=0.0.0.0 --port=80```
-4. Open the ```index.html``` in a browser
+4. Run the ```index.html``` using any server. We used python server to host the web application locally using the following command <br/> ```python -m http.server 9000```
