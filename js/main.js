@@ -328,9 +328,11 @@ const margin = { top: 10, right: 30, bottom: 10, left: 30 },
 
         console.log("allGroups",allGroups);
   // A color scale for groups:
+        const customColors = ['#7fc97f', 'red', 'blue', 'orange', 'black'];
+
         const color = d3.scaleOrdinal()
             .domain(allGroups)
-            .range(d3.schemeSet3);
+            .range(customColors);
 
         // A linear scale for node size
         const size = d3.scaleLinear()
