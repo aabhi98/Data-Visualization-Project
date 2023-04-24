@@ -40,28 +40,43 @@ d3.text("data/final_dataset.csv").then(data => {
       .domain([-1, 0, 1])
       .range(["red", "gray", "green"]);
 
-  // Add the circles for each data point
-  svg.selectAll("circle")
-    .data(sentimentData)
-    .enter()
-    .append("circle")
-    .attr("cx", d => x(d.date))
-    .attr("cy", d => y(d.sentiment))
-    .attr("r", 5)
-    .attr("fill", d => color(d.sentiment));
+// Add the circles for each data point
+svg.selectAll("circle")
+  .data(sentimentData)
+  .enter()
+  .append("circle")
+  .attr("cx", d => x(d.date))
+  .attr("cy", d => y(d.sentiment))
+  .attr("r", 0)
+  .attr("fill", "grey")
+  .transition()
+  .duration(4000)
+  .attr("r", 5);
+
 
     // Add the spline graph
     const line = d3.line()
-      .x(d => x(d.date))
-      .y(d => y(d.sentiment))
-      .curve(d3.curveCardinal);
+        .x(d => x(d.date))
+        .y(d => y(d.sentiment))
+        .curve(d3.curveCardinal);
 
-    svg.append("path")
-      .datum(sentimentData)
-      .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 1.5)
-      .attr("d", line);
+    const path = svg.append("path")
+        .datum(sentimentData)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1.5)
+        .attr("d", "");
+
+    path.transition()
+        .duration(5000)
+        .ease(d3.easeLinear)
+        .attrTween("d", function() {
+      const l = this.getTotalLength();
+        return function(t) {
+        return line(sentimentData.slice(0, Math.round(t * (sentimentData.length - 1)) + 1));
+        };
+    });
+
   }
 
   function aggregateSentimentData(data) {
@@ -74,7 +89,8 @@ d3.text("data/final_dataset.csv").then(data => {
 
     const sentimentData = data.map(d => ({
         date: d3.timeParse("%Y%m%d%H%M%S")(d.date),
-        sentiment: sentimentScores[d.sentiment]
+        sentiment: sentimentScores[d.sentiment],
+        majorEvent: d.major_event
       }));
 
     console.log("sentimentData",sentimentData);

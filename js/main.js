@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(data2);
         drawbeeswarm1();
         createArcDiagram();
-        createSplineGraph();
+        //createSplineGraph(spline_data);
     })
 })
 
@@ -290,9 +290,10 @@ function changeData(dataset) {
         filtereddata3 = dataset.filter(function (d) {
             return d.date >= time_line[1] && d.date <= endtime;
         });
-        console.log(filtereddata3);
-        drawPieChart(filtereddata1, filtereddata2, filtereddata3)
-        drawBars(filtereddata1, filtereddata2, filtereddata3)
+        console.log("filtereddata3",filtereddata3);
+        drawPieChart(filtereddata1, filtereddata2, filtereddata3);
+        drawBars(filtereddata1, filtereddata2, filtereddata3);
+        //createSplineGraph(filtereddata2);
 
         const formatDate = d3.timeFormat("%Y%m%d%H%M%S");
 
@@ -457,90 +458,3 @@ const margin = { top: 10, right: 30, bottom: 10, left: 30 },
             })
     })
 }
-
-// function createSplineGraph(data){
-
-//     // set the dimensions and margins of the graph
-//     const margin = {top: 10, right: 30, bottom: 30, left: 50},
-//           width = 1100 - margin.left - margin.right,
-//           height = 400 - margin.top - margin.bottom;
-  
-//     // append the svg object to the body of the page
-//     const svg = d3.select("#spline_graph_svg")
-//         .attr("width", width + margin.left + margin.right)
-//         .attr("height", height + margin.top + margin.bottom)
-//       .append("g")
-//         .attr("transform",`translate(${margin.left},${margin.top})`);
-  
-//     //Read the data
-//     d3.csv("data/final_dataset.csv", 
-  
-//       // When reading the csv, I must format variables:
-//       d => {
-//         if(d.sentiment == "neutral"){
-//             d.sentiment = 0;
-//         }else if(d.sentiment == "positive"){
-//             d.sentiment = 1;
-//         }else if(d.sentiment == "negative"){
-//             d.sentiment = -1;
-//         } 
-//         return { date : d3.timeParse("%Y%m%d%H%M%S")(d.date), 
-//         value : d.sentiment };
-//       }).then(
-  
-//       // Now I can use this dataset:
-//       function(data) {
-  
-//         // Keep only the 90 first rows
-//         data = data.slice(0, 200);
-  
-//         // Add X axis --> it is a date format
-//         const x = d3.scaleTime()
-//           .domain(d3.extent(data, d => d.date))
-//           .range([ 0, width ]);
-//         svg.append("g")
-//           .attr("transform", `translate(0,  ${height+5})`)
-//           .call(d3.axisBottom(x).ticks(5).tickSizeOuter(0));
-  
-//         // Add Y axis
-//         const y = d3.scaleLinear()
-//           .domain( d3.extent(data, d => +d.value))
-//           .range([ height, 0 ]);
-//         svg.append("g")
-//           .attr("transform", "translate(-5,0)")
-//           .call(d3.axisLeft(y).tickSizeOuter(0));
-  
-//     // Add the area
-//     svg.append("path")
-//         .datum(data)
-//         .attr("fill", d => d[0].value >= 0 ? "green" : "red") // fill color based on sentiment value
-//         .attr("fill-opacity", .3)
-//         .attr("stroke", "none")
-//         .attr("d", d3.area()
-//             .x(d => x(d.date))
-//             .y0( height )
-//             .y1(d => y(d.value))
-//         );
-
-//         // Add the line
-//     svg.append("path")
-//         .datum(data)
-//         .attr("fill", "none")
-//         .attr("stroke", d => d[0].value >= 0 ? "green" : "red") // stroke color based on sentiment value
-//         .attr("stroke-width", 4)
-//         .attr("d", d3.line()
-//             .x(d => x(d.date))
-//             .y(d => y(d.value))
-//         );
-
-//     // Add the circles
-//     svg.selectAll("myCircles")
-//         .data(data)
-//         .join("circle")
-//         .attr("fill", d => d.value >= 0 ? "green" : "red") // fill color based on sentiment value
-//         .attr("stroke", "none")
-//         .attr("cx", d => x(d.date))
-//         .attr("cy", d => y(d.value))
-//         .attr("r", 3);
-//         });
-//     } 
