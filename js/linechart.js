@@ -68,6 +68,58 @@ d3.text("data/final_dataset.csv").then(data => {
             .text('Risk calculated with -1 as no risk and 1 as high risk')
             .style('font-size', '16px');    
 
+            svg.append('rect')
+            .attr("x", 1020)
+            .attr("y", 120)
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", "red");
+    
+            svg.append('text')
+                .attr("x", 1050)
+                .attr("y", 135)
+                .text("pok_rally")
+                .style('font-size', '20px');
+    
+            svg.append('rect')
+                .attr("x", 1020)
+                .attr("y", 150)
+                .attr("width", 20)
+                .attr("height", 20)
+                .style("fill", "orange");
+        
+            svg.append('text')
+                    .attr("x", 1050)
+                    .attr("y", 165)
+                    .text("hit_and_run")
+                    .style('font-size', '20px');
+    
+            svg.append('rect')
+            .attr("x", 1020)
+            .attr("y", 180)
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", "blue");
+    
+            svg.append('text')
+                .attr("x", 1050)
+                .attr("y", 195)
+                .text("fire")
+                .style('font-size', '20px');
+    
+                svg.append('rect')
+            .attr("x", 1020)
+            .attr("y", 210)
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", "black");
+    
+            svg.append('text')
+                .attr("x", 1050)
+                .attr("y", 225)
+                .text("chatter/spam")
+                .style('font-size', '20px');
+
 
 
     // Add the spline graph
