@@ -16,6 +16,7 @@ from matplotlib.colors import ListedColormap
 
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS, cross_origin
+from datetime import datetime
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/foo": {"origins": "*"}})
@@ -47,7 +48,10 @@ def my_webservice():
 
     get_cloud(start_time, end_time, filter_values)
 
-    print("returning before saving")
+    now = datetime.now()
+
+    current_time = now.strftime("%H:%M:%S")
+    print("Current Time =", current_time)
     return resp
 
 
@@ -74,13 +78,13 @@ def get_cloud(start, end, filter):
 def generate_cloud(df, name, filter):
     path = "wc_images"
 
-    file_path = os.path.join(path, name)
-
-    if os.path.exists(file_path):
-        os.remove(file_path)
-        print(f"{name} deleted successfully")
-    else:
-        print(f"{name} does not exist")
+    # file_path = os.path.join(path, name)
+    #
+    # if os.path.exists(file_path):
+    #     os.remove(file_path)
+    #     print(f"{name} deleted successfully")
+    # else:
+    #     print(f"{name} does not exist")
 
     filtered_df = [obj for obj in df if obj['major_event'] in filter]
 
@@ -102,6 +106,5 @@ def generate_cloud(df, name, filter):
     plt.show()
 
     wordcloud.to_file('wc_images/{}.png'.format(name))
-    print("returning after saving")
 
     # flask --app wc_images/dv_project.py run --host=0.0.0.0 --port=80

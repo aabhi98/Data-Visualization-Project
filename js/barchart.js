@@ -176,7 +176,7 @@ function drawEachBarChart(bar_data, barSvg) {
         .data(top_six)
         .enter()
         .append("rect")
-        .style("fill", "#FFA233")
+        .style("fill", "#92a8d1")
         .attr("class", "bar")
         .style("stroke", "black")
         .style("stroke-width", 1)
@@ -212,7 +212,7 @@ function drawEachBarChart(bar_data, barSvg) {
             if (xScale(d.count) < bar_svg_width - bar_svg_margin - 50) {
                 return xScale(d.count) + 10
             }
-            return bar_svg_width - bar_svg_margin - 80;
+            return bar_svg_width - bar_svg_margin - 90;
         })
         .attr("y", function (d) { return yScale(d.author) + yScale.bandwidth() / 2 + 5; })
         .text(function (d) { return d.author; })
@@ -292,7 +292,7 @@ function drawEachTagChart(bar_data, barSvg) {
         .data(top_six_tags)
         .enter()
         .append("rect")
-        .style("fill", "#FFA233")
+        .style("fill", "#bcc499")
         .attr("class", "bar")
         .style("stroke", "black")
         .style("stroke-width", 1)
@@ -326,7 +326,7 @@ function drawEachTagChart(bar_data, barSvg) {
         .attr("class", "label")
         .attr("x", function (d) {
 
-            if (tag_xScale(d.count) < bar_svg_width - bar_svg_margin - 50) {
+            if (tag_xScale(d.count) < bar_svg_width - bar_svg_margin - 30) {
                 return tag_xScale(d.count)
             }
             return bar_svg_width - bar_svg_margin - 80;

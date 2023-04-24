@@ -9,7 +9,6 @@ function loadWordCloudImage(start, end) {
 
     logJSONData();
 
-    console.log("Draw world cloud")
 
     async function logJSONData() {
 
@@ -17,7 +16,6 @@ function loadWordCloudImage(start, end) {
             .nodes()
             .map(checkbox => checkbox.value);
 
-        console.log(checked)
 
         if (start != null) {
             start_time = start;
@@ -34,38 +32,10 @@ function loadWordCloudImage(start, end) {
         url.searchParams.append("pok", checked.includes("pok_rally"));
 
         try {
-            const response = await fetch(url, {
-                mode: "no-cors"
-            });
-
-            const data = await response; // parse response as JSON
-
-            // if (response.status === 200) {
-                console.log("response ok")
-            var today = new Date();
-            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-            console.log(time)
-                setImages()
-            // } else {
-            //     console.log("response not ok")
-            //     word_svg1.append("image")
-            //         .attr('xlink:href', "wc_images/wc-1.png")
-            //         .attr("width", 360)
-            //         .attr("height", 360)
-            //
-            //     word_svg2.append("image")
-            //         .attr('xlink:href', "wc_images/wc-2.png")
-            //         .attr("width", 360)
-            //         .attr("height", 360)
-            //
-            //     word_svg3.append("image")
-            //         .attr('xlink:href', "wc_images/wc-3.png")
-            //         .attr("width", 360)
-            //         .attr("height", 360)
-            // }
+            const response = await fetch(url, { mode: "no-cors" });
+            setImages()
 
         } catch (error) {
-            console.log(error)
             console.log("response error")
 
             word_svg1.append("image")
@@ -86,18 +56,28 @@ function loadWordCloudImage(start, end) {
 
 
         function setImages(data) {
-                word_svg1.append("image")
-                    .attr('xlink:href', "wc_images/wc1.png")
+
+            var today = new Date();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            console.log(time)
+            console.log("showing images")
+
+                word_svg1.select("image").remove()
+                word_svg2.select("image").remove()
+                word_svg3.select("image").remove()
+
+            word_svg1.append("image")
+                    .attr('xlink:href', "wc_images/wc1.png?v=" + new Date().getTime())
                     .attr("width", 360)
                     .attr("height", 360)
 
                 word_svg2.append("image")
-                    .attr('xlink:href', "wc_images/wc2.png")
+                    .attr('xlink:href', "wc_images/wc2.png?v=" + new Date().getTime())
                     .attr("width", 360)
                     .attr("height", 360)
 
                 word_svg3.append("image")
-                    .attr('xlink:href', "wc_images/wc3.png")
+                    .attr('xlink:href', "wc_images/wc3.png?v=" + new Date().getTime())
                     .attr("width", 360)
                     .attr("height", 360)
         }
