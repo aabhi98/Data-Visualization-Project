@@ -53,6 +53,19 @@ svg.selectAll("circle")
   .duration(4000)
   .attr("r", 5);
 
+  svg.append('text')
+            .attr('x', 860)
+            .attr('y', 440)
+            .text('Time')
+            .style('font-size', '16px');
+
+  svg.append('text')
+            .attr('transform','rotate(-90)')
+            .attr('dy','-40')
+            .attr('dx','-400')
+            .text('Risk calculated with -1 as no risk and 1 as high risk')
+            .style('font-size', '16px');    
+
 
     // Add the spline graph
     const line = d3.line()
