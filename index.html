@@ -268,19 +268,16 @@
             </label>
         </div>
         <div id="my_div">
-            <div id="bee_swarm_div">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Bee Swarm - Characterization of events</h4>
                 <svg id="bee_swarm_svg"></svg>
             </div>
-            <div id="word_cloud_div">
-                <svg id="word_cloud_svg_1"></svg>
-                <svg id="word_cloud_svg_2"></svg>
-                <svg id="word_cloud_svg_3"></svg>
-            </div>
+
             <div id="bar_chart_div">
                 <div class="row" style="margin-left: 10px;">
                     <div class="col-1">Trends:</div>
                     <div class="col-3">
-                        <select id="country-select" onchange="drawBarsChanged()">
+                        <select id="country-select" onchange="drawBarsChanged()" style="background-color: #F5F5DC ">
                             <option value="author" selected>Authors</option>
                             <option value="tag">HashTags</option>
                         </select>
@@ -297,23 +294,43 @@
                         </style>
 
                     </div>
+                    <div class = "col-5">
+                        <h4>Bar Graphs - Distribution of top authors/tags</h4>
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
                 <svg id="bar_chart_svg_1" style="margin-left: 10px;"></svg>
                 <svg id="bar_chart_svg_2"></svg>
                 <svg id="bar_chart_svg_3"></svg>
             </div>
-            <div id="pie_chart_div">
-                <svg id="pie_chart_svg_1"></svg>
-                <svg id="pie_chart_svg_2"></svg>
-                <svg id="pie_chart_svg_3"></svg>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4 style="margin-top: 0;">Pie Charts - Sentiment Analysis</h4>
+                <div id="pie_chart_div">
+                    <svg id="pie_chart_svg_1"></svg>
+                    <svg id="pie_chart_svg_2"></svg>
+                    <svg id="pie_chart_svg_3"></svg>
+                </div>
             </div>
-            <div >
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Word Clouds - Frequency of Words</h4>
+                <div id="word_cloud_div">
+                    <svg id="word_cloud_svg_1"></svg>
+                    <svg id="word_cloud_svg_2"></svg>
+                    <svg id="word_cloud_svg_3"></svg>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Arc Diagram - Connecting Similar Author Messages</h4>
                 <svg id="arc_diagram_svg"></svg>
             </div>
-            <div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Spline Graph - Risk Analysis</h4>
                 <svg id="spline_graph_svg"></svg>
             </div>
-            <div id="point_map_div">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4>Point Map - Geospatial Locations of Messages</h4>
                 <div class="row" style="margin: 10px 10px; position: relative;">
                     <svg id="point_map_svg"></svg>
                     <div id="point_map_message_info" style="margin-left: 10px;"></div>
