@@ -108,7 +108,7 @@ function draw() {
     xAxis = d3.axisBottom(xScale);
     xAxis = d3.axisBottom(xScale);
     g.append('g')
-        .attr('transform', `translate(0, ${innerHeight})`)
+        .attr('transform', `translate(0, ${innerHeight-20})`)
         .transition().duration(1000)
         .call(xAxis)
 
@@ -160,7 +160,11 @@ function draw() {
         .on("mouseout", function () {
             return tooltip.style("visibility", "hidden");
         });
-
+    g.append('text')
+            .attr('x', 1080)
+            .attr('y', 600)
+            .text('Time')
+            .style('font-size', '20px');
     resetFrameLines()
     for (let x of [xScale(parseTime('20140123183000')), xScale(parseTime('20140123200000'))]) {
         drawFrameLines(x, xScale)
@@ -430,6 +434,12 @@ const margin = { top: 10, right: 30, bottom: 10, left: 30 },
         }
       })
       .style("font-size", "14px");
+
+      svg.append('text')
+            .attr('x', 1180)
+            .attr('y', 560)
+            .text('Authors')
+            .style('font-size', '24px');
     
     
 
