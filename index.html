@@ -19,7 +19,7 @@
             margin :10px;
             padding :10px;
             width : 890px;
-            height : 400px;
+            height : 590px;
             align-items: left;
         }
         #contribution {
@@ -138,10 +138,10 @@
 
 <body>
     <div class="myContainer">
-        <hr>
+        <hr><hr>
         <h2 class="text-center">Retrospective Analysis of Events at Abila City Using Visualization
             Techniques.</h2>
-        <hr>
+        <hr><hr>
         <div class="row">
         <div id = "description" style="border: 1px solid black; padding: 10px;">
             <h5>Description:</h5>
@@ -153,7 +153,12 @@
                 help the user understand where to send the first responders if there was a chance.
             </p>
             <h5>Interactions:</h5>
-            <p>
+            <p> Beeswarm graph has a time slider which can be slided to left or right and this changes the word clouds, pie charts and bar charts. The check boxes on top of the page contains the three major events
+                happening at Abila. When a checkbox is unselected/selected, the changes will be reflected in word clouds, pie charts and bar charts. Word cloud represents the most tweeted words in that time frame. Beeswarm also has a tooltip 
+                that shows the author and message tweeted. Bar chart has dropdown to show most tweeted tags or authors during that time frame. Pie chart shows the distibution of the sentiment Analysis of the tweets in that time frame with a tooltip. 
+                Arc diagram, when hovered on a circle, connects all the authors that tweeted about the same major event that author tweeted. Point Map shows animation of the location of the tweets categorized via event types when the play button is clicked.
+                 The range Slider is used to show animation of the data points from that time to the end of the time frame. The "Track Van" button is used to show the "hit and run" van path over time. When hovered on a circle, lines will be connected to the circles with the 
+                 same type of event. The circle also shows a tooltip with the data related to that message.
             </p>
         </div>
         <div id = "contribution" style="border: 1px solid black; padding: 10px;">
