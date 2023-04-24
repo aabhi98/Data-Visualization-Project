@@ -1,5 +1,7 @@
+var parsedData;
+
 d3.text("data/final_dataset.csv").then(data => {
-    const parsedData = d3.csvParse(data);
+    parsedData = d3.csvParse(data);
     createSplineGraph(parsedData);
   });
   
@@ -231,4 +233,37 @@ d3.text("data/final_dataset.csv").then(data => {
   
     return maxString;
   }
-  
+
+  function getCheckedBoxes(checkboxName) {
+
+    let checkboxes = d3.selectAll(checkboxName).nodes();
+    let checkboxesChecked = [];
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            checkboxesChecked.push(checkboxes[i].defaultValue);
+        }
+    }
+    return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+}
+  function reDrawSplineGraph(){
+    let checkedBoxes = getCheckedBoxes(".event");
+    let newData = [];
+    console.log("spline new data",newData);
+    // Get the SVG element
+    const svg = d3.select('#spline_graph_svg');
+
+    if(checkedBoxes == null){
+        svg.selectAll("*").remove();
+        createSplineGraph(splineData);
+    }else{
+        for (let i = 0; i < checkedBoxes.length; i++) {
+            let newArray = parsedData.filter(function (d) {
+                return d["major_event"] === checkedBoxes[i];
+            });
+            Array.prototype.push.apply(newData, newArray);
+        }
+        svg.selectAll("*").remove();
+        createSplineGraph(newData);
+    }
+
+  }
